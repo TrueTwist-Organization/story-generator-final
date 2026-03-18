@@ -1,15 +1,18 @@
 openapi: 3.1.0
 info:
-  # Do not change the title, if the title changes, the import paths will be broken
   title: Api
   version: 0.1.0
-  description: API specification
+  description: AI Story Generator API
 servers:
   - url: /api
     description: Base API path
 tags:
   - name: health
     description: Health operations
+  - name: stories
+    description: Story generation operations
+  - name: openai
+    description: OpenAI AI chat, image, and audio operations
 paths:
   /healthz:
     get:
@@ -24,6 +27,92 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+  /generate-story:
+    post:
+      operationId: generateStory
+      tags: [stories]
+      summary: Generate a new AI story
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/GenerateStoryBody"
+      responses:
+        "200":
+          description: Generated story with scenes
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/StoryResponse"
+  /generate-story-image:
+    post:
+      operationId: generateStoryImage
+      tags: [stories]
+      summary: Generate an image for a story scene
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/GenerateStoryImageBody"
+      responses:
+        "200":
+          description: Generated image
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GenerateStoryImageResponse"
+  /generate-narration:
+    post:
+      operationId: generateNarration
+      tags: [stories]
+      summary: Generate voice narration for a scene
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/GenerateNarrationBody"
+      responses:
+        "200":
+          description: Generated audio narration
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GenerateNarrationResponse"
+  /demo-stories:
+    get:
+      operationId: getDemoStories
+      tags: [stories]
+      summary: Get pre-built demo stories
+      responses:
+        "200":
+          description: List of demo stories
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/DemoStory"
+  /openai/generate-image:
+    post:
+      operationId: generateOpenaiImage
+      tags: [openai]
+      summary: Generate an image from a text prompt
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/GenerateOpenaiImageBody"
+      responses:
+        "200":
+          description: Generated image data
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GenerateOpenaiImageResponse"
 components:
   schemas:
     HealthStatus:
@@ -33,4 +122,196 @@ components:
           type: string
       required:
         - status
-
+    GenerateStoryBody:
+      type: object
+      properties:
+        prompt:
+          type: string
+          description: Story prompt or description
+        category:
+          type: string
+          enum: [nature, princess, anime, travel, custom]
+        language:
+          type: string
+          enum: [english, hindi, gujarati]
+        mode:
+          type: string
+          enum: [image, video, game]
+        numScenes:
+          type: integer
+          minimum: 2
+          maximum: 8
+          default: 4
+      required:
+        - prompt
+        - category
+        - language
+        - mode
+    StoryScene:
+      type: object
+      properties:
+        sceneNumber:
+          type: integer
+        title:
+          type: string
+        text:
+          type: string
+        imagePrompt:
+          type: string
+        choices:
+          type: array
+          items:
+            $ref: "#/components/schemas/StoryChoice"
+      required:
+        - sceneNumber
+        - title
+        - text
+        - imagePrompt
+    StoryChoice:
+      type: object
+      properties:
+        id:
+          type: string
+        text:
+          type: string
+        nextScene:
+          type: integer
+        isCorrect:
+          type: boolean
+      required:
+        - id
+        - text
+    StoryResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        category:
+          type: string
+        language:
+          type: string
+        mode:
+          type: string
+        scenes:
+          type: array
+          items:
+            $ref: "#/components/schemas/StoryScene"
+        quizQuestions:
+          type: array
+          items:
+            $ref: "#/components/schemas/QuizQuestion"
+      required:
+        - id
+        - title
+        - category
+        - language
+        - mode
+        - scenes
+    QuizQuestion:
+      type: object
+      properties:
+        question:
+          type: string
+        options:
+          type: array
+          items:
+            type: string
+        correctIndex:
+          type: integer
+        explanation:
+          type: string
+      required:
+        - question
+        - options
+        - correctIndex
+        - explanation
+    GenerateStoryImageBody:
+      type: object
+      properties:
+        prompt:
+          type: string
+        category:
+          type: string
+        style:
+          type: string
+      required:
+        - prompt
+        - category
+    GenerateStoryImageResponse:
+      type: object
+      properties:
+        b64_json:
+          type: string
+      required:
+        - b64_json
+    GenerateNarrationBody:
+      type: object
+      properties:
+        text:
+          type: string
+        language:
+          type: string
+          enum: [english, hindi, gujarati]
+        voice:
+          type: string
+      required:
+        - text
+        - language
+    GenerateNarrationResponse:
+      type: object
+      properties:
+        audioBase64:
+          type: string
+        format:
+          type: string
+      required:
+        - audioBase64
+        - format
+    DemoStory:
+      type: object
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        category:
+          type: string
+        language:
+          type: string
+        mode:
+          type: string
+        thumbnail:
+          type: string
+        description:
+          type: string
+        scenes:
+          type: array
+          items:
+            $ref: "#/components/schemas/StoryScene"
+      required:
+        - id
+        - title
+        - category
+        - language
+        - mode
+        - description
+        - scenes
+    GenerateOpenaiImageBody:
+      type: object
+      properties:
+        prompt:
+          type: string
+        size:
+          type: string
+          enum: ["1024x1024", "512x512", "256x256"]
+      required:
+        - prompt
+    GenerateOpenaiImageResponse:
+      type: object
+      properties:
+        b64_json:
+          type: string
+      required:
+        - b64_json
