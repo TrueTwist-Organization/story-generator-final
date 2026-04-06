@@ -519,7 +519,7 @@ export default function HomePage() {
                   </div>
                   
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {stories.map((story: any, storyIdx: number) => {
+                    {stories.slice(0, 2).map((story: any, storyIdx: number) => {
                       // Best-matching local image per category (always loads instantly)
                       const categoryImagePools: Record<string, string[]> = {
                         king_queen:  ["/images/king_queen_1.png", "/images/king_queen_2.png", "/images/king_queen_3.png", "/images/king_queen_4.png"],
