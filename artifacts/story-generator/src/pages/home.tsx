@@ -530,20 +530,10 @@ export default function HomePage() {
                         kids:        ["/images/cat-kids.webp",       "/images/demo-rabbit-lion.png", "/images/cat-kids.webp",       "/images/demo-rabbit-lion.png"],
                         bedtime:     ["/images/cat-bedtime.webp",    "/images/demo-moon-star.png",   "/images/cat-bedtime.webp",    "/images/demo-moon-star.png"],
                         moral:       ["/images/cat-moral.webp",      "/images/demo-woodcutter.png",  "/images/cat-moral.webp",      "/images/demo-woodcutter.png"],
-                        animal:      ["/images/cat-animal.webp",     "/images/demo-rabbit-lion.png", "/images/cat-animal.webp",     "/images/demo-rabbit-lion.png"],
-                        god:         [
-                          "https://image.pollinations.ai/prompt/Lord+Ganesha+Wisdom+divine+palace+storybook+art?width=512&height=768&nologo=true&seed=136",
-                          "https://image.pollinations.ai/prompt/Lord+Krishna+playing+a+golden+flute+divine+light+storybook+art?width=512&height=768&nologo=true&seed=137",
-                          "https://image.pollinations.ai/prompt/Lord+Hanuman+leaping+across+vast+blue+ocean+divine+pose+storybook+art?width=512&height=768&nologo=true&seed=138",
-                          "https://image.pollinations.ai/prompt/A+glowing+divine+figure+shaping+a+beautiful+blue+planet+from+clay+cosmic+background+storybook+art?width=512&height=768&nologo=true&seed=139"
-                        ],
-                        bird:        [
-                          "https://image.pollinations.ai/prompt/A+proud+peacock+with+a+grand+colorful+tail+spread+out+vibrant+forest+garden+bird+storybook+art?width=512&height=768&nologo=true&seed=140",
-                          "https://image.pollinations.ai/prompt/A+majestic+eagle+soaring+high+above+a+lush+green+valley+winding+river+bird+storybook+art?width=512&height=768&nologo=true&seed=141",
-                          "https://image.pollinations.ai/prompt/A+small+brown+bird+singing+on+a+flowering+branch+under+full+moon+magical+notes+storybook+art?width=512&height=768&nologo=true&seed=142",
-                          "https://image.pollinations.ai/prompt/Two+bright+blue+jays+sitting+proudly+on+a+neatly+woven+nest+in+a+flowering+spring+tree+bird+storybook+art?width=512&height=768&nologo=true&seed=143"
-                        ],
-                        custom:      ["/images/cat-custom.webp",     "/images/demo-nature.png",      "/images/demo-anime.png",      "/images/cat-custom.webp"],
+                        animal:      ["/images/cat-animal.webp",     "/images/demo-rabbit-lion.png"],
+                        god:         ["/images/cat-god.webp",        "/images/demo-nature.png"],
+                        bird:        ["/images/cat-bird.webp",       "/images/fantasy_1.png"],
+                        custom:      ["/images/cat-custom.webp",     "/images/demo-nature.png"],
                       };
 
                       const pool = categoryImagePools[story.category as keyof typeof categoryImagePools] || categoryImagePools.custom;
