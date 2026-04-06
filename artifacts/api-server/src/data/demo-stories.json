@@ -1,0 +1,938 @@
+[
+  {
+    "id": "demo-1",
+    "title": "The Just King's Decree",
+    "category": "king_queen",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/Majestic+ancient+Indian+king+and+queen+sitting+on+a+stone+terrace+overlooking+misty+mountains+and+golden+temples+cinematic+storybook+illustration+detailed+digital+art+warm+sunset+colors?width=512&height=768&nologo=true&seed=881",
+    "description": "A wise king named Aryan solves a difficult dispute between two women by testing their true love.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The Decree",
+        "text": "In a kingdom where truth was the highest law, King Aryan faced a difficult choice. Two women claimed the same child.",
+        "imagePrompt": "A noble king with a grey beard sitting on a high throne, two women standing before him, one looking desperate, the other greedy, medieval court",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Test",
+        "text": "'Split the child in two,' the King said calmly. One woman stayed silent, while the other fell to her knees, crying for mercy.",
+        "imagePrompt": "The King raising a hand in judgment, a guardsman standing near, one woman weeping on the floor while the other watches coldly",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "Selfless Love",
+        "text": "'Give the child to her!' the crying woman yelled. 'I would rather lose my child than see him harmed.'",
+        "imagePrompt": "Close up of an emotional mother's face with tears, pleading with her hands outstretched towards the king",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Justice Served",
+        "text": "The King smiled. 'Only a true mother would give up her child to save him.' Justice was done, and the kingdom rejoiced.",
+        "imagePrompt": "The mother hugging her baby tightly, the king smiling warmly from his throne, glowing light through stained glass windows",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-2",
+    "title": "Queen Elara's Secret",
+    "category": "king_queen",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/Royal+European+king+and+queen+in+a+classic+sunlit+palace+throne+room+with+tall+arched+windows+and+floral+arrangements+cinematic+storybook+illustration+detailed+digital+art+bright+royal+colors?width=512&height=768&nologo=true&seed=882",
+    "description": "The Queen discovers a hidden garden that only blooms when the kingdom is at peace.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The Hidden Wall",
+        "text": "Beneath the palace walls, Queen Elara found a door covered in thick ivy. It hadn't been opened for a hundred years.",
+        "imagePrompt": "Queen Elara in a royal gown, clearing vines from an old stone door at the base of a castle wall, mystery atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Bloom",
+        "text": "As she stepped inside, the silver moonflowers began to glow. They only opened their petals when the heart was light.",
+        "imagePrompt": "A secret garden with glowing blue and silver flowers, a stone fountain in the center, sparks of magic in the air",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Message",
+        "text": "Inside, a message was carved in stone: 'Peace is the garden where hope grows.' Elara knew she had to share this with her people.",
+        "imagePrompt": "Close up of a stone tablet with elegant carvings, surrounded by glowing petals and soft light",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "The Kingdom Blooms",
+        "text": "By sharing the garden's secret, the Queen brought the whole kingdom together. Unity became their greatest strength.",
+        "imagePrompt": "A grand celebration in the palace courtyard, people holding jars of glowing plants, happiness and light",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-5",
+    "title": "The Last Dragon",
+    "category": "fantasy",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/Two%20children%20with%20a%20burning%20torch%20exploring%20a%20dark%20mysterious%20cave%2C%20dramatic%20shadows%2C%20classic%20storybook%20illustration%2C%20vintage%20art%20style?width=512&height=768&nologo=true&seed=994",
+    "description": "An unlikely hero finds the last dragon egg in a hidden cave and must protect it from those who want its power.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The Cave",
+        "text": "Kael was a simple shepherd, but he followed a falling star into the Dragon's Maw cave. There, he found a pulsing purple egg.",
+        "imagePrompt": "A young man in simple clothes holding a glowing purple egg inside a dark, rocky cave with stalactites",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Hatching",
+        "text": "With a soft crack, a tiny creature with emerald eyes emerged. Kael name him Spark, the last of his kind.",
+        "imagePrompt": "A small cute baby dragon with tiny wings peeking out of a broken purple shell, looking up at a surprised young man",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Flight",
+        "text": "Years passed, and Spark grew strong. Together, they soared above the clouds, far away from the greedy hunters.",
+        "imagePrompt": "A man riding a large green dragon through a golden sky with white fluffy clouds, high altitude adventure",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "A New Era",
+        "text": "They found a hidden valley where dragons could once again thrive. Kael became the first Guardian of the Skies.",
+        "imagePrompt": "A beautiful hidden valley with a waterfall, several dragons flying around, a peaceful sanctuary",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-6",
+    "title": "Crystal Mountain",
+    "category": "fantasy",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/Dark%20gothic%20tower%20reaching%20the%20clouds%2C%20mysterious%20fantasy%20architecture%2C%20cinematic%20storybook%20illustration%2C%20detailed%20digital%20art%2C%20gloomy%20atmosphere?width=512&height=768&nologo=true&seed=991",
+    "description": "Quest to find the scattered pieces of the mountain that keeps the world afloat and the magic within.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The Split",
+        "text": "Long ago, the Crystal Mountain was the heart of the world. But it shattered, and the world began to sink.",
+        "imagePrompt": "A massive crystal mountain floating in a dark sky, pieces of it falling away into a mist below",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Call",
+        "text": "A young girl named Lyra heard the crystal singing. She set out with only a lantern and a map showing the stars.",
+        "imagePrompt": "A girl in a cloak walking through a misty forest, holding a lantern while looking at a scroll under moonlight",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Summit",
+        "text": "The mountain was guarded by stone giants. Lyra didn't fight them; she sang the song of the mountain back to them.",
+        "imagePrompt": "Large stone giants standing perfectly still on a snowy slope, a small girl standing before them peacefully",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "The Rebirth",
+        "text": "As the pieces came together, the world floated high once more. The mountain was whole, and so was her heart.",
+        "imagePrompt": "The crystal mountain glowing with brilliant white light, aurora borealis in the sky, epic peaceful resolution",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-9",
+    "title": "Sorcerer's Apprentice",
+    "category": "magic",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/Young+wizard+apprentice+accidentally+making+brooms+dance+in+a+chaotic+magical+library+floating+books+and+glowing+sparks+cinematic+storybook+illustration?width=512&height=768&nologo=true&seed=108",
+    "description": "A young student learns that true magic comes from the heart, not just from old books and dusty scrolls.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The First Spell",
+        "text": "Toby tried to make the brooms dance. He read the words correctly, but the magic was wild and messy.",
+        "imagePrompt": "A young boy in a wizard robe, many brooms floating around a room haphazardly, spilled potion bottles, chaotic magic",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Master's Library",
+        "text": "Master Eldon watched from the shadows. 'Magic follows your intent, Toby, not just your tongue.'",
+        "imagePrompt": "An old wizard with a long white beard and starry hat, standing in a library filled with glowing books",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Pure Heart",
+        "text": "When a small bird was hurt, Toby didn't look at a book. He reached out with love, and the magic worked perfectly.",
+        "imagePrompt": "A boy gently holding a small bird, a soft blue light emanating from his palms, healing wings",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "A True Wizard",
+        "text": "He realized that being a sorcerer wasn't about power, but about protection. He was an apprentice no more.",
+        "imagePrompt": "The boy and the old wizard standing together on a balcony, casting a combined spell that creates fireworks",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-10",
+    "title": "The Magic Inkwell",
+    "category": "magic",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/Young+woman+using+a+glowing+silver+inkwell+to+draw+a+paper+boat+that+comes+to+life+magical+ink+ripples+on+an+antique+desk+storybook+art?width=512&height=768&nologo=true&seed=109",
+    "description": "Everything written with this ink comes to life for exactly one hour, but it can't be used for greed.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The Bottle",
+        "text": "In a box of antiques, Sarah found a bottle that smelled like wet earth and ozone. It was the Ink of Creation.",
+        "imagePrompt": "A young woman opening a dusty wooden box, finding a small obsidian bottle with a glowing silver label",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Drawing",
+        "text": "She drew a small paper boat. To her shock, it floated right off the page and began to sail in her glass of water.",
+        "imagePrompt": "A small origami-style boat made of ink-marked paper, floating in a water glass, magical ripples",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Limit",
+        "text": "A greedy merchant tried to draw a bag of gold, but the ink turned to dust. It only worked for things of beauty.",
+        "imagePrompt": "A grumpy man looking at a pile of gray dust on a desk, a disappointed expression, dark atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "One Hour of Joy",
+        "text": "Sarah drew a field of butterflies for her sick grandmother. For one hour, the room was filled with dancing colors.",
+        "imagePrompt": "An old woman smiling in bed, surrounded by many vibrant glowing butterflies, a very warm and joyful room",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-13",
+    "title": "Two Friends and the Storm",
+    "category": "friendship",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/Two+friends+braving+a+dramatic+mountain+storm+hugging+together+for+warmth+in+a+snowy+himalayan+meadow+cinematic+storybook+art?width=512&height=768&nologo=true&seed=112",
+    "description": "Rohan and Aman learn the true meaning of friendship during a dangerous storm in the Himalayas.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The High Meadow",
+        "text": "Rohan and Aman were grazing their sheep in the high meadow. The sky was as blue as a sapphire, and they were laughing.",
+        "imagePrompt": "Two boys in traditional Himalayan clothes laughing in a green meadow with many sheep, snow capped mountains in background",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Dark Clouds",
+        "text": "Without warning, the light vanished. A thunderhead as black as coal rolled over the peaks, bringing ice and wind.",
+        "imagePrompt": "Massive dark scary clouds looming over a mountain ridge, wind blowing the grass and sheep running for cover",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Cave",
+        "text": "Rohan's foot slipped on the wet rock, but Aman caught him. They huddled together in a small cave, sharing a single blanket.",
+        "imagePrompt": "One boy holding the hand of another who is slipping on a rock cliff, rain and lightning everywhere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "The Sunrise",
+        "text": "The morning sun was warm and golden. They had survived together, and their bond was now as strong as the mountains themselves.",
+        "imagePrompt": "Two friends walking down a mountain path in the morning sun, arms around each other's shoulders, peaceful and heroic",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-14",
+    "title": "Sharing the Last Apple",
+    "category": "friendship",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/Two+kids+with+different+clothes+sharing+a+single+red+apple+in+a+dry+dusty+village+warm+sunlight+heartwarming+storybook+art?width=512&height=768&nologo=true&seed=113",
+    "description": "In a time of scarcity, two rivals find common ground and discover that sharing makes a meal twice as full.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The Dry Land",
+        "text": "A long drought had dried the river, and food was hard to find. Sam and Jack were both searching for anything to eat.",
+        "imagePrompt": "A cracked dry earth landscape, two tired-looking boys walking along a dusty path, several abandoned buckets",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Discovery",
+        "text": "They both spotted it at the same time: one small, bright red apple underneath a dead tree.",
+        "imagePrompt": "A single red apple on the ground, two boys rushing towards it from different sides, hands almost touching it",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Split",
+        "text": "Instead of fighting, Sam took a small knife and cut the apple exactly in half. He handed the bigger half to Jack.",
+        "imagePrompt": "Hands of a boy cutting an apple in half on a flat stone, the other boy looking surprised and grateful",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "A New Friend",
+        "text": "As they ate together, the first raindrop fell. Sharing the apple was the start of a friendship that would last a lifetime.",
+        "imagePrompt": "Two boys laughing and eating apple slices, rain starting to fall on their faces, puddles forming",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-17",
+    "title": "The Cookie Jar Mystery",
+    "category": "kids",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/Young+detective+looking+at+an+empty+glass+cookie+jar+through+a+magnifying+glass+blue+cat+sneaking+away+in+the+background+kids+mystery+storybook?width=512&height=768&nologo=true&seed=116",
+    "description": "Young Milo uses his magnifying glass to solve the case of the missing cookies.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The Empty Jar",
+        "text": "Milo loved cookies, but someone else loved them more. The jar was empty, and there were crumbs on the floor.",
+        "imagePrompt": "A boy looking disappointed at an empty cookie jar on a table, cookie crumbs trail leading to another room",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "Detective Work",
+        "text": "With his magnifying glass, he found a long blue hair. Milo knew exactly who had a blue coat.",
+        "imagePrompt": "A close up of a magnifying glass showing a blue cat hair on a wooden floor",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Suspect",
+        "text": "Whiskers the Cat was sleeping under the couch. She looked very satisfied, and there was a bit of frosting on her nose.",
+        "imagePrompt": "A blue cat sleeping under a couch with some white frosting on its chin, looking very happy",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Sharing is Fun",
+        "text": "Instead of being mad, Milo shared a glass of milk. Next time, they decided to bake together.",
+        "imagePrompt": "A boy and a blue cat sharing a small snack together, both of them looking very happy",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-18",
+    "title": "The Flying Cardboard Box",
+    "category": "kids",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/A+child+inside+a+cardboard+box+rocket+ship+soaring+through+a+vibrant+living+room+filled+with+imaginary+nebulae+and+aliens+kids+storybook+art?width=512&height=768&nologo=true&seed=117",
+    "description": "A child's imagination turns a simple cardboard box into a spaceship for an epic adventure through the living room.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The Launchpad",
+        "text": "Leo found a big cardboard box. It wasn't just a box; it was the fastest spaceship in the galaxy!",
+        "imagePrompt": "A child drawing controls inside a large cardboard box, surrounded by toys, in a living room",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "Through the Stars",
+        "text": "Zoom! He flew past the sofa-mountains and the lamp-stars, heading for the kitchen-planet.",
+        "imagePrompt": "A child in a cardboard box spaceship 'flying' through a living room, blurred background to show speed",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "Alien Encounter",
+        "text": "On the kitchen-planet, he met a friendly alien (his cat, Mittens) who wanted to share his space-milk.",
+        "imagePrompt": "A child in a cardboard box spaceship offering a bowl of milk to a cat wearing a tin foil hat",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Home Sweet Home",
+        "text": "After a long journey, Leo landed his spaceship safely back in his room, ready for his next adventure.",
+        "imagePrompt": "A child sleeping soundly in bed, the cardboard box spaceship parked neatly beside it, stars drawn on the box",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-21",
+    "title": "The Moon's Night Light",
+    "category": "bedtime",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/Cozy+children+bedroom+with+the+moon+shining+through+the+window+like+a+gentle+nightlight+sparkling+stars+bedtime+storybook+art?width=512&height=768&nologo=true&seed=120",
+    "description": "A little girl asks the moon to stay so she doesn't feel alone at night.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The Fear of Dark",
+        "text": "Lilly didn't like the shadows on her wall. She whispered to the moon, 'Please don't go away.'",
+        "imagePrompt": "A girl in bed looking at shadows on the wall that look like scary trees, moonlight shining through the glass",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Moon's Promise",
+        "text": "The moon sent a beam of silver light that turned her teddy bear into a knight made of stardust.",
+        "imagePrompt": "A teddy bear glowing with silver starlight, sitting upright on a bed, protective stance",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "Dreamland Gate",
+        "text": "With the star-knight by her side, Lilly drifted into a world where everything was made of fluff and soft light.",
+        "imagePrompt": "A girl sleeping peacefully, her room turning into a clouds and soft light, many stars",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Morning Sun",
+        "text": "Lilly woke up feeling brave. She knew that even when the moon sleeps, the light is always there.",
+        "imagePrompt": "A girl sitting up in bed with the morning sun hitting her face, a huge smile, her teddy bear is normal again",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-22",
+    "title": "Counting Star Sheep",
+    "category": "bedtime",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/Child+sleeping+on+a+giant+fluffy+cloud+with+jumping+star+sheep+in+a+moonlit+sky+dreamy+bedtime+art?width=512&height=768&nologo=true&seed=121",
+    "description": "Counting magical star-sheep to fall into a deep and peaceful slumber.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The First Sheep",
+        "text": "In the valley of dreams, the first sheep stepped across the moon. She was soft and white as a summer cloud.",
+        "imagePrompt": "A fluffy white sheep jumping over a fence made of starlight in a purple night sky",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "Two and Three",
+        "text": "They weren't just sheep. They were the keepers of the deep sleep, and they brought pillows and soft blankets.",
+        "imagePrompt": "Three sheep walking on a cloud, several pillows made of starlight floating around them",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Final Count",
+        "text": "As the tenth sheep jumped, the child's eyes became heavy. Ten is the number of the deepest rest.",
+        "imagePrompt": "A long line of sheep in the sky, a bedroom window below with a sleeping child, very serene",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Deep Dream",
+        "text": "The sheep settled into the stars. The counting was over, and the adventure of dreaming had begun.",
+        "imagePrompt": "A child dreaming of flying on a sheep's back, a world of colors and stars",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-25",
+    "title": "Honest Woodcutter",
+    "category": "moral",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/Honest+woodcutter+at+a+river+edge+with+a+glowing+water+fairy+holding+a+golden+axe+forest+setting+moral+storybook+art?width=512&height=768&nologo=true&seed=124",
+    "description": "A poor woodcutter is rewarded for his honesty by a river fairy after he refuses to take axes that don't belong to him.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The Big Mistake",
+        "text": "Oh no! Hari's old iron axe slipped from his hand and fell into the deep, dark river. He was so poor he couldn't afford a new one.",
+        "imagePrompt": "A man in simple clothes looking worried at the edge of a river, bubbles in the water as an axe sinks",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Fairy",
+        "text": "The river began to glow. A beautiful water fairy appeared, holding up a golden axe. 'Is this yours?' she asked.",
+        "imagePrompt": "A glowing water fairy rising from a river holding a shining golden axe, the man looking surprised",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Choice",
+        "text": "Hari shook his head. 'No, that is too fine for a man like me.' She then showed him a silver one, but he said no again.",
+        "imagePrompt": "The man being shown a silver axe, he is gesturing 'no' with his hands, honest expression",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Honesty Rewarded",
+        "text": "Finally, she showed him his old iron axe. 'That's it!' he cried. The fairy was so happy she gave him all three axes.",
+        "imagePrompt": "The fairy handing the man three axes (gold, silver, iron), he is bowing in gratitude, bright forest light",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-26",
+    "title": "The Boy who Cried Wolf",
+    "category": "moral",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/A+young+shepherd+boy+shouting+on+a+green+hill+with+sheep+villagers+running+up+to+help+faded+gray+wolf+shadow+in+the+woods+moral+storybook+art?width=512&height=768&nologo=true&seed=125",
+    "description": "The classic tale of why telling the truth is important for trust and how a boy learned it the hard way.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Boredom",
+        "text": "Bored on the hill, Sam decided to play a trick. 'Wolf! Wolf!' he yelled, and all the villagers ran up to help.",
+        "imagePrompt": "A boy on a green hill cupping his hands and shouting, villagers in the distance running towards him",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Second Trick",
+        "text": "He did it again the next day. The villagers were angry, but Sam just laughed at his cleverness.",
+        "imagePrompt": "A boy laughing on a hill as frustrated villagers walk back down, a group of sheep nearby",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Real Wolf",
+        "text": "Then, a giant shadow moved in the trees. A real wolf was there! Sam yelled for help, but no one came.",
+        "imagePrompt": "A large gray wolf with glowing eyes peeking out from bushes, the boy looking terrified and shouting",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Restoring Trust",
+        "text": "He lost his sheep that day. He learned that no one believes a liar, even when he's telling the truth.",
+        "imagePrompt": "The boy sitting alone on a hill in the sunset, a sad expression, empty paths below",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-29",
+    "title": "The Clever Rabbit",
+    "category": "animal",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/A+small+clever+rabbit+standing+confronting+a+giant+fierce+lion+near+a+stone+well+deep+jungle+vibrant+colors+animal+storybook+art?width=512&height=768&nologo=true&seed=128",
+    "description": "Intelligence overcomes strength when a clever rabbit outsmarts a fierce lion who thought he was the master of all.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The King's Hunger",
+        "text": "Leo the Lion ate an animal every day. The forest was scared. The animals met to find a better way.",
+        "imagePrompt": "A large fierce lion sitting on a rock in the jungle, small animals hiding behind trees, dark atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Rabbit's Turn",
+        "text": "It was the rabbit's turn to be eaten. He arrived late and told the Lion, 'A bigger King lion stopped me!'",
+        "imagePrompt": "A small rabbit standing in front of a giant lion, looking brave but small, lush jungle background",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Well",
+        "text": "The rabbit led the Lion to a deep well. 'He is inside!' the rabbit said. The Lion saw his own face and jumped in to fight.",
+        "imagePrompt": "The lion looking into a round stone well, his reflection visible, the rabbit pointing towards the water",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Victory",
+        "text": "With the Lion gone, the forest was safe. Always remember: wit is stronger than claws.",
+        "imagePrompt": "All the animals (deer, monkeys, parrots) celebrating in a clearing, the rabbit on a small raised rock",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-30",
+    "title": "Brave Little Lion cub",
+    "category": "animal",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/Small+lion+cub+and+baby+zebra+sitting+together+on+a+savanna+at+sunset+warm+golden+light+animal+friendship+storybook+art?width=512&height=768&nologo=true&seed=129",
+    "description": "A cub learns that courage isn't the absence of fear, but acting despite it for those we love.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The Fearful Cub",
+        "text": "Simba was afraid of everything—even the long grass. He hid behind his mother always.",
+        "imagePrompt": "A small lion cub cowering behind a large lioness's legs in the tall savanna grass",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Lost Friend",
+        "text": "A baby zebra got stuck in a mud pit. Simba heard the cries. No one else was there to help.",
+        "imagePrompt": "A small zebra cub sinking into a pit of gray mud, looking very scared",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "Stepping Up",
+        "text": "Simba's legs shook, but he walked onto the logs and pulled the zebra's neck with all his cub strength.",
+        "imagePrompt": "The lion cub pulling a zebra cub by the mane using his mouth, a very determined and brave expression",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "The Real King",
+        "text": "He saved his friend. Simba learned that true power isn't about the size of your roar, but the size of your heart.",
+        "imagePrompt": "The two cubs sitting together in the sunset, Simbe looking tall and proud, beautiful savanna view",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-33",
+    "title": "Princess and the Garden",
+    "category": "princess",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/Young+princess+in+a+blue+dress+kneeling+in+a+vibrant+palace+garden+planting+seeds+magical+butterflies+colorful+flowers+princess+storybook+art?width=512&height=768&nologo=true&seed=132",
+    "description": "Princess Elina discovers that true beauty and magic come from a kind heart and the way she treats her subjects.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The Gray Palace",
+        "text": "Elina lived in a palace made of cold, gray stone. It had many jewels, but no flowers and no laughter.",
+        "imagePrompt": "A large stone castle on a hill, a young woman looking out from a window, empty courtyard",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Seeds",
+        "text": "She found a bag of old seeds in the cellar. She decided to plant them herself, getting her fine hands dirty.",
+        "imagePrompt": "A princess in a blue dress kneeling on the ground, digging a small hole, a bag of seeds next to her",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Bloom",
+        "text": "As the flowers grew, so did the happiness of the castle. The stone walls began to glow with light and color.",
+        "imagePrompt": "A vibrant garden with many types of flowers, vines growing up the castle walls, butterfly magic",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "The New Queen",
+        "text": "She learned that the best kingdoms are built from the ground up, with love and a bit of hard work.",
+        "imagePrompt": "The princess standing in her garden, people from the village joining her, a very bright and happy ending",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-34",
+    "title": "Princess and the Pea",
+    "category": "princess",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/A+tall+bed+with+twenty+colorful+mattresses+stacked+up+to+the+ceiling+a+small+pea+glowing+at+the+bottom+moonlight+princess+storybook+art?width=512&height=768&nologo=true&seed=133",
+    "description": "A classic test of character that reveals a true royal spirit after a very restless night on twenty mattresses.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The Rainy Night",
+        "text": "A knock came at the castle door in the middle of a storm. A girl stood there, soaking wet, claiming to be a princess.",
+        "imagePrompt": "A girl with messy hair and a wet dress at a large castle door, rain and lightning, palace guards",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Bed",
+        "text": "The Queen placed a single green pea under twenty mattresses. 'If she's a real princess, she'll feel it,' she thought.",
+        "imagePrompt": "A tall bed with many colorful mattresses, an old queen hiding a small pea at the very bottom",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "Restless Sleep",
+        "text": "The girl couldn't sleep. Every time she moved, she felt like she was lying on a mountain of stone.",
+        "imagePrompt": "A girl sitting up in a giant bed, looking tired and rubbing her back, moonlight from the window",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Recognition",
+        "text": "'I didn't sleep a wink!' she said at breakfast. Only a true princess could be so sensitive. The prince had found his bride.",
+        "imagePrompt": "The prince and girl shaking hands at a breakfast table, the queen smiling in the background",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-37",
+    "title": "Ganesha's Wisdom",
+    "category": "god",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/Lord+Ganesha+with+elephant+head+holding+a+glowing+golden+fruit+inside+a+divine+palace+with+stars+and+lotus+flowers+god+storybook+art?width=512&height=768&nologo=true&seed=136",
+    "description": "How the elephant-headed god learned that circling his parents was the same as circling the whole world.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The Race",
+        "text": "Shiva and Parvati had a race for their sons. 'Whoever circles the world first wins this magical fruit!'",
+        "imagePrompt": "A divine couple sitting on a high mountain throne, two sons standing before them, a golden fruit in the center",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "Kartikeya's Flight",
+        "text": "Kartikeya jumped on his peacock and flew around the oceans, mountains, and lands as fast as he could.",
+        "imagePrompt": "A young warrior on a peacock flying over the sea and mountains, sunset sky",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Real World",
+        "text": "Ganesha didn't have a peacock. He had a small mouse. He walked around his parents three times.",
+        "imagePrompt": "Lord Ganesha in orange robes walking around a seated couple, his mouse following him closely",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "The Fruit of Love",
+        "text": "'My parents ARE my world,' he said. Shiva smiled and gave him the fruit. Wisdom is greater than speed.",
+        "imagePrompt": "The couple handing Lord Ganesha a glowing golden fruit, happiness and light within a divine palace",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-38",
+    "title": "Krishna and the Flute",
+    "category": "god",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/Lord+Krishna+playing+a+golden+flute+under+a+flowering+Kadamba+tree+with+dancing+peacocks+and+calm+cows+divine+light+god+storybook+art?width=512&height=768&nologo=true&seed=137",
+    "description": "The song of Krishna's flute charms all of nature, bringing a moment of pure bliss to the cows and the clouds.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The Evening Bank",
+        "text": "By the river Yamuna, young Krishna sat on the soft grass. The birds were silent, waiting for his first note.",
+        "imagePrompt": "A blue-skinned boy with a crown of peacock feathers, sitting under a large ancient tree, a river in the background",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Music",
+        "text": "As the flute touched his lips, a melody of pure joy filled the air. The cows stopped grazing to listen.",
+        "imagePrompt": "Lord Krishna playing a golden flute, several cows and calves looking at him with peaceful eyes",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "Dancing Peacock",
+        "text": "Even the peacocks began to dance! The rhythm of the flute was the heartbeat of the whole universe.",
+        "imagePrompt": "A peacock with a grand open tail dancing in a lush garden, the music notes glowing in the air",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Eternal Peace",
+        "text": "The music reminded every living being that the divine is always with us, in the sound of a song or a breeze.",
+        "imagePrompt": "Lord Krishna surrounded by many animals and children, everyone looking completely happy and at peace",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-41",
+    "title": "The Proud Peacock",
+    "category": "bird",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/A+proud+peacock+with+a+grand+colorful+tail+spread+out+in+a+vibrant+forest+garden+at+sunset+bird+storybook+art?width=512&height=768&nologo=true&seed=140",
+    "description": "A beautiful bird learns that while his feathers are grand, his voice isn't the most important gift he has to offer.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The Mirror",
+        "text": "Percy the Peacock loved his reflection. 'I'm the most beautiful bird in the world!' he would shout.",
+        "imagePrompt": "A peacock looking at himself in a forest puddle, his tail spread out in all colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Song Contest",
+        "text": "The Nightingale sang a song that made the trees cry with joy. Percy tried to sing, but out came a harsh squawk.",
+        "imagePrompt": "A tiny brown nightingale singing on a branch, the peacock looking frustrated with an open beak",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Lesson",
+        "text": "The Owl told him: 'Beauty is for the eyes, but character is for the ears of the universe.'",
+        "imagePrompt": "An owl on a branch looking down at a peacock with its tail closed, thoughtful atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Inner Beauty",
+        "text": "Percy stopped boasting. He used his large feathers to shade the smaller birds from the sun. He was finally happy.",
+        "imagePrompt": "The peacock with his tail spread over a group of small birds, providing shade in a sunny sunny field",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-42",
+    "title": "Eagle's High Flight",
+    "category": "bird",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/A+majestic+eagle+soaring+high+above+a+lush+green+valley+and+winding+river+bright+blue+sky+with+white+clouds+bird+storybook+art?width=512&height=768&nologo=true&seed=141",
+    "description": "Learning to see the big picture from above the clouds and the courage it takes to leave the nest.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The Cliff Edge",
+        "text": "Eddie the Eagle was afraid to jump. The wind was fast, and the rocks below were very sharp and hard.",
+        "imagePrompt": "A young eagle sitting at the edge of a high rocky cliff, looking down with a nervous expression",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The First Wingbeat",
+        "text": "His father pushed him! Seconds before he hit the ground, Eddie opened his wings and felt the air carry him up.",
+        "imagePrompt": "The eagle diving down, wings starting to open, a massive canyon below",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "Above the Storm",
+        "text": "He flew higher than anyone. He saw the whole river, the whole forest, and the whole world in one glance.",
+        "imagePrompt": "The eagle flying through a white cloud, looking down on a miniature world of green and blue",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Master of Sky",
+        "text": "He realized that the only thing holding him back was his own fear. Now, the sky was his true home.",
+        "imagePrompt": "The eagle soaring toward the sun, silhouette against a bright sky, pure freedom",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-45",
+    "title": "The Magical Forest",
+    "category": "custom",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/An+enchanted+forest+with+translucent+glowing+glass+leaves+in+rainbow+colors+magical+sparkles+crystal+trees+custom+storybook+art?width=512&height=768&nologo=true&seed=144",
+    "description": "Discover a place where nature itself tells tales of the old world and every tree has a heartbeat.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The First Step",
+        "text": "The air was filled with the sound of wind chimes. But there were no chimes—only the leaves of the Crystal Wood.",
+        "imagePrompt": "A forest with translucent glass-like leaves, a young explorer touching a tree trunk that is glowing",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Drinking Pool",
+        "text": "The animals here didn't drink water, they drank light from the silver pond that sat in the forest's heart.",
+        "imagePrompt": "A fox and a deer drinking from a pool of glowing white liquid, stars reflected on the surface",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Elder Tree",
+        "text": "At the center was the Tree of Time. Its rings told the story of every star that had ever fallen to earth.",
+        "imagePrompt": "A massive tree with a face carved in the bark, its roots glowing with ancient energy",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Always Green",
+        "text": "The forest never died. It only changed colors, reflecting the dreams of those who wandered through it.",
+        "imagePrompt": "A wide shot of a rainbow-colored forest under a double moon sky, incredibly magical and colorful",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-46",
+    "title": "Singing River's Secret",
+    "category": "custom",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "https://image.pollinations.ai/prompt/A+sparkling+river+flowing+through+a+peaceful+valley+with+musical+notes+glowing+in+the+mist+vibrant+flowers+green+hills+custom+storybook+art?width=512&height=768&nologo=true&seed=145",
+    "description": "If you listen closely, the water tells where it has been and the future it plans to bring.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "The Source",
+        "text": "High in the mountains, a small stream began with a giggle. It was the only river in the world that could sing.",
+        "imagePrompt": "A small waterfall coming out of a cave on a snowy mountain, musical notes in the spray",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Chorus",
+        "text": "As it grew, the river added more voices. The rocks were its drums, and the fish were its backup singers.",
+        "imagePrompt": "A wide river with many rocks, fish jumping out of the water, a very lively and rhythmic scene",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Warning",
+        "text": "One day, the river took on a dark, low note. It was warning the village of the coming flood from the melted snow.",
+        "imagePrompt": "The river water turning dark and fast, people on the bank looking worried and listening",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Peaceful Harmony",
+        "text": "The village prepared, and no one was hurt. The river went back to its sweet lullaby, the most trusted friend of all.",
+        "imagePrompt": "The river flowing through a peaceful village, sun reflecting on the water, people waving at the stream",
+        "choices": []
+      }
+    ]
+  }
+]

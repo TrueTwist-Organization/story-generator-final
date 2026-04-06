@@ -13,10 +13,17 @@ export type GenerateStoryBodyCategory =
   (typeof GenerateStoryBodyCategory)[keyof typeof GenerateStoryBodyCategory];
 
 export const GenerateStoryBodyCategory = {
-  nature: "nature",
+  king_queen: "king_queen",
+  fantasy: "fantasy",
+  magic: "magic",
+  friendship: "friendship",
+  kids: "kids",
+  bedtime: "bedtime",
+  moral: "moral",
+  animal: "animal",
   princess: "princess",
-  anime: "anime",
-  travel: "travel",
+  god: "god",
+  bird: "bird",
   custom: "custom",
 } as const;
 
@@ -87,10 +94,12 @@ export interface GenerateStoryImageBody {
   prompt: string;
   category: string;
   style?: string;
+  faceImage?: string;
 }
 
 export interface GenerateStoryImageResponse {
-  b64_json: string;
+  b64_json?: string | null;
+  url?: string;
 }
 
 export type GenerateNarrationBodyLanguage =

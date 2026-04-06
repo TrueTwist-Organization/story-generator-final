@@ -1,12 +1,13 @@
 import React, { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Volume2, VolumeX, Play, CheckCircle2, XCircle } from "lucide-react";
+import { useStoryStore } from "@/lib/store";
 import { 
   useGenerateStoryImage, 
   useGenerateNarration 
 } from "@workspace/api-client-react";
-import type { StoryScene, StoryResponse } from "@workspace/api-client-react/src/generated/api.schemas";
-import { getBase64ImageUrl, getBase64AudioUrl } from "@/lib/utils";
+import type { StoryScene, StoryResponse } from "@workspace/api-client-react";
+import { getBase64ImageUrl, getBase64AudioUrl, cn } from "@/lib/utils";
 import { Button } from "./ui/button";
 
 interface SceneViewerProps {
@@ -17,12 +18,15 @@ interface SceneViewerProps {
 }
 
 export function SceneViewer({ scene, story, isActive, onChoiceMade }: SceneViewerProps) {
+  const { voice, faceImage } = useStoryStore();
   const [imageUrl, setImageUrl] = useState<string | null>(null);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [choiceResult, setChoiceResult] = useState<'success' | 'fail' | null>(null);
+  const [isUsingSynthesis, setIsUsingSynthesis] = useState(false);
   
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const synthRef = useRef<SpeechSynthesisUtterance | null>(null);
   
   const generateImage = useGenerateStoryImage();
   const generateAudio = useGenerateNarration();
@@ -31,7 +35,7 @@ export function SceneViewer({ scene, story, isActive, onChoiceMade }: SceneViewe
   useEffect(() => {
     if (isActive && !imageUrl && !generateImage.isPending && !generateImage.isSuccess) {
       generateImage.mutate(
-        { data: { prompt: scene.imagePrompt, category: story.category } },
+        { data: { prompt: scene.imagePrompt, category: story.category, faceImage: faceImage || undefined } },
         {
           onSuccess: (res) => {
             setImageUrl(getBase64ImageUrl(res.b64_json));
@@ -43,37 +47,86 @@ export function SceneViewer({ scene, story, isActive, onChoiceMade }: SceneViewe
 
   // Lazy load audio
   useEffect(() => {
-    if (isActive && !audioUrl && !generateAudio.isPending && !generateAudio.isSuccess) {
+    // Only try if active and we don't have audio yet and are not currently loading
+    if (isActive && !audioUrl && !generateAudio.isPending) {
+      console.log(`🔊 Requesting audio for: "${scene.text.slice(0, 30)}..." in ${story.language}`);
+      
       generateAudio.mutate(
-        { data: { text: scene.text, language: story.language as any } },
+        { data: { text: scene.text, language: story.language as any, voice } },
         {
           onSuccess: (res) => {
-            setAudioUrl(getBase64AudioUrl(res.audioBase64, res.format));
+            console.log("✅ Audio received from server:", !!res?.audioBase64);
+            if (res.audioBase64) {
+              setAudioUrl(getBase64AudioUrl(res.audioBase64, res.format));
+            } else {
+              console.warn("⚠️ No audio data in response, falling back to synthesis");
+            }
+          },
+          onError: (err) => {
+            console.error("❌ Audio generation error:", err);
           }
         }
       );
     }
-  }, [isActive, audioUrl, generateAudio, scene.text, story.language]);
+  }, [isActive, audioUrl, generateAudio, scene.text, story.language, voice]);
+
+  const stopAllAudio = () => {
+    if (audioRef.current) audioRef.current.pause();
+    if (window.speechSynthesis) window.speechSynthesis.cancel();
+    setIsPlaying(false);
+  };
+
+  const speakText = (text: string, lang: string) => {
+    if (!window.speechSynthesis) return;
+    window.speechSynthesis.cancel();
+    
+    const utterance = new SpeechSynthesisUtterance(text);
+    // Map language to BCP47 tags
+    if (lang === 'hindi') utterance.lang = 'hi-IN';
+    else if (lang === 'gujarati') utterance.lang = 'gu-IN';
+    else utterance.lang = 'en-US';
+    
+    utterance.rate = 0.9; // Slightly slower for clarity
+    utterance.onend = () => setIsPlaying(false);
+    utterance.onerror = () => setIsPlaying(false);
+    
+    synthRef.current = utterance;
+    window.speechSynthesis.speak(utterance);
+    setIsPlaying(true);
+    setIsUsingSynthesis(true);
+  };
 
   // Handle auto-play when active
   useEffect(() => {
-    if (isActive && audioUrl && audioRef.current) {
-      audioRef.current.play().catch(e => console.log("Autoplay prevented:", e));
-      setIsPlaying(true);
-    } else if (!isActive && audioRef.current) {
-      audioRef.current.pause();
-      setIsPlaying(false);
+    if (isActive) {
+      if (audioUrl && audioRef.current) {
+        audioRef.current.play().catch(e => console.log("Autoplay prevented:", e));
+        setIsPlaying(true);
+      } else if (generateAudio.isError || (generateAudio.isSuccess && !audioUrl)) {
+        // AI failed, use browser synthesis
+        speakText(scene.text, story.language);
+      }
+    } else {
+      stopAllAudio();
     }
-  }, [isActive, audioUrl]);
+    
+    return () => {
+      if (window.speechSynthesis) window.speechSynthesis.cancel();
+    };
+  }, [isActive, audioUrl, generateAudio.isError, generateAudio.isSuccess]);
 
   const toggleAudio = () => {
-    if (!audioRef.current) return;
     if (isPlaying) {
-      audioRef.current.pause();
+      stopAllAudio();
     } else {
-      audioRef.current.play();
+      if (audioUrl && audioRef.current) {
+        audioRef.current.play();
+        setIsPlaying(true);
+        setIsUsingSynthesis(false);
+      } else {
+        speakText(scene.text, story.language);
+      }
     }
-    setIsPlaying(!isPlaying);
   };
 
   const handleChoice = (isCorrect?: boolean) => {
@@ -119,14 +172,12 @@ export function SceneViewer({ scene, story, isActive, onChoiceMade }: SceneViewe
       <div className="relative z-20 w-full max-w-3xl mx-auto p-6 md:p-10 pb-24 md:pb-12 flex flex-col gap-6">
         
         {/* Audio Player hidden element */}
-        {audioUrl && (
-          <audio 
-            ref={audioRef} 
-            src={audioUrl} 
-            onEnded={() => setIsPlaying(false)} 
-            className="hidden" 
-          />
-        )}
+        <audio 
+          ref={audioRef} 
+          src={audioUrl || ""} 
+          onEnded={() => setIsPlaying(false)} 
+          className="hidden" 
+        />
 
         {/* Game Mode Choices */}
         {story.mode === 'game' && scene.choices && scene.choices.length > 0 && (
@@ -178,7 +229,6 @@ export function SceneViewer({ scene, story, isActive, onChoiceMade }: SceneViewe
               size="icon" 
               onClick={toggleAudio}
               className="rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md shrink-0"
-              disabled={!audioUrl}
             >
               {generateAudio.isPending ? (
                 <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />

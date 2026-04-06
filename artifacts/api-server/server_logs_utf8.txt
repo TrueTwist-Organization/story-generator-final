@@ -1,0 +1,34 @@
+﻿node.exe : npm error 
+Lifecycle script 
+`dev:server` failed with 
+error:
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (npm err  
+  or Lifec...led with erro   
+ r::String) [], RemoteExc    
+eption
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+npm error workspace 
+@workspace/api-server@0.0.0
+npm error location C:\Users\3
+69Network\Downloads\Story-Wea
+ver-AI\Story-Weaver-AI\artifa
+cts\api-server
+npm error Missing script: 
+"dev:server"
+npm error
+npm error To see a list of 
+scripts, run:
+npm error   npm run --workspa
+ce=@workspace/api-server@0.0.
+0

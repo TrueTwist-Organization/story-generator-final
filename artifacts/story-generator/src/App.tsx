@@ -6,6 +6,10 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 // Pages
 import HomePage from "@/pages/home";
 import ViewerPage from "@/pages/viewer";
+import GamesPage from "@/pages/games";
+import PrivacyPolicy from "@/pages/privacy";
+import TermsOfService from "@/pages/terms";
+import CookiesPolicy from "@/pages/cookies";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient({
@@ -22,6 +26,10 @@ function Router() {
     <Switch>
       <Route path="/" component={HomePage} />
       <Route path="/story" component={ViewerPage} />
+      <Route path="/games" component={GamesPage} />
+      <Route path="/privacy" component={PrivacyPolicy} />
+      <Route path="/terms" component={TermsOfService} />
+      <Route path="/cookies" component={CookiesPolicy} />
       <Route component={NotFound} />
     </Switch>
   );

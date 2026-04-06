@@ -1,0 +1,1225 @@
+
+> @workspace/api-server@0.0.0 dev C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\artifacts\api-server
+> tsx watch --env-file=../../.env ./src/index.ts
+
+Server listening on port 3000
+11:08:29 AM [tsx] change in ./src\routes\stories.ts Rerunning...
+cServer listening on port 3000
+11:13:48 AM [tsx] change in ./src\routes\stories.ts Rerunning...
+c
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+Error [TransformError]: Transform failed with 1 error:
+C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\artifacts\api-server\src\routes\stories.ts:17:22: ERROR: Expected ";" but found "..."
+    at failureErrorWithLog (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:1467:15)
+    at C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:736:50
+    at responseCallbacks.<computed> (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:603:9)
+    at handleIncomingPacket (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:658:12)
+    at Socket.readFromStdout (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:581:7)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:563:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+    at Readable.push (node:internal/streams/readable:394:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+Node.js v24.14.0
+11:14:05 AM [tsx] change in ./src\routes\stories.ts Rerunning...
+c
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+Error [TransformError]: Transform failed with 1 error:
+C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\artifacts\api-server\src\routes\stories.ts:17:22: ERROR: Expected ";" but found "..."
+    at failureErrorWithLog (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:1467:15)
+    at C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:736:50
+    at responseCallbacks.<computed> (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:603:9)
+    at handleIncomingPacket (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:658:12)
+    at Socket.readFromStdout (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:581:7)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:563:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+    at Readable.push (node:internal/streams/readable:394:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+Node.js v24.14.0
+11:15:23 AM [tsx] change in ./src\routes\stories.ts Rerunning...
+cServer listening on port 3000
+11:17:31 AM [tsx] change in ./src\routes\stories.ts Rerunning...
+cfatal error: runtime: cannot allocate memory
+
+runtime stack:
+runtime.throw({0x7ff7b8b71d23?, 0x7ff7b8547da0?})
+	runtime/panic.go:1094 +0x4d fp=0x89a83ff8e8 sp=0x89a83ff8b8 pc=0x7ff7b85571ad
+runtime.stkbucket(0x1, 0x800, {0xc000049b00, 0x9, 0xc00004e798?}, 0x1)
+	runtime/mprof.go:284 +0x3d6 fp=0x89a83ff948 sp=0x89a83ff8e8 pc=0x7ff7b8515cb6
+runtime.mProf_Malloc(0xc000063008, 0xc000080008, 0x800)
+	runtime/mprof.go:450 +0xda fp=0x89a83ff9c8 sp=0x89a83ff948 pc=0x7ff7b8515f7a
+runtime.profilealloc(0xc000063008?, 0xc000080008?, 0x800?)
+	runtime/malloc.go:1835 +0x9b fp=0x89a83ff9f8 sp=0x89a83ff9c8 pc=0x7ff7b84f6bdb
+runtime.mallocgcSmallScanHeader(0x0?, 0x7ff7b8b01dc0)
+	runtime/malloc.go:1523 +0x296 fp=0x89a83ffa50 sp=0x89a83ff9f8 pc=0x7ff7b84f64b6
+runtime.mallocgc(0x7f8, 0x7ff7b8b01dc0, 0x1)
+	runtime/malloc.go:1068 +0xac fp=0x89a83ffa80 sp=0x89a83ffa50 pc=0x7ff7b855504c
+runtime.newobject(0x89a83ffaa0?)
+	runtime/malloc.go:1747 +0x25 fp=0x89a83ffaa8 sp=0x89a83ffa80 pc=0x7ff7b84f6b25
+runtime.allocm(0xc000050c08, 0x7ff7b8b971b0, 0x5)
+	runtime/proc.go:2339 +0x91 fp=0x89a83ffb00 sp=0x89a83ffaa8 pc=0x7ff7b8527471
+runtime.newm(0x45da37e6ddc0?, 0xc000050c08, 0x7ff7b851cd90?)
+	runtime/proc.go:2875 +0x35 fp=0x89a83ffb30 sp=0x89a83ffb00 pc=0x7ff7b8527eb5
+runtime.startm(0xc000050c08?, 0x1, 0x0)
+	runtime/proc.go:3101 +0x159 fp=0x89a83ffb80 sp=0x89a83ffb30 pc=0x7ff7b8528579
+runtime.wakep()
+	runtime/proc.go:3248 +0xec fp=0x89a83ffbb0 sp=0x89a83ffb80 pc=0x7ff7b855742c
+runtime.resetspinning()
+	runtime/proc.go:4022 +0x3e fp=0x89a83ffbd0 sp=0x89a83ffbb0 pc=0x7ff7b852ad1e
+runtime.schedule()
+	runtime/proc.go:4175 +0x10a fp=0x89a83ffc08 sp=0x89a83ffbd0 pc=0x7ff7b852b22a
+runtime.mstart1()
+	runtime/proc.go:1949 +0xd7 fp=0x89a83ffc30 sp=0x89a83ffc08 pc=0x7ff7b8526bf7
+runtime.mstart0()
+	runtime/proc.go:1895 +0x6a fp=0x89a83ffc58 sp=0x89a83ffc30 pc=0x7ff7b8526b0a
+runtime.mstart()
+	runtime/asm_amd64.s:395 +0x5 fp=0x89a83ffc60 sp=0x89a83ffc58 pc=0x7ff7b855d145
+
+goroutine 1 gp=0xc0000021c0 m=nil [runnable, locked to thread]:
+runtime.asyncPreempt2()
+	runtime/preempt.go:308 +0x39 fp=0xc00005dc98 sp=0xc00005dc78 pc=0x7ff7b8522219
+runtime.asyncPreempt()
+	runtime/preempt_amd64.s:46 +0xdb fp=0xc00005de20 sp=0xc00005dc98 pc=0x7ff7b85607db
+crypto/internal/fips140deps/cpu.init()
+	crypto/internal/fips140deps/cpu/cpu.go:21 fp=0xc00005de28 sp=0xc00005de20 pc=0x7ff7b863bf80
+runtime.doInit1(0x7ff7b8f1ffb0)
+	runtime/proc.go:7670 +0xda fp=0xc00005df50 sp=0xc00005de28 pc=0x7ff7b853299a
+runtime.doInit(...)
+	runtime/proc.go:7637
+runtime.main()
+	runtime/proc.go:256 +0x325 fp=0xc00005dfe0 sp=0xc00005df50 pc=0x7ff7b8523705
+runtime.goexit({})
+	runtime/asm_amd64.s:1693 +0x1 fp=0xc00005dfe8 sp=0xc00005dfe0 pc=0x7ff7b855f221
+
+goroutine 2 gp=0xc0000028c0 m=nil [runnable]:
+runtime.forcegchelper()
+	runtime/proc.go:364 fp=0xc000059fe0 sp=0xc000059fd8 pc=0x7ff7b85238c0
+runtime.goexit({})
+	runtime/asm_amd64.s:1693 +0x1 fp=0xc000059fe8 sp=0xc000059fe0 pc=0x7ff7b855f221
+created by runtime.init.7 in goroutine 1
+	runtime/proc.go:361 +0x1a
+
+goroutine 3 gp=0xc000002c40 m=nil [GC sweep wait]:
+runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+	runtime/proc.go:460 +0xce fp=0xc00005bf80 sp=0xc00005bf60 pc=0x7ff7b85572ce
+runtime.goparkunlock(...)
+	runtime/proc.go:466
+runtime.bgsweep(0xc000030180)
+	runtime/mgcsweep.go:279 +0x94 fp=0xc00005bfc8 sp=0xc00005bf80 pc=0x7ff7b850ac54
+runtime.gcenable.gowrap1()
+	runtime/mgc.go:212 +0x25 fp=0xc00005bfe0 sp=0xc00005bfc8 pc=0x7ff7b84feca5
+runtime.goexit({})
+	runtime/asm_amd64.s:1693 +0x1 fp=0xc00005bfe8 sp=0xc00005bfe0 pc=0x7ff7b855f221
+created by runtime.gcenable in goroutine 1
+	runtime/mgc.go:212 +0x66
+
+goroutine 4 gp=0xc000002e00 m=nil [GC scavenge wait]:
+runtime.gopark(0xc000030180?, 0x7ff7b8c3f880?, 0x1?, 0x0?, 0xc000002e00?)
+	runtime/proc.go:460 +0xce fp=0xc00006bf78 sp=0xc00006bf58 pc=0x7ff7b85572ce
+runtime.goparkunlock(...)
+	runtime/proc.go:466
+runtime.(*scavengerState).park(0x7ff7b8f8d340)
+	runtime/mgcscavenge.go:425 +0x49 fp=0xc00006bfa8 sp=0xc00006bf78 pc=0x7ff7b8508729
+runtime.bgscavenge(0xc000030180)
+	runtime/mgcscavenge.go:653 +0x3c fp=0xc00006bfc8 sp=0xc00006bfa8 pc=0x7ff7b8508cbc
+runtime.gcenable.gowrap2()
+	runtime/mgc.go:213 +0x25 fp=0xc00006bfe0 sp=0xc00006bfc8 pc=0x7ff7b84fec45
+runtime.goexit({})
+	runtime/asm_amd64.s:1693 +0x1 fp=0xc00006bfe8 sp=0xc00006bfe0 pc=0x7ff7b855f221
+created by runtime.gcenable in goroutine 1
+	runtime/mgc.go:213 +0xa5
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+Error [TransformError]: The service was stopped: write EOF
+    at C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:718:38
+    at responseCallbacks.<computed> (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:603:9)
+    at afterClose (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:594:28)
+    at C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:1986:18
+    at onwriteError (node:internal/streams/writable:603:3)
+    at onwrite (node:internal/streams/writable:647:7)
+    at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:89:19)
+
+Node.js v24.14.0
+11:17:45 AM [tsx] change in ./src\routes\stories.ts Rerunning...
+cfatal error: out of memory allocating heap arena map
+
+runtime stack:
+runtime.throw({0x7ff7b8b775e4?, 0x0?})
+	runtime/panic.go:1094 +0x4d fp=0x1fb6dff348 sp=0x1fb6dff318 pc=0x7ff7b85571ad
+runtime.(*mheap).sysAlloc(0x7ff7b8f978a0, 0x4?, 0x7ff7b8fa7ca0, 0x7ff7b8fa7cc8)
+	runtime/malloc.go:776 +0x3b6 fp=0x1fb6dff400 sp=0x1fb6dff348 pc=0x7ff7b84f50f6
+runtime.(*mheap).grow(0x7ff7b8f978a0, 0x1f00010000?)
+	runtime/mheap.go:1566 +0x78 fp=0x1fb6dff480 sp=0x1fb6dff400 pc=0x7ff7b850f058
+runtime.(*mheap).allocSpan(0x7ff7b8f978a0, 0x1, 0x0, 0x20)
+	runtime/mheap.go:1299 +0x1ad fp=0x1fb6dff528 sp=0x1fb6dff480 pc=0x7ff7b850e86d
+runtime.(*mheap).alloc.func1()
+	runtime/mheap.go:1017 +0x5c fp=0x1fb6dff570 sp=0x1fb6dff528 pc=0x7ff7b850e31c
+runtime.(*mheap).alloc(0x7ff7b855eee1?, 0x1fb6dff5d8?, 0x0?)
+	runtime/mheap.go:1011 +0x5b fp=0x1fb6dff5b8 sp=0x1fb6dff570 pc=0x7ff7b850e27b
+runtime.(*mcentral).grow(0x7ff7b8560a40?)
+	runtime/mcentral.go:253 +0x36 fp=0x1fb6dff5e8 sp=0x1fb6dff5b8 pc=0x7ff7b84f9c96
+runtime.(*mcentral).cacheSpan(0x7ff7b8fa9538)
+	runtime/mcentral.go:171 +0x42e fp=0x1fb6dff660 sp=0x1fb6dff5e8 pc=0x7ff7b84f9b2e
+runtime.(*mcache).refill(0x204286e0108, 0xf8?)
+	runtime/mcache.go:184 +0x153 fp=0x1fb6dff6a0 sp=0x1fb6dff660 pc=0x7ff7b84f9153
+runtime.(*mcache).nextFree(0x204286e0108, 0x20)
+	runtime/malloc.go:968 +0x7e fp=0x1fb6dff6d8 sp=0x1fb6dff6a0 pc=0x7ff7b84f575e
+runtime.mallocgcSmallScanNoHeader(0xe0, 0x7ff7b8ac1520)
+	runtime/malloc.go:1378 +0x145 fp=0x1fb6dff738 sp=0x1fb6dff6d8 pc=0x7ff7b84f6025
+runtime.mallocgc(0xe0, 0x7ff7b8ac1520, 0x1)
+	runtime/malloc.go:1066 +0xa5 fp=0x1fb6dff768 sp=0x1fb6dff738 pc=0x7ff7b8555045
+runtime.newobject(0x1fb6dff7c8?)
+	runtime/malloc.go:1747 +0x25 fp=0x1fb6dff790 sp=0x1fb6dff768 pc=0x7ff7b84f6b25
+internal/cpu.doinit()
+	internal/cpu/cpu_x86.go:52 +0x1e fp=0x1fb6dff7f0 sp=0x1fb6dff790 pc=0x7ff7b84e21be
+internal/cpu.Initialize({0x0, 0x0})
+	internal/cpu/cpu.go:168 +0x1d fp=0x1fb6dff810 sp=0x1fb6dff7f0 pc=0x7ff7b84e1c1d
+runtime.cpuinit(...)
+	runtime/proc.go:763
+runtime.schedinit()
+	runtime/proc.go:876 +0xe5 fp=0x1fb6dff860 sp=0x1fb6dff810 pc=0x7ff7b85244c5
+runtime.rt0_go()
+	runtime/asm_amd64.s:349 +0x13c fp=0x1fb6dff868 sp=0x1fb6dff860 pc=0x7ff7b855d0bc
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+Error [TransformError]: The service was stopped: write EOF
+    at C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:718:38
+    at responseCallbacks.<computed> (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:603:9)
+    at afterClose (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:594:28)
+    at C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:1986:18
+    at onwriteError (node:internal/streams/writable:603:3)
+    at onwrite (node:internal/streams/writable:647:7)
+    at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:89:19)
+
+Node.js v24.14.0
+11:22:17 AM [tsx] change in ./src\lib\gemini.ts Rerunning...
+cServer listening on port 3000
+11:22:47 AM [tsx] change in ./src\routes\stories.ts Restarting...
+cServer listening on port 3000
+11:23:21 AM [tsx] change in ./src\routes\stories.ts Restarting...
+cServer listening on port 3000
+🎨 [Router] Generating image for: "Children's storybook illustration: पिछले हफ्ते मैं..." (Face: no)
+🎨 [Router] Generating image via Pollinations.ai: "Children's storybook illustration: पिछले हफ्ते मैं अपने परिव..."
+⚠️ Pollinations returned status 401.
+🎨 [Router] Generating image for: "Children's storybook illustration: पिछले हफ्ते मैं..." (Face: no)
+🎨 [Router] Generating image via Pollinations.ai: "Children's storybook illustration: पिछले हफ्ते मैं अपने परिव..."
+⚠️ Pollinations returned status 401.
+11:39:12 AM [tsx] change in ./src\routes\stories.ts Restarting...
+cServer listening on port 3000
+🎨 [Router] Generating image for: "Children's storybook illustration: पिछले हफ्ते मैं..." (Face: no)
+🎨 [Router] Generating image via OpenAI (DALL-E 3): "Children's storybook illustration: पिछले हफ्ते मैं अपने परिव..."
+✅ [Router] Image generated via OpenAI: 2074208 bytes
+🎨 [Router] Generating image for: "Children's storybook illustration: पिछले हफ्ते मैं..." (Face: no)
+🎨 [Router] Generating image via OpenAI (DALL-E 3): "Children's storybook illustration: पिछले हफ्ते मैं अपने परिव..."
+✅ [Router] Image generated via OpenAI: 2137991 bytes
+🌍 Translating 48 demo stories to hindi via Gemini...
+Library translation failed, returning English originals: GEMINI_API_KEY is not defined
+🚀 Using OpenAI (fallback)...
+OpenAI failed: openai is not defined
+🚀 Using Pollinations (FREE) fallback...
+Story generation failed: Error: All AI providers failed to generate story
+    at <anonymous> (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\artifacts\api-server\src\routes\stories.ts:1009:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+🎨 [Router] Generating image for: "Children's storybook illustration: पिछले हफ्ते मैं..." (Face: no)
+🎨 [Router] Generating image via OpenAI (DALL-E 3): "Children's storybook illustration: पिछले हफ्ते मैं अपने परिव..."
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎨 [Router] Generating image for: "Children's storybook illustration: पहले दिन हम होट..." (Face: no)
+🎨 [Router] Generating image via OpenAI (DALL-E 3): "Children's storybook illustration: पहले दिन हम होटल पहुँचे औ..."
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पहले दिन हम होटल पहुँचे और थोड़ा आराम किया। कमरे स..."
+⚠️ All AI narration provide12:25:27 PM [tsx] change in ./src\routes\stories.ts Rerunning...
+cServer listening on port 3000
+🎨 [Router] Generating image for: "A divine couple sitting on a high mountain throne,..." (Face: no)
+🎨 [Router] Generating image via OpenAI (DALL-E 3): "A divine couple sitting on a high mountain throne, two sons ..."
+🎙️ Narration Request: lang=english, voice=shimmer, text="Shiva and Parvati had a race for their sons. 'Whoe..."
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎨 [Router] Generating image for: "A young warrior on a peacock flying over the sea a..." (Face: no)
+🎨 [Router] Generating image via OpenAI (DALL-E 3): "A young warrior on a peacock flying over the sea and mountai..."
+🎙️ Narration Request: lang=english, voice=shimmer, text="Kartikeya jumped on his peacock and flew around th..."
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎨 [Router] Generating image for: "Lord Ganesha in orange robes walking around a seat..." (Face: no)
+🎨 [Router] Generating image via OpenAI (DALL-E 3): "Lord Ganesha in orange robes walking around a seated couple,..."
+🎙️ Narration Request: lang=english, voice=shimmer, text="Ganesha didn't have a peacock. He had a small mous..."
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎨 [Router] Generating image for: "A young warrior on a peacock flying over the sea a..." (Face: no)
+🎨 [Router] Generating image via OpenAI (DALL-E 3): "A young warrior on a peacock flying over the sea and mountai..."
+🎙️ Narration Request: lang=english, voice=shimmer, text="Kartikeya jumped on his peacock and flew around th..."
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎨 [Router] Generating image for: "The couple handing Lord Ganesha a glowing golden f..." (Face: no)
+🎨 [Router] Generating image via OpenAI (DALL-E 3): "The couple handing Lord Ganesha a glowing golden fruit, happ..."
+🎙️ Narration Request: lang=english, voice=shimmer, text="'My parents ARE my world,' he said. Shiva smiled a..."
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎨 [Router] Generating image for: "Lord Ganesha in orange robes walking around a seat..." (Face: no)
+🎨 [Router] Generating image via OpenAI (DALL-E 3): "Lord Ganesha in orange robes walking around a seated couple,..."
+✅ [Router] Image generated via OpenAI: 2085174 bytes
+🎙️ Narration Request: lang=english, voice=shimmer, text="Ganesha didn't have a peacock. He had a small mous..."
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎨 [Router] Generating image for: "The couple handing Lord Ganesha a glowing golden f..." (Face: no)
+🎨 [Router] Generating image via OpenAI (DALL-E 3): "The couple handing Lord Ganesha a glowing golden fruit, happ..."
+✅ [Router] Image generated via OpenAI: 2165053 bytes
+✅ [Router] Image generated via OpenAI: 1895778 bytes
+🎙️ Narration Request: lang=english, voice=shimmer, text="'My parents ARE my world,' he said. Shiva smiled a..."
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+✅ [Router] Image generated via OpenAI: 2110634 bytes
+✅ [Router] Image generated via OpenAI: 2146009 bytes
+✅ [Router] Image generated via OpenAI: 2138260 bytes
+✅ [Router] Image generated via OpenAI: 2183832 bytes
+�️ Narration Request: lang=hindi, voice=shimmer, text="पहले दिन हम होटल पहुँचे और थोड़ा आराम किया। कमरे स..."
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎨 [Router] Generating image for: "A boy putting on a silver shimmering cloak, his ha..." (Face: no)
+🎨 [Router] Generating image via OpenAI (DALL-E 3): "A boy putting on a silver shimmering cloak, his hand becomin..."
+🎙️ Narration Request: lang=english, voice=shimmer, text="Jack was given a cloak that looked like woven moon..."
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎨 [Router] Generating image for: "A floating plate of cookies with a nibbled one, th..." (Face: no)
+🎨 [Router] Generating image via OpenAI (DALL-E 3): "A floating plate of cookies with a nibbled one, the shadow o..."
+🎙️ Narration Request: lang=english, voice=shimmer, text="At first, he used it to steal extra cookies and pl..."
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+✅ [Router] Image generated via OpenAI: 1692941 bytes
+✅ [Router] Image generated via OpenAI: 2396536 bytes
+🎨 [Router] Generating image for: "A forest with translucent glass-like leaves, a you..." (Face: no)
+🎨 [Router] Generating image via OpenAI (DALL-E 3): "A forest with translucent glass-like leaves, a young explore..."
+🎙️ Narration Request: lang=english, voice=shimmer, text="The air was filled with the sound of wind chimes. ..."
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎨 [Router] Generating image for: "A fox and a deer drinking from a pool of glowing w..." (Face: no)
+🎨 [Router] Generating image via OpenAI (DALL-E 3): "A fox and a deer drinking from a pool of glowing white liqui..."
+🎙️ Narration Request: lang=english, voice=shimmer, text="The animals here didn't drink water, they drank li..."
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎨 [Router] Generating image for: "A massive tree with a face carved in the bark, its..." (Face: no)
+🎨 [Router] Generating image via OpenAI (DALL-E 3): "A massive tree with a face carved in the bark, its roots glo..."
+🎙️ Narration Request: lang=english, voice=shimmer, text="At the center was the Tree of Time. Its rings told..."
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+✅ [Router] Image generated via OpenAI: 2031814 bytes
+🎨 [Router] Generating image for: "A fox and a deer drinking from a pool of glowing w..." (Face: no)
+🎨 [Router] Generating image via OpenAI (DALL-E 3): "A fox and a deer drinking from a pool of glowing white liqui..."
+🎙️ Narration Request: lang=english, voice=shimmer, text="The animals here didn't drink water, they drank li..."
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+✅ [Router] Image generated via OpenAI: 2081004 bytes
+🎙️ Narration Request: lang=english, voice=shimmer, text="The forest never died. It only changed colors, ref..."
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎨 [Router] Generating image for: "A wide shot of a rainbow-colored forest under a do..." (Face: no)
+🎨 [Router] Generating image via OpenAI (DALL-E 3): "A wide shot of a rainbow-colored forest under a double moon ..."
+✅ [Router] Image generated via OpenAI: 1898396 bytes
+🎨 [Router] Generating image for: "A massive tree with a face carved in the bark, its..." (Face: no)
+🎨 [Router] Generating image via OpenAI (DALL-E 3): "A massive tree with a face carved in the bark, its roots glo..."
+🎙️ Narration Request: lang=english, voice=shimmer, text="At the center was the Tree of Time. Its rings told..."
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+✅ [Router] Image generated via OpenAI: 1837838 bytes
+✅ [Router] Image generated via OpenAI: 1950080 bytes
+✅ [Router] Image generated via OpenAI: 1919997 bytes
+🎙️ Narration Request: lang=english, voice=shimmer, text="The forest never died. It only changed colors, ref..."
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+12:25:27 PM [tsx] change in ./src\routes\stories.ts Restarting...
+cServer listening on port 3000
+"
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 238 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+🎨 [Router] Generating image via Pollinations.ai (free, no key needed)
+🎙️ Narration Request: lang=english, voice=shimmer, text="We made a short detour to a charming village nestl..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 308 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+🎙️ Narration Request: lang=english, voice=shimmer, text="On the third day we ventured onto narrow trails, f..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 295 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="On the third day we ventured onto narrow trails, f..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 295 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+🎙️ Narration Request: lang=english, voice=shimmer, text="We made a short detour to a charming village nestl..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 308 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="We made a short detour to a charming village nestl..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 308 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="The hotel greeted us with a warm welcome and a wid..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 238 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="The hotel greeted us with a warm welcome and a wid..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 238 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallbac11:08:29 AM [tsx] change in ./src\routes\stories.ts Rerunning...
+cServer listening on port 3000
+11:13:48 AM [tsx] change in ./src\routes\stories.ts Rerunning...
+c
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+Error [TransformError]: Transform failed with 1 error:
+C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\artifacts\api-server\src\routes\stories.ts:17:22: ERROR: Expected ";" but found "..."
+    at failureErrorWithLog (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:1467:15)
+    at C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:736:50
+    at responseCallbacks.<computed> (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:603:9)
+    at handleIncomingPacket (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:658:12)
+    at Socket.readFromStdout (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:581:7)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:563:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+    at Readable.push (node:internal/streams/readable:394:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+Node.js v24.14.0
+11:14:05 AM [tsx] change in ./src\routes\stories.ts Rerunning...
+c
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+Error [TransformError]: Transform failed with 1 error:
+C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\artifacts\api-server\src\routes\stories.ts:17:22: ERROR: Expected ";" but found "..."
+    at failureErrorWithLog (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:1467:15)
+    at C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:736:50
+    at responseCallbacks.<computed> (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:603:9)
+    at handleIncomingPacket (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:658:12)
+    at Socket.readFromStdout (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:581:7)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:563:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+    at Readable.push (node:internal/streams/readable:394:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+Node.js v24.14.0
+11:15:23 AM [tsx] change in ./src\routes\stories.ts Rerunning...
+cServer listening on port 3000
+11:17:31 AM [tsx] change in ./src\routes\stories.ts Rerunning...
+cfatal error: runtime: cannot allocate memory
+
+runtime stack:
+runtime.throw({0x7ff7b8b71d23?, 0x7ff7b8547da0?})
+	runtime/panic.go:1094 +0x4d fp=0xa9f17ff6b8 sp=0xa9f17ff688 pc=0x7ff7b85571ad
+runtime.stkbucket(0x1, 0x800, {0xc000049b00, 0x9, 0xc00004e798?}, 0x1)
+	runtime/mprof.go:284 +0x3d6 fp=0xa9f17ff718 sp=0xa9f17ff6b8 pc=0x7ff7b8515cb6
+runtime.mProf_Malloc(0xc000063008, 0xc000080008, 0x800)
+	runtime/mprof.go:450 +0xda fp=0xa9f17ff798 sp=0xa9f17ff718 pc=0x7ff7b8515f7a
+runtime.profilealloc(0xc000063008?, 0xc000080008?, 0x800?)
+	runtime/malloc.go:1835 +0x9b fp=0xa9f17ff7c8 sp=0xa9f17ff798 pc=0x7ff7b84f6bdb
+runtime.mallocgcSmallScanHeader(0x0?, 0x7ff7b8b01dc0)
+	runtime/malloc.go:1523 +0x296 fp=0xa9f17ff820 sp=0xa9f17ff7c8 pc=0x7ff7b84f64b6
+runtime.mallocgc(0x7f8, 0x7ff7b8b01dc0, 0x1)
+	runtime/malloc.go:1068 +0xac fp=0xa9f17ff850 sp=0xa9f17ff820 pc=0x7ff7b855504c
+runtime.newobject(0xa9f17ff870?)
+	runtime/malloc.go:1747 +0x25 fp=0xa9f17ff878 sp=0xa9f17ff850 pc=0x7ff7b84f6b25
+runtime.allocm(0xc000050c08, 0x7ff7b8b971b0, 0x5)
+	runtime/proc.go:2339 +0x91 fp=0xa9f17ff8d0 sp=0xa9f17ff878 pc=0x7ff7b8527471
+runtime.newm(0x45da38306a44?, 0xc000050c08, 0x7ff7b851cd90?)
+	runtime/proc.go:2875 +0x35 fp=0xa9f17ff900 sp=0xa9f17ff8d0 pc=0x7ff7b8527eb5
+runtime.startm(0xc000050c08?, 0x1, 0x0)
+	runtime/proc.go:3101 +0x159 fp=0xa9f17ff950 sp=0xa9f17ff900 pc=0x7ff7b8528579
+runtime.wakep()
+	runtime/proc.go:3248 +0xec fp=0xa9f17ff980 sp=0xa9f17ff950 pc=0x7ff7b855742c
+runtime.resetspinning()
+	runtime/proc.go:4022 +0x3e fp=0xa9f17ff9a0 sp=0xa9f17ff980 pc=0x7ff7b852ad1e
+runtime.schedule()
+	runtime/proc.go:4175 +0x10a fp=0xa9f17ff9d8 sp=0xa9f17ff9a0 pc=0x7ff7b852b22a
+runtime.mstart1()
+	runtime/proc.go:1949 +0xd7 fp=0xa9f17ffa00 sp=0xa9f17ff9d8 pc=0x7ff7b8526bf7
+runtime.mstart0()
+	runtime/proc.go:1895 +0x6a fp=0xa9f17ffa28 sp=0xa9f17ffa00 pc=0x7ff7b8526b0a
+runtime.mstart()
+	runtime/asm_amd64.s:395 +0x5 fp=0xa9f17ffa30 sp=0xa9f17ffa28 pc=0x7ff7b855d145
+
+goroutine 1 gp=0xc0000021c0 m=nil [runnable, locked to thread]:
+runtime.doInit1(0x7ff7b8f1ffb0?)
+	runtime/proc.go:7641 +0x505 fp=0xc00005df50 sp=0xc00005df48 pc=0x7ff7b8532dc5
+runtime.doInit(...)
+	runtime/proc.go:7637
+runtime.main()
+	runtime/proc.go:256 +0x325 fp=0xc00005dfe0 sp=0xc00005df50 pc=0x7ff7b8523705
+runtime.goexit({})
+	runtime/asm_amd64.s:1693 +0x1 fp=0xc00005dfe8 sp=0xc00005dfe0 pc=0x7ff7b855f221
+
+goroutine 2 gp=0xc0000028c0 m=nil [runnable]:
+runtime.forcegchelper()
+	runtime/proc.go:364 fp=0xc000059fe0 sp=0xc000059fd8 pc=0x7ff7b85238c0
+runtime.goexit({})
+	runtime/asm_amd64.s:1693 +0x1 fp=0xc000059fe8 sp=0xc000059fe0 pc=0x7ff7b855f221
+created by runtime.init.7 in goroutine 1
+	runtime/proc.go:361 +0x1a
+
+goroutine 3 gp=0xc000002c40 m=nil [GC sweep wait]:
+runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+	runtime/proc.go:460 +0xce fp=0xc00005bf80 sp=0xc00005bf60 pc=0x7ff7b85572ce
+runtime.goparkunlock(...)
+	runtime/proc.go:466
+runtime.bgsweep(0xc000030180)
+	runtime/mgcsweep.go:279 +0x94 fp=0xc00005bfc8 sp=0xc00005bf80 pc=0x7ff7b850ac54
+runtime.gcenable.gowrap1()
+	runtime/mgc.go:212 +0x25 fp=0xc00005bfe0 sp=0xc00005bfc8 pc=0x7ff7b84feca5
+runtime.goexit({})
+	runtime/asm_amd64.s:1693 +0x1 fp=0xc00005bfe8 sp=0xc00005bfe0 pc=0x7ff7b855f221
+created by runtime.gcenable in goroutine 1
+	runtime/mgc.go:212 +0x66
+
+goroutine 4 gp=0xc000002e00 m=nil [GC scavenge wait]:
+runtime.gopark(0xc000030180?, 0x7ff7b8c3f880?, 0x1?, 0x0?, 0xc000002e00?)
+	runtime/proc.go:460 +0xce fp=0xc00006bf78 sp=0xc00006bf58 pc=0x7ff7b85572ce
+runtime.goparkunlock(...)
+	runtime/proc.go:466
+runtime.(*scavengerState).park(0x7ff7b8f8d340)
+	runtime/mgcscavenge.go:425 +0x49 fp=0xc00006bfa8 sp=0xc00006bf78 pc=0x7ff7b8508729
+runtime.bgscavenge(0xc000030180)
+	runtime/mgcscavenge.go:653 +0x3c fp=0xc00006bfc8 sp=0xc00006bfa8 pc=0x7ff7b8508cbc
+runtime.gcenable.gowrap2()
+	runtime/mgc.go:213 +0x25 fp=0xc00006bfe0 sp=0xc00006bfc8 pc=0x7ff7b84fec45
+runtime.goexit({})
+	runtime/asm_amd64.s:1693 +0x1 fp=0xc00006bfe8 sp=0xc00006bfe0 pc=0x7ff7b855f221
+created by runtime.gcenable in goroutine 1
+	runtime/mgc.go:213 +0xa5
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+Error [TransformError]: The service was stopped: write EOF
+    at C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:718:38
+    at responseCallbacks.<computed> (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:603:9)
+    at afterClose (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:594:28)
+    at C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:1986:18
+    at onwriteError (node:internal/streams/writable:603:3)
+    at onwrite (node:internal/streams/writable:647:7)
+    at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:89:19)
+
+Node.js v24.14.0
+11:17:45 AM [tsx] change in ./src\routes\stories.ts Rerunning...
+cServer listening on port 3000
+11:22:17 AM [tsx] change in ./src\lib\gemini.ts Restarting...
+cServer listening on port 3000
+11:22:47 AM [tsx] change in ./src\routes\stories.ts Rerunning...
+cServer listening on port 3000
+11:23:21 AM [tsx] change in ./src\routes\stories.ts Rerunning...
+cServer listening on port 3000
+11:39:12 AM [tsx] change in ./src\routes\stories.ts Rerunning...
+cServer listening on port 3000
+12:25:27 PM [tsx] change in ./src\routes\stories.ts Rerunning...
+cServer listening on port 3000
+abs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=english, voice=shimmer, text="Yesterday we hit the highway with a sense of adven..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=english
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 229 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=english
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🌍 Translating 48 demo stories to hindi via OpenAI...
+Library translation failed, returning English originals: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+🚀 Using Gemini for story generation (PRIMARY)...
+Gemini failed: Invalid JSON payload received. Unknown name "responseMimeType" at 'generation_config': Cannot find field.
+🚀 Using OpenAI (fallback)...
+OpenAI failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+🚀 Using Pollinations (FREE) fallback...
+Story generation failed: Error: All AI providers failed to generate story
+    at <anonymous> (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\artifacts\api-server\src\routes\stories.ts:1030:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+🎨 [Router] Generating image via Pollinations.ai (free, no key needed)
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+🎨 [Router] Generating image via Pollinations.ai (free, no key needed)
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पहले दिन हम होटल पहुँचे और थोड़ा आराम किया। कमरे स..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 138 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+⚠️ [OpenAI TTS] Failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+⚠️ All AI narration providers failed or were unavailable. Falling back to browser synthesis.
+🎙️ Narration Request: lang=hindi, voice=shimmer, text="पिछले हफ्ते मैं अपने परिवार के साथ 4 दिनों के लिए ..."
+🎙️ [ElevenLabs] Attempting generation: voiceId=EXAVITQu4vr4xnSDxMaL, lang=hindi
+⚠️ [ElevenLabs] Notice: This request exceeds your quota of 30025. You have 0 credits remaining, while 161 credits are required for this request.
+📢 [ElevenLabs] Quota exceeded. Moving to high-quality fallback...
+🎙️ [OpenAI TTS] Fallback generation: voice=shimmer, lang=hindi
+11:08:29 AM [tsx] change in ./src\routes\stories.ts Restarting...
+cServer listening on port 3000
+11:13:48 AM [tsx] change in ./src\routes\stories.ts Rerunning...
+c
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+Error [TransformError]: Transform failed with 1 error:
+C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\artifacts\api-server\src\routes\stories.ts:17:22: ERROR: Expected ";" but found "..."
+    at failureErrorWithLog (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:1467:15)
+    at C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:736:50
+    at responseCallbacks.<computed> (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:603:9)
+    at handleIncomingPacket (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:658:12)
+    at Socket.readFromStdout (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:581:7)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:563:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+    at Readable.push (node:internal/streams/readable:394:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+Node.js v24.14.0
+11:14:05 AM [tsx] change in ./src\routes\stories.ts Rerunning...
+c
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+Error [TransformError]: Transform failed with 1 error:
+C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\artifacts\api-server\src\routes\stories.ts:17:22: ERROR: Expected ";" but found "..."
+    at failureErrorWithLog (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:1467:15)
+    at C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:736:50
+    at responseCallbacks.<computed> (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:603:9)
+    at handleIncomingPacket (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:658:12)
+    at Socket.readFromStdout (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:581:7)
+    at Socket.emit (node:events:508:28)
+    at addChunk (node:internal/streams/readable:563:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+    at Readable.push (node:internal/streams/readable:394:5)
+    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+Node.js v24.14.0
+11:15:23 AM [tsx] change in ./src\routes\stories.ts Rerunning...
+cServer listening on port 3000
+11:17:31 AM [tsx] change in ./src\routes\stories.ts Restarting...
+cfatal error: runtime: cannot allocate memory
+
+runtime stack:
+runtime.throw({0x7ff7b8b71d23?, 0x7ff7b8547da0?})
+	runtime/panic.go:1094 +0x4d fp=0x7538bff318 sp=0x7538bff2e8 pc=0x7ff7b85571ad
+runtime.stkbucket(0x1, 0x800, {0xc000049b00, 0x9, 0xc00004e798?}, 0x1)
+	runtime/mprof.go:284 +0x3d6 fp=0x7538bff378 sp=0x7538bff318 pc=0x7ff7b8515cb6
+runtime.mProf_Malloc(0xc000063008, 0xc000080008, 0x800)
+	runtime/mprof.go:450 +0xda fp=0x7538bff3f8 sp=0x7538bff378 pc=0x7ff7b8515f7a
+runtime.profilealloc(0xc000063008?, 0xc000080008?, 0x800?)
+	runtime/malloc.go:1835 +0x9b fp=0x7538bff428 sp=0x7538bff3f8 pc=0x7ff7b84f6bdb
+runtime.mallocgcSmallScanHeader(0x0?, 0x7ff7b8b01dc0)
+	runtime/malloc.go:1523 +0x296 fp=0x7538bff480 sp=0x7538bff428 pc=0x7ff7b84f64b6
+runtime.mallocgc(0x7f8, 0x7ff7b8b01dc0, 0x1)
+	runtime/malloc.go:1068 +0xac fp=0x7538bff4b0 sp=0x7538bff480 pc=0x7ff7b855504c
+runtime.newobject(0x7538bff4d0?)
+	runtime/malloc.go:1747 +0x25 fp=0x7538bff4d8 sp=0x7538bff4b0 pc=0x7ff7b84f6b25
+runtime.allocm(0xc000050c08, 0x7ff7b8b971b0, 0x5)
+	runtime/proc.go:2339 +0x91 fp=0x7538bff530 sp=0x7538bff4d8 pc=0x7ff7b8527471
+runtime.newm(0x45da37a4c570?, 0xc000050c08, 0x7ff7b851cd90?)
+	runtime/proc.go:2875 +0x35 fp=0x7538bff560 sp=0x7538bff530 pc=0x7ff7b8527eb5
+runtime.startm(0xc000050c08?, 0x1, 0x0)
+	runtime/proc.go:3101 +0x159 fp=0x7538bff5b0 sp=0x7538bff560 pc=0x7ff7b8528579
+runtime.wakep()
+	runtime/proc.go:3248 +0xec fp=0x7538bff5e0 sp=0x7538bff5b0 pc=0x7ff7b855742c
+runtime.resetspinning()
+	runtime/proc.go:4022 +0x3e fp=0x7538bff600 sp=0x7538bff5e0 pc=0x7ff7b852ad1e
+runtime.schedule()
+	runtime/proc.go:4175 +0x10a fp=0x7538bff638 sp=0x7538bff600 pc=0x7ff7b852b22a
+runtime.mstart1()
+	runtime/proc.go:1949 +0xd7 fp=0x7538bff660 sp=0x7538bff638 pc=0x7ff7b8526bf7
+runtime.mstart0()
+	runtime/proc.go:1895 +0x6a fp=0x7538bff688 sp=0x7538bff660 pc=0x7ff7b8526b0a
+runtime.mstart()
+	runtime/asm_amd64.s:395 +0x5 fp=0x7538bff690 sp=0x7538bff688 pc=0x7ff7b855d145
+
+goroutine 1 gp=0xc0000021c0 m=nil [runnable, locked to thread]:
+runtime.asyncPreempt2()
+	runtime/preempt.go:308 +0x39 fp=0xc00005dc98 sp=0xc00005dc78 pc=0x7ff7b8522219
+runtime.asyncPreempt()
+	runtime/preempt_amd64.s:46 +0xdb fp=0xc00005de20 sp=0xc00005dc98 pc=0x7ff7b85607db
+crypto/internal/fips140deps/cpu.init()
+	crypto/internal/fips140deps/cpu/cpu.go:21 fp=0xc00005de28 sp=0xc00005de20 pc=0x7ff7b863bf80
+runtime.doInit1(0x7ff7b8f1ffb0)
+	runtime/proc.go:7670 +0xda fp=0xc00005df50 sp=0xc00005de28 pc=0x7ff7b853299a
+runtime.doInit(...)
+	runtime/proc.go:7637
+runtime.main()
+	runtime/proc.go:256 +0x325 fp=0xc00005dfe0 sp=0xc00005df50 pc=0x7ff7b8523705
+runtime.goexit({})
+	runtime/asm_amd64.s:1693 +0x1 fp=0xc00005dfe8 sp=0xc00005dfe0 pc=0x7ff7b855f221
+
+goroutine 2 gp=0xc0000028c0 m=nil [runnable]:
+runtime.forcegchelper()
+	runtime/proc.go:364 fp=0xc000059fe0 sp=0xc000059fd8 pc=0x7ff7b85238c0
+runtime.goexit({})
+	runtime/asm_amd64.s:1693 +0x1 fp=0xc000059fe8 sp=0xc000059fe0 pc=0x7ff7b855f221
+created by runtime.init.7 in goroutine 1
+	runtime/proc.go:361 +0x1a
+
+goroutine 3 gp=0xc000002c40 m=nil [GC sweep wait]:
+runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+	runtime/proc.go:460 +0xce fp=0xc00005bf80 sp=0xc00005bf60 pc=0x7ff7b85572ce
+runtime.goparkunlock(...)
+	runtime/proc.go:466
+runtime.bgsweep(0xc000030180)
+	runtime/mgcsweep.go:279 +0x94 fp=0xc00005bfc8 sp=0xc00005bf80 pc=0x7ff7b850ac54
+runtime.gcenable.gowrap1()
+	runtime/mgc.go:212 +0x25 fp=0xc00005bfe0 sp=0xc00005bfc8 pc=0x7ff7b84feca5
+runtime.goexit({})
+	runtime/asm_amd64.s:1693 +0x1 fp=0xc00005bfe8 sp=0xc00005bfe0 pc=0x7ff7b855f221
+created by runtime.gcenable in goroutine 1
+	runtime/mgc.go:212 +0x66
+
+goroutine 4 gp=0xc000002e00 m=nil [GC scavenge wait]:
+runtime.gopark(0xc000030180?, 0x7ff7b8c3f880?, 0x1?, 0x0?, 0xc000002e00?)
+	runtime/proc.go:460 +0xce fp=0xc00006bf78 sp=0xc00006bf58 pc=0x7ff7b85572ce
+runtime.goparkunlock(...)
+	runtime/proc.go:466
+runtime.(*scavengerState).park(0x7ff7b8f8d340)
+	runtime/mgcscavenge.go:425 +0x49 fp=0xc00006bfa8 sp=0xc00006bf78 pc=0x7ff7b8508729
+runtime.bgscavenge(0xc000030180)
+	runtime/mgcscavenge.go:653 +0x3c fp=0xc00006bfc8 sp=0xc00006bfa8 pc=0x7ff7b8508cbc
+runtime.gcenable.gowrap2()
+	runtime/mgc.go:213 +0x25 fp=0xc00006bfe0 sp=0xc00006bfc8 pc=0x7ff7b84fec45
+runtime.goexit({})
+	runtime/asm_amd64.s:1693 +0x1 fp=0xc00006bfe8 sp=0xc00006bfe0 pc=0x7ff7b855f221
+created by runtime.gcenable in goroutine 1
+	runtime/mgc.go:213 +0xa5
+
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+Error [TransformError]: The service was stopped: write EOF
+    at C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:718:38
+    at responseCallbacks.<computed> (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:603:9)
+    at afterClose (C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:594:28)
+    at C:\Users\369Network\Downloads\Story-Weaver-AI\Story-Weaver-AI\node_modules\.pnpm\esbuild@0.27.3\node_modules\esbuild\lib\main.js:1986:18
+    at onwriteError (node:internal/streams/writable:603:3)
+    at onwrite (node:internal/streams/writable:647:7)
+    at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:89:19)
+
+Node.js v24.14.0
+11:17:45 AM [tsx] change in ./src\routes\stories.ts Rerunning...
+cServer listening on port 3000
+11:22:17 AM [tsx] change in ./src\lib\gemini.ts Rerunning...
+cServer listening on port 3000
+11:22:47 AM [tsx] change in ./src\routes\stories.ts Rerunning...
+cServer listening on port 3000
+11:23:21 AM [tsx] change in ./src\routes\stories.ts Rerunning...
+c
+<--- Last few GCs --->
+
+[244:00000229E3186000]      418 ms: Scavenge 8.5 (11.1) -> 7.5 (11.6) MB, pooled: 0 MB, 3.53 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[244:00000229E3186000]      515 ms: Scavenge 9.3 (12.3) -> 8.4 (13.1) MB, pooled: 0 MB, 2.68 / 0.00 ms  (average mu = 1.000, current mu = 1.000) allocation failure; 
+[244:00000229E3186000]     1042 ms: Scavenge 10.1 (13.6) -> 9.1 (17.8) MB, pooled: 0 MB, 1.94 / 0.02 ms  (average mu = 1.000, current mu = 1.000) task; 
+
+FATAL ERROR: Zone Allocation failed - process out of memory
+----- Native stack trace -----
+
+ 1: 00007FF6E307C36F 
+ 2: 00007FF6E3CC4D77 
+ 3: 00007FF6E363FBD6 
+ 4: 00007FF6E3203524 
+ 5: 00007FF6E48BD157 
+ 6: 00007FF6E48BBF22 
+ 7: 00007FF6E48B72A7 
+ 8: 00007FF6E48B6431 
+ 9: 00007FF6E48E6458 
+10: 00007FF6E48B2BE0 
+11: 00007FF6E48B252C 
+12: 00007FF6E48B1AB1 
+13: 00007FF6E48B180F 
+14: 00007FF6E46BF5D6 
+15: 00007FF6E46B7E46 
+16: 00007FF6E46B72C0 
+17: 00007FF6E3C389AF 
+18: 00007FF6E3BFDA3D 
+19: 00007FF6E3BFD735 
+20: 00007FF6E44A570F 
+21: 00007FF6E2FCCD8E 
+22: 00007FF6E3D1A096 
+23: 00007FF6E4F792B3 
+24: 00007FFEA07B7374 
+25: 00007FFEA115CC91 
+11:39:12 AM [tsx] change in ./src\routes\stories.ts Rerunning...
+cServer listening on port 3000
+12:25:27 PM [tsx] change in ./src\routes\stories.ts Rerunning...
+cServer listening on port 3000

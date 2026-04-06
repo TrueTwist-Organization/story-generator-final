@@ -2,11 +2,21 @@
   "name": "workspace",
   "version": "0.0.0",
   "license": "MIT",
+  "workspaces": [
+    "artifacts/*",
+    "lib/*",
+    "lib/integrations/*",
+    "scripts"
+  ],
   "scripts": {
-    "preinstall": "sh -c 'rm -f package-lock.json yarn.lock; case \"$npm_config_user_agent\" in pnpm/*) ;; *) echo \"Use pnpm instead\" >&2; exit 1 ;; esac'",
-    "build": "pnpm run typecheck && pnpm -r --if-present run build",
-    "typecheck:libs": "tsc --build",
-    "typecheck": "pnpm run typecheck:libs && pnpm -r --filter \"./artifacts/**\" --filter \"./scripts\" --if-present run typecheck"
+    "build": "npm run build:libs && npm run build:apps",
+    "build:libs": "tsc --build",
+    "build:apps": "npx -y pnpm -r --filter \"./artifacts/**\" run build",
+    "setup": "node ./scripts/check-env.mjs",
+    "dev": "npm run setup && npx -y concurrently \"npm run dev:server\" \"npm run dev:frontend\"",
+    "dev:server": "cd artifacts/api-server && npm run dev",
+    "dev:frontend": "cd artifacts/story-generator && npm run dev",
+    "typecheck": "tsc --build"
   },
   "private": true,
   "devDependencies": {

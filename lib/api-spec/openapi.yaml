@@ -130,7 +130,7 @@ components:
           description: Story prompt or description
         category:
           type: string
-          enum: [nature, princess, anime, travel, custom]
+          enum: [king_queen, fantasy, magic, friendship, kids, bedtime, moral, animal, princess, god, bird, custom]
         language:
           type: string
           enum: [english, hindi, gujarati]
@@ -236,6 +236,9 @@ components:
           type: string
         style:
           type: string
+        faceImage:
+          type: string
+          description: Base64 data URI of the user's face photo for face-consistent image generation
       required:
         - prompt
         - category
@@ -244,8 +247,9 @@ components:
       properties:
         b64_json:
           type: string
-      required:
-        - b64_json
+          nullable: true
+        url:
+          type: string
     GenerateNarrationBody:
       type: object
       properties:
