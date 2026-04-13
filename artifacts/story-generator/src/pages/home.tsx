@@ -326,14 +326,31 @@ export default function HomePage() {
                   key={cat.id}
                   onClick={() => setCategory(cat.id)}
                   className={cn(
-                    "snap-start flex-shrink-0 flex flex-col items-center justify-center gap-2 w-28 h-24 rounded-2xl border-2 transition-all duration-300",
+                    "snap-start flex-shrink-0 relative overflow-hidden flex flex-col items-center justify-center gap-2 w-32 h-28 rounded-2xl border-2 transition-all duration-300 group",
                     category === cat.id
-                      ? "border-primary bg-primary/20 shadow-[0_0_20px_rgba(168,85,247,0.4)] scale-105 z-10"
-                      : "border-white/10 bg-white/5 opacity-70 hover:opacity-100 hover:border-white/30 hover:bg-white/10"
+                      ? "border-primary shadow-[0_0_20px_rgba(168,85,247,0.4)] scale-105 z-10"
+                      : "border-white/10 opacity-70 hover:opacity-100 hover:border-white/30"
                   )}
                 >
-                  <span className="text-2xl">{cat.icon}</span>
-                  <span className="font-semibold text-white text-xs tracking-wide text-center leading-tight px-1">{t.categories[cat.id]}</span>
+                  {/* Category Image Background */}
+                  <img 
+                    src={cat.image} 
+                    alt="" 
+                    className={cn(
+                      "absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110",
+                      category === cat.id ? "opacity-40" : "opacity-20"
+                    )}
+                    onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                  />
+                  <div className={cn(
+                    "absolute inset-0 bg-gradient-to-b from-black/40 to-black/80",
+                    category === cat.id ? "bg-primary/20" : ""
+                  )} />
+                  
+                  <span className="text-3xl relative z-10 group-hover:scale-125 transition-transform duration-300">{cat.icon}</span>
+                  <span className="font-bold text-white text-[11px] tracking-wide text-center leading-tight px-1 relative z-10 drop-shadow-md">
+                    {t.categories[cat.id]}
+                  </span>
                 </button>
               ))}
             </div>
