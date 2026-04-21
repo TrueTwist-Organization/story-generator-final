@@ -15,6 +15,54 @@ interface BookViewerProps {
   onBack: () => void;
 }
 
+const BOOK_TRANSLATIONS = {
+  english: {
+    back: "Back",
+    page: "Page",
+    epilogue: "Epilogue",
+    nextPage: "Next Page",
+    readAgain: "Read Again",
+    backToLibrary: "Back to Library",
+    fin: "Fin.",
+    endSub: "The story has come to an end, but your next journey is just a page turn away.",
+    loadingImage: "Loading image...",
+    weavingVisuals: "Weaving your story visuals...",
+    genFailed: "Image generation failed",
+    retry: "Retry Generating",
+    question: "Question"
+  },
+  hindi: {
+    back: "पीछे",
+    page: "पृष्ठ",
+    epilogue: "उपसंहार",
+    nextPage: "अगला पृष्ठ",
+    readAgain: "पुनः पढ़ें",
+    backToLibrary: "लाइब्रेरी में वापस",
+    fin: "समाप्त",
+    endSub: "कहानी खत्म हो गई है, लेकिन आपकी अगली यात्रा बस एक पन्ना दूर है।",
+    loadingImage: "छवि लोड हो रही है...",
+    weavingVisuals: "कहानी के दृश्य बन रहे हैं...",
+    genFailed: "छवि निर्माण विफल",
+    retry: "पुनः प्रयास करें",
+    question: "प्रश्न"
+  },
+  gujarati: {
+    back: "પાછા",
+    page: "પૃષ્ઠ",
+    epilogue: "ઉપસંહાર",
+    nextPage: "આગળનું પૃષ્ઠ",
+    readAgain: "ફરીથી વાંચો",
+    backToLibrary: "લાઇબ્રેરીમાં પાછા",
+    fin: "સમાપ્ત",
+    endSub: "વાર્તા પૂરી થઈ ગઈ છે, પરંતુ તમારી આગામી સફર ફક્ત એક પૃષ્ઠ દૂર છે.",
+    loadingImage: "ચિત્ર લોડ થઈ રહ્યું છે...",
+    weavingVisuals: "વાર્તાના દ્રશ્યો બની રહ્યા છે...",
+    genFailed: "ચિત્ર બનાવવામાં નિષ્ફળ",
+    retry: "ફરીથી પ્રયાસ કરો",
+    question: "પ્રશ્ન"
+  }
+};
+
 export function BookViewer({ story, onBack }: BookViewerProps) {
   const { voice: storeVoice } = useStoryStore();
   const [currentPage, setCurrentPage] = useState(0);
@@ -25,6 +73,8 @@ export function BookViewer({ story, onBack }: BookViewerProps) {
   const totalPages = story.scenes.length + (hasQuiz ? 1 : 0) + 1; // +1 for end screen, +1 for quiz if it exists
   const quizPageIndex = story.scenes.length;
   const endPageIndex = totalPages - 1;
+
+  const bt = BOOK_TRANSLATIONS[story.language as keyof typeof BOOK_TRANSLATIONS] || BOOK_TRANSLATIONS.english;
 
   const handleNext = () => {
     if (currentPage < totalPages - 1) {
@@ -53,11 +103,11 @@ export function BookViewer({ story, onBack }: BookViewerProps) {
       {/* Top Controls */}
       <div className="absolute top-0 left-0 right-0 z-50 p-6 flex justify-between items-center bg-gradient-to-b from-black/80 to-transparent">
         <Button variant="ghost" onClick={onBack} className="text-white/70 hover:text-white transition-colors">
-          <ChevronLeft className="mr-2 h-5 w-5" /> Back
+          <ChevronLeft className="mr-2 h-5 w-5" /> {bt.back}
         </Button>
         <div className="flex items-center gap-4">
           <div className="text-white/90 text-sm font-medium tracking-[0.2em] uppercase">
-            {currentPage < story.scenes.length ? `Page ${currentPage + 1}` : 'Epilogue'}
+            {currentPage < story.scenes.length ? `${bt.page} ${currentPage + 1}` : bt.epilogue}
           </div>
           <Button 
             variant="glass" 
@@ -90,12 +140,14 @@ export function BookViewer({ story, onBack }: BookViewerProps) {
           ) : hasQuiz && currentPage === quizPageIndex ? (
             <QuizPage 
               key="quiz"
+              language={story.language as any}
               questions={(story as any).quizQuestions}
               onComplete={handleNext}
             />
           ) : (
             <EndPage 
               key="end"
+              language={story.language as any}
               onRestart={() => setCurrentPage(0)}
               onExit={onBack}
             />
@@ -185,8 +237,9 @@ function BookPage({
   onNext
 }: BookPageProps) {
   const { faceImage } = useStoryStore();
-  const [imageUrl, setImageUrl] = useState<string | null>(cachedUrls.image || scene.imageUrl || null);
-  const [isImageLoaded, setIsImageLoaded] = useState(!!(cachedUrls.image || scene.imageUrl));
+  const bt = BOOK_TRANSLATIONS[story.language as keyof typeof BOOK_TRANSLATIONS] || BOOK_TRANSLATIONS.english;
+  const [imageUrl, setImageUrl] = useState<string | null>(cachedUrls.image || (scene as any).imageUrl || null);
+  const [isImageLoaded, setIsImageLoaded] = useState(!!(cachedUrls.image || (scene as any).imageUrl));
   const [imageError, setImageError] = useState(false);
   const [audioUrl, setAudioUrl] = useState<string | null>(cachedUrls.audio || null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -216,7 +269,7 @@ function BookPage({
       return;
     }
  
-    if (lastAttemptedImagePrompt.current === scene.imagePrompt) return;
+    if (!scene.imagePrompt || lastAttemptedImagePrompt.current === scene.imagePrompt) return;
  
     console.log(`🎨 [BookPage] Requesting image for: "${scene.imagePrompt.slice(0, 30)}..."`);
     lastAttemptedImagePrompt.current = scene.imagePrompt;
@@ -246,13 +299,13 @@ function BookPage({
   // Load Audio
   useEffect(() => {
     if (audioUrl || generateAudio.isPending || generateAudio.isError) return;
-    if (lastAttemptedAudioText.current === scene.text) return;
+    if (!scene.text || lastAttemptedAudioText.current === scene.text) return;
 
     console.log(`🔊 [BookPage] Requesting audio for: "${scene.text.slice(0, 30)}..."`);
     lastAttemptedAudioText.current = scene.text;
 
     generateAudio.mutate(
-      { data: { text: scene.text, language: story.language as any, voice } },
+      { data: { text: scene.text || "", language: story.language as any, voice } },
       { 
         onSuccess: (res) => {
             if (res && res.audioBase64) {
@@ -300,37 +353,75 @@ function BookPage({
       // Browser Speech Synthesis Fallback (only when API audio is unavailable)
       if (window.speechSynthesis) {
         hasStartedNarration.current = true;
-        window.speechSynthesis.cancel();
+        
         const speakText = () => {
-          const utterance = new SpeechSynthesisUtterance(scene.text);
+          // Cancel any ongoing speech first
+          window.speechSynthesis.cancel();
+          
+          const utterance = new SpeechSynthesisUtterance(scene.text || "");
           const voices = window.speechSynthesis.getVoices();
           let selectedVoice = null;
 
+          console.log(`🔊 [BrowserSpeech] Attempting synthesis for ${story.language}. Available voices: ${voices.length}`);
+
           if (story.language === 'hindi') {
             utterance.lang = 'hi-IN';
-            selectedVoice = voices.find(v => v.lang.startsWith('hi') || v.name.toLowerCase().includes('hindi'));
+            selectedVoice = voices.find(v => v.lang.startsWith('hi') || v.name.toLowerCase().includes('hindi')) ||
+                           voices.find(v => v.lang.startsWith('en')); // Fallback to English if no Hindi
           } else if (story.language === 'gujarati') {
             utterance.lang = 'gu-IN';
-            selectedVoice = voices.find(v => v.lang.startsWith('gu') || v.name.toLowerCase().includes('gujarati'));
-            if (!selectedVoice) {
-              selectedVoice = voices.find(v => v.lang.startsWith('hi') || v.name.toLowerCase().includes('hindi'));
-            }
+            // Gujarati is rare in default browser voices, fallback to Hindi or English
+            selectedVoice = voices.find(v => v.lang.startsWith('gu') || v.name.toLowerCase().includes('gujarati')) ||
+                           voices.find(v => v.lang.startsWith('hi') || v.name.toLowerCase().includes('hindi')) ||
+                           voices.find(v => v.lang.startsWith('en'));
+          } else {
+            utterance.lang = 'en-US';
+            selectedVoice = voices.find(v => v.lang.startsWith('en-US')) || voices[0];
           }
 
-          if (selectedVoice) utterance.voice = selectedVoice;
-          utterance.onstart = () => setIsPlaying(true);
+          if (selectedVoice) {
+            console.log(`🔊 [BrowserSpeech] Selected voice: ${selectedVoice.name}`);
+            utterance.voice = selectedVoice;
+          }
+          
+          utterance.rate = 0.9; // Slightly slower for better clarity
+          utterance.pitch = 1.0;
+
+          utterance.onstart = () => {
+            console.log("🔊 [BrowserSpeech] Started speaking");
+            setIsPlaying(true);
+          };
+          
+          utterance.onerror = (e) => {
+            console.error("❌ [BrowserSpeech] Error:", e);
+            setIsPlaying(false);
+          };
+          
           utterance.onend = () => {
+            console.log("🔊 [BrowserSpeech] Finished speaking");
             setIsPlaying(false);
             autoNext();
           };
-          window.speechSynthesis.speak(utterance);
+
+          // Some browsers need a tiny delay for voice loading or gesture clearing
+          setTimeout(() => {
+            window.speechSynthesis.speak(utterance);
+          }, 50);
+          
           synthesisRef.current = utterance;
         };
 
         if (window.speechSynthesis.getVoices().length > 0) {
           speakText();
         } else {
-          window.speechSynthesis.onvoiceschanged = speakText;
+          // Wait for voices to be loaded
+          const voicesChangedListener = () => {
+            if (window.speechSynthesis.getVoices().length > 0) {
+              speakText();
+              window.speechSynthesis.removeEventListener('voiceschanged', voicesChangedListener);
+            }
+          };
+          window.speechSynthesis.addEventListener('voiceschanged', voicesChangedListener);
         }
       }
     }
@@ -390,7 +481,7 @@ function BookPage({
               {!isImageLoaded && (
                 <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-indigo-900/40 to-purple-900/40 z-10">
                   <RefreshCw className="w-12 h-12 text-blue-400/50 animate-spin mb-4" />
-                  <p className="text-white/60 font-medium tracking-wide">Loading image...</p>
+                  <p className="text-white/60 font-medium tracking-wide">{bt.loadingImage}</p>
                 </div>
               )}
               <motion.img
@@ -471,7 +562,7 @@ function BookPage({
             </div>
             
             <h2 className="text-3xl md:text-5xl font-display font-bold text-[#121212] mb-10 leading-tight">
-              {scene.text.split(' ').slice(0, 3).join(' ')}
+              {scene.text?.split(' ').slice(0, 3).join(' ') || ""}
               <span className="text-primary"> ...</span>
             </h2>
             
@@ -481,7 +572,7 @@ function BookPage({
                </p>
                {/* Drop cap first letter */}
                <div className="absolute -left-12 -top-4 opacity-[0.03] text-[12rem] font-display select-none pointer-events-none">
-                  {scene.text[0]}
+                  {scene.text?.[0]}
                </div>
             </div>
 
@@ -523,7 +614,7 @@ function BookPage({
                     className="rounded-full px-10 h-14 bg-black text-white hover:bg-black/80 shadow-lg shadow-black/10 group-hover:scale-105 transition-transform"
                     onClick={onNext}
                   >
-                    Next Page
+                    {bt.nextPage}
                   </Button>
                   <Button 
                     variant="outline" 
@@ -550,7 +641,13 @@ function BookPage({
   );
 }
 
-function QuizPage({ questions, onComplete }: { questions: any[], onComplete: () => void }) {
+function QuizPage({ language, questions, onComplete }: { language: string, questions: any[], onComplete: () => void }) {
+  const bt = BOOK_TRANSLATIONS[language as keyof typeof BOOK_TRANSLATIONS] || BOOK_TRANSLATIONS.english;
+  const labels = {
+    score: language === 'hindi' ? "स्कोर" : language === 'gujarati' ? "સ્કોર" : "Score",
+    finalScore: language === 'hindi' ? "अंतिम स्कोर देखें" : language === 'gujarati' ? "અંતિમ સ્કોર જુઓ" : "See Final Score",
+    next: language === 'hindi' ? "अगला प्रश्न" : language === 'gujarati' ? "આગળનો પ્રશ્ન" : "Next Question"
+  };
   const [currentIdx, setCurrentIdx] = useState(0);
   const [score, setScore] = useState(0);
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
@@ -589,10 +686,10 @@ function QuizPage({ questions, onComplete }: { questions: any[], onComplete: () 
       <div className="relative z-10 w-full max-w-2xl">
         <div className="flex justify-between items-center mb-8">
           <div className="bg-primary/20 backdrop-blur px-4 py-1 rounded-full text-xs font-bold text-primary tracking-widest uppercase">
-            Question {currentIdx + 1} / {questions.length}
+            {bt.question} {currentIdx + 1} / {questions.length}
           </div>
           <div className="text-white/40 text-sm font-medium">
-            Score: <span className="text-accent">{score}</span>
+            {labels.score}: <span className="text-accent">{score}</span>
           </div>
         </div>
 
@@ -648,7 +745,7 @@ function QuizPage({ questions, onComplete }: { questions: any[], onComplete: () 
             className="w-full h-14 rounded-xl text-lg"
             onClick={nextQuestion}
           >
-            {isLast ? "See Final Score" : "Next Question"}
+            {isLast ? labels.finalScore : labels.next}
           </Button>
         )}
       </div>
@@ -656,7 +753,8 @@ function QuizPage({ questions, onComplete }: { questions: any[], onComplete: () 
   );
 }
 
-function EndPage({ onRestart, onExit }: { onRestart: () => void, onExit: () => void }) {
+function EndPage({ language, onRestart, onExit }: { language: string, onRestart: () => void, onExit: () => void }) {
+  const bt = BOOK_TRANSLATIONS[language as keyof typeof BOOK_TRANSLATIONS] || BOOK_TRANSLATIONS.english;
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.95 }}
@@ -677,15 +775,15 @@ function EndPage({ onRestart, onExit }: { onRestart: () => void, onExit: () => v
            </svg>
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-display font-medium text-white mb-6 tracking-tight">Fin.</h1>
-        <p className="text-xl text-white/60 mb-12 font-light">The story has come to an end, but your next journey is just a page turn away.</p>
+        <h1 className="text-5xl md:text-7xl font-display font-medium text-white mb-6 tracking-tight">{bt.fin}</h1>
+        <p className="text-xl text-white/60 mb-12 font-light">{bt.endSub}</p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button variant="glow" size="lg" className="px-10 h-16 text-lg rounded-2xl" onClick={onRestart}>
-            Read Again
+            {bt.readAgain}
           </Button>
           <Button variant="outline" size="lg" className="px-10 h-16 text-lg rounded-2xl bg-white/5 hover:bg-white/10" onClick={onExit}>
-             Back to Library
+             {bt.backToLibrary}
           </Button>
         </div>
       </div>

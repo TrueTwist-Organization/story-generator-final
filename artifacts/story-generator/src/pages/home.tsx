@@ -26,7 +26,6 @@ const CATEGORIES: { id: GenerateStoryBodyCategory; label: string; icon: string; 
   { id: "custom", label: "Custom", icon: "✨", image: "/images/cat-custom.webp" },
 ];
 
-
 const LANGUAGES: { id: GenerateStoryBodyLanguage; label: string }[] = [
   { id: "english", label: "English" },
   { id: "hindi", label: "हिंदी" },
@@ -42,6 +41,16 @@ const VOICES = [
 
 const TRANSLATIONS = {
   english: {
+    heroTitle: <>Craft Your <span className="text-gradient-gold drop-shadow-[0_0_20px_rgba(234,179,8,0.4)]">Epic Saga</span></>,
+    heroSub: "Immerse yourself in infinite worlds. Generate beautiful, voice-narrated stories and interactive adventures in seconds.",
+    startButton: "Start Your Adventure",
+    playGames: "Play Games",
+    aiPowered: "AI Powered Generation",
+    weavingMagic: "Weaving Magic...",
+    inkFlowing: "The ink is flowing from the stars",
+    discoverRealms: "Discover Realms",
+    discoverSub: "Explore infinite worlds created by imagination",
+    readStory: "Read Story",
     worldTheme: "World Theme",
     experienceMode: "Experience Mode",
     language: "Language",
@@ -71,6 +80,16 @@ const TRANSLATIONS = {
     faceDesc: "Upload your photo and the hero of every scene will look like you! Our AI will place your face into each story illustration."
   },
   hindi: {
+    heroTitle: <>अपनी <span className="text-gradient-gold drop-shadow-[0_0_20px_rgba(234,179,8,0.4)]">महागाथा</span> <br/> तैयार करें</>,
+    heroSub: "अनंत दुनिया में खो जाएं। सेकंडों में सुंदर, आवाज़-वर्णित कहानियाँ और इंटरैक्टिव रोमांच पैदा करें।",
+    startButton: "अपना साहसिक कार्य शुरू करें",
+    playGames: "खेल खेलें",
+    aiPowered: "AI संचालित पीढ़ी",
+    weavingMagic: "जादू बुन रहे हैं...",
+    inkFlowing: "सितारों से स्याही बह रही है",
+    discoverRealms: "क्षेत्रों की खोज करें",
+    discoverSub: "कल्पना द्वारा बनाई गई अनंत दुनिया का पता लगाएं",
+    readStory: "कहानी पढ़ें",
     worldTheme: "विश्व की थीम",
     experienceMode: "अनुभव मोड",
     language: "भाषा",
@@ -91,13 +110,25 @@ const TRANSLATIONS = {
       bird: "पक्षी", 
       custom: "कस्टम" 
     },
-    narratorVoice: "सूत्रधार की आवाज़",
+    modes: { image: "कहानी की किताब", video: "सिनेमैटिक", game: "साहसिक" },
+    modeDescs: { image: "सुंदर सचित्र पृष्ठ", video: "इमर्सिव ऑटो-प्लेइंग सीन", game: "जीवित रहने के लिए चुनाव करें" },
+    narratorVoice: "सूत्रधार की आवाज़",
     voices: { shimmer: "महिला (कोमल)", alloy: "तटस्थ", echo: "पुरुष (गहरी)", nova: "महिला (चमकदार)" },
     yourFace: "आपका चेहरा (वैकल्पिक)",
     uploadFace: "अपलोड",
     faceDesc: "अपनी फ़ोटो अपलोड करें और हर दृश्य का नायक आप जैसा दिखेगा! AI आपका चेहरा हर चित्र में लगाएगा।"
   },
   gujarati: {
+    heroTitle: <>તમારી <span className="text-gradient-gold drop-shadow-[0_0_20px_rgba(234,179,8,0.4)]">મહાકથા</span> <br/> બનાવો</>,
+    heroSub: "અનંત વિશ્વોમાં ડૂબી જાઓ. સેકન્ડોમાં સુંદર, અવાજ જેવી વાર્તાઓ અને ઇન્ટરેક્ટિવ સાહસો બનાવો.",
+    startButton: "તમારું સાહસ શરૂ કરો",
+    playGames: "રમતો રમો",
+    aiPowered: "AI સંચાલિત જનરેશન",
+    weavingMagic: "જાદુ વણી રહ્યા છીએ...",
+    inkFlowing: "તારાઓમાંથી શાહી વહી રહી છે",
+    discoverRealms: "વિશ્વની ખોજ કરો",
+    discoverSub: "કલ્પના દ્વારા બનાવવામાં આવેલા અનંત વિશ્વોનું અન્વેષણ કરો",
+    readStory: "વાર્તા વાંચો",
     worldTheme: "વિશ્વની થીમ",
     experienceMode: "અનુભવ મોડ",
     language: "ભાષા",
@@ -118,6 +149,8 @@ const TRANSLATIONS = {
       bird: "પક્ષી", 
       custom: "કસ્ટમ" 
     },
+    modes: { image: "વાર્તા પુસ્તક", video: "સિનેમેટિક", game: "સાહસ" },
+    modeDescs: { image: "સુંદર સચિત્ર પૃષ્ઠો", video: "ઇમર્સિવ ઓટો-પ્લેઇંગ સીન્સ", game: "જીવંત રહેવા માટે પસંદગીઓ કરો" },
     narratorVoice: "વક્તાનો અવાજ",
     voices: { shimmer: "સ્ત્રી (કોમળ)", alloy: "તટસ્થ", echo: "પુરુષ (ગંભીર)", nova: "સ્ત્રી (તેજસ્વી)" },
     yourFace: "તમારો ચહેરો (વૈકલ્પિક)",
@@ -128,15 +161,14 @@ const TRANSLATIONS = {
 
 export default function HomePage() {
   const [_, setLocation] = useLocation();
-  const { setActiveStory, setVoice: setGlobalVoice, setFaceImage } = useStoryStore();
+  const { setActiveStory, setVoice: setGlobalVoice, setFaceImage, language, setLanguage } = useStoryStore();
 
   const [prompt, setPrompt] = useState("");
   const [category, setCategory] = useState<GenerateStoryBodyCategory>("custom");
-  const [language, setLanguage] = useState<GenerateStoryBodyLanguage>("english");
   const [voice, setVoice] = useState("shimmer");
   const [facePreview, setFacePreview] = useState<string | null>(null);
   const faceInputRef = useRef<HTMLInputElement>(null);
-  const t = TRANSLATIONS[language];
+  const t = TRANSLATIONS[language as keyof typeof TRANSLATIONS] || TRANSLATIONS.english;
 
   const generateStoryMutation = useGenerateStory();
 
@@ -221,16 +253,15 @@ export default function HomePage() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-xs font-bold text-accent mb-8 border-accent/20 tracking-widest uppercase">
               <Sparkles className="w-4 h-4 shadow-[0_0_10px_gold]" />
-              <span>AI Powered Generation</span>
+              <span>{t.aiPowered}</span>
             </div>
 
             <h1 className="text-6xl md:text-8xl font-display font-medium text-white mb-8 leading-[1.05] tracking-tight">
-              Craft Your <br/>
-              <span className="text-gradient-gold drop-shadow-[0_0_20px_rgba(234,179,8,0.4)]">Epic Tale</span>
+              {t.heroTitle}
             </h1>
 
             <p className="text-xl md:text-2xl text-white/60 mb-12 max-w-xl leading-relaxed font-light italic">
-              Immerse yourself in infinite worlds. Generate beautiful, voice-narrated stories and interactive adventures in seconds.
+              {t.heroSub}
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -240,7 +271,7 @@ export default function HomePage() {
                 className="h-16 px-10 text-lg rounded-2xl shadow-[0_0_30px_rgba(168,85,247,0.3)] bg-primary"
                 onClick={() => document.getElementById('generation-panel')?.scrollIntoView({ behavior: 'smooth' })}
                >
-                 Start Your Adventure
+                 {t.startButton}
                </Button>
                <Button
                 variant="outline"
@@ -249,7 +280,7 @@ export default function HomePage() {
                 onClick={() => setLocation("/games")}
                >
                  <Gamepad2 className="w-5 h-5 mr-2" />
-                 Play Games
+                 {t.playGames}
                </Button>
             </div>
           </motion.div>
@@ -487,9 +518,9 @@ export default function HomePage() {
                 transition={{ delay: 0.5 }}
                 className="mt-12 text-3xl font-display font-bold text-white tracking-widest uppercase"
               >
-                Weaving Magic...
+                {t.weavingMagic}
               </motion.h2>
-              <p className="mt-4 text-white/40 animate-pulse italic">The ink is flowing from the stars</p>
+              <p className="mt-4 text-white/40 animate-pulse italic">{t.inkFlowing}</p>
             </motion.div>
           )}
         </AnimatePresence>
@@ -504,8 +535,8 @@ export default function HomePage() {
         >
           <div className="flex items-center justify-between mb-12">
              <div className="space-y-2">
-                <h2 className="text-4xl md:text-5xl font-display font-bold text-white tracking-tight">Discover Realms</h2>
-                <p className="text-white/40 italic">Explore infinite worlds created by imagination</p>
+                <h2 className="text-4xl md:text-5xl font-display font-bold text-white tracking-tight">{t.discoverRealms}</h2>
+                <p className="text-white/40 italic">{t.discoverSub}</p>
              </div>
           </div>
 
@@ -590,7 +621,7 @@ export default function HomePage() {
                           {/* Play Badge */}
                           <div className="flex items-center gap-2 text-[10px] font-bold text-primary uppercase tracking-widest bg-white/10 w-fit px-3 py-1.5 rounded-lg border border-white/10">
                             <Play className="w-3 h-3 fill-current" />
-                            Read Story
+                            {t.readStory}
                           </div>
                         </div>
                       </motion.div>

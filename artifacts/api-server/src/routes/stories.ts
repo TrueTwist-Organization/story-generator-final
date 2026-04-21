@@ -6,7 +6,8 @@ import { generateStoryWithGrok, generateGrokImage, generateGrokVideo } from "../
 import { generateDeepAIImage } from "../lib/deepai";
 import {
   generateImageBuffer,
-} from "@workspace/integrations-openai-ai-server/image";
+  openai,
+} from "@workspace/integrations-openai-ai-server";
 import { generateElevenLabsAudio } from "../lib/elevenlabs";
 
 const router: IRouter = Router();
@@ -507,9 +508,9 @@ async function getDemoStories(): Promise<Story[]> {
 function getLanguageInstruction(language: string): string {
   switch (language) {
     case "hindi":
-      return "Write the story entirely in Hindi (Devanagari script). Use simple, expressive Hindi storytelling style.";
+      return "CRITICAL: The story TITLE, story DESCRIPTION, and all scene TEXT must be written ONLY in Hindi using Devanagari script. Do NOT use English for story content. Only provide the imagePrompt in English.";
     case "gujarati":
-      return "Write the story entirely in Gujarati (Gujarati script). Use traditional Gujarati storytelling style.";
+      return "CRITICAL: The story TITLE, story DESCRIPTION, and all scene TEXT must be written ONLY in Gujarati using Gujarati script. Do NOT use English for story content. Only provide the imagePrompt in English.";
     default:
       return "Write the story in English.";
   }
@@ -746,6 +747,186 @@ const DEMO_TRANSLATIONS: Record<string, Record<string, any>> = {
         { sceneNumber: 3, title: "सच्ची हिम्मत", text: "सिपाही ने टेबल लैंप की रोशनी का इस्तेमाल किया और अंधेरे को भगा दिया। उसकी हिम्मत उसके कद से कहीं बड़ी थी।" },
         { sceneNumber: 4, title: "सुबह का सूरज", text: "जैसे ही सूरज उगा, सिपाही अपनी जगह पर लौट आया। वह खुश था कि उसका दोस्त चैन से सो सका। वफादारी ही सबसे बड़ी ढाल है।" }
       ]
+    },
+    "demo-13": { 
+      title: "दो दोस्त और तूफान", 
+      description: "हिमालय में एक खतरनाक तूफान के दौरान रोहन और अमन दोस्ती का सच्चा अर्थ सीखते हैं।",
+      scenes: [
+        { sceneNumber: 1, title: "ऊंचा मैदान", text: "रोहन और अमन हिमालय के ऊंचे मैदानों में भेड़ें चरा रहे थे। आसमान एक नीलम की तरह नीला था।" },
+        { sceneNumber: 2, title: "काले बादल", text: "अचानक अंधेरा छा गया। कोयले की तरह काले बादलों ने चोटियों को ढक लिया और बर्फीली हवा चलने लगी।" },
+        { sceneNumber: 3, title: "गुफा का सहारा", text: "रोहन का पैर गीली चट्टान पर फिसल गया, लेकिन अमन ने उसे पकड़ लिया। वे एक छोटी गुफा में छिप गए।" },
+        { sceneNumber: 4, title: "नया सवेरा", text: "सुबह का सूरज सुनहरा और गर्म था। वे एक साथ बच गए थे और उनकी दोस्ती अब पहाड़ों की तरह मजबूत थी।" }
+      ]
+    },
+    "demo-14": { 
+      title: "आखिरी सेब बांटना", 
+      description: "कठिन समय में, दो प्रतिद्वंद्वी साझा करने की खुशी और दोस्ती की ताकत को पहचानते हैं।",
+      scenes: [
+        { sceneNumber: 1, title: "सूखी धरती", text: "लंबे सूखे ने नदी को सुखा दिया था। सैम और जैक दोनों खाने के लिए कुछ ढूंढ रहे थे।" },
+        { sceneNumber: 2, title: "खोज", text: "दोनों ने एक साथ एक छोटे से सूखे पेड़ के नीचे एक चमकता हुआ लाल सेब देखा।" },
+        { sceneNumber: 3, title: "हिस्सेदारी", text: "लड़ने के बजाय, सैम ने चाकू लिया और सेब के बिल्कुल दो हिस्से किए। उसने बड़ा हिस्सा जैक को दे दिया।" },
+        { sceneNumber: 4, title: "नया दोस्त", text: "जैसे ही उन्होंने मिलकर खाया, बारिश की पहली बूंद गिरी। सेब बांटना उस दोस्ती की शुरुआत थी जो जीवन भर चली।" }
+      ]
+    },
+    "demo-17": { 
+      title: "कुकी जार का रहस्य", 
+      description: "युवा जासूस मिलो अपने आवर्धक लेंस का उपयोग करके गायब कुकीज़ के मामले को सुलझाता है।",
+      scenes: [
+        { sceneNumber: 1, title: "खाली जार", text: "जार खाली था। मिलो को कुकीज़ बहुत पसंद थीं, लेकिन लगता है किसी और ने उन्हें चट कर दिया था।" },
+        { sceneNumber: 2, title: "जासूसी", text: "अपने लेंस के साथ, उसे फर्श पर एक लंबी नीली बिल्ली का बाल मिला। मिलो समझ गया कि यह किसका काम है।" },
+        { sceneNumber: 3, title: "संदिग्ध", text: "व्हिस्कर्स बिल्ली सोफे के नीचे सो रही थी। उसकी नाक पर थोड़ी सी फ्रॉस्टिंग लगी हुई थी।" },
+        { sceneNumber: 4, title: "साझा करना", text: "नाराज होने के बजाय, मिलो ने उसके साथ दूध साझा किया।" }
+      ]
+    },
+    "demo-18": { 
+      title: "उड़ने वाला कार्डबोर्ड बॉक्स", 
+      description: "एक बच्चे की कल्पना एक साधारण कार्डबोर्ड बॉक्स को अंतरिक्ष यान में बदल देती है।",
+      scenes: [
+        { sceneNumber: 1, title: "लांच पैड", text: "लियो को एक बड़ा बॉक्स मिला। यह सिर्फ बॉक्स नहीं, बल्कि गैलेक्सी का सबसे तेज रॉकेट था!" },
+        { sceneNumber: 2, title: "तारों के बीच", text: "ज़ूम! वह सोफे-पहाड़ों और लैंप-तारों को पार कर किचन-ग्रह की ओर बढ़ने लगा।" },
+        { sceneNumber: 3, title: "एलियन मिलन", text: "वहां उसे एक दोस्ताना एलियन (उसकी बिल्ली) मिली, जो अपना अंतरिक्ष-दूध साझा करना चाहती थी।" },
+        { sceneNumber: 4, title: "घर वापसी", text: "लियो ने अपना यान सुरक्षित उतारा, अगले रोमांच के लिए तैयार।" }
+      ]
+    },
+    "demo-21": { 
+      title: "चाँद की नाइट लाइट", 
+      description: "एक छोटी लड़की चाँद से रुकने के लिए कहती है ताकि वह रात में अकेला महसूस न करे।",
+      scenes: [
+        { sceneNumber: 1, title: "अंधेरे का डर", text: "लिली को दीवार पर परछाइयों से डर लगता था। उसने चाँद से कहा—हटना मत।" },
+        { sceneNumber: 2, title: "चाँद का वादा", text: "चाँद ने चांदी जैसी रोशनी भेजी जिससे लिली का खिलौना एक वफादार रक्षक बन गया।" },
+        { sceneNumber: 3, title: "सपनों का द्वार", text: "उसी रोशनी के साथ लिली मीठे सपनों की दुनिया में खो गई।" },
+        { sceneNumber: 4, title: "सुबह की धूप", text: "वह सोकर उठी और जान गई कि उजाला हमेशा साथ होता है।" }
+      ]
+    },
+    "demo-22": { 
+      title: "तारों वाली भेड़ें गिनना", 
+      description: "गहरी और शांतिपूर्ण नींद में जाने के लिए जादुई तारों वाली भेड़ों की गिनती करें।",
+      scenes: [
+        { sceneNumber: 1, title: "पहली भेड़", text: "सपनों की घाटी में, पहली भेड़ ने चाँद के ऊपर से छलांग लगाई। वह रुई की तरह नरम थी।" },
+        { sceneNumber: 2, title: "दो और तीन", text: "वे सिर्फ भेड़ें नहीं, बल्कि नींद की रखवाली करने वाली सखियां थीं जो शांति लाती थीं।" },
+        { sceneNumber: 3, title: "अंतिम गिनती", text: "दसवीं भेड़ के कूदते ही आँखें भारी होने लगीं।" },
+        { sceneNumber: 4, title: "गहरा सपना", text: "गिनती खत्म हुई और सपनों का सफर शुरू हो गया।" }
+      ]
+    },
+    "demo-25": { 
+      title: "ईमानदार लकड़हारा", 
+      description: "गरीब लकड़हारे को उसकी ईमानदारी के लिए नदी की परी ने पुरस्कृत किया।",
+      scenes: [
+        { sceneNumber: 1, title: "खोई हुई कुल्हाड़ी", text: "एक गरीब लकड़हारा नदी किनारे लकड़ी काट रहा था। अचानक उसकी कुल्हाड़ी गहरी नदी में गिर गई।" },
+        { sceneNumber: 2, title: "परी का आना", text: "नदी में से एक सुनहरी परी निकली। उसने एक सोने की कुल्हाड़ी दिखाई, पर लकड़हारे ने कहा—यह मेरी नहीं है।" },
+        { sceneNumber: 3, title: "ईमानदारी की जीत", text: "आखिर में जब परी ने लोहे की कुल्हाड़ी निकाली, तो वह खुश हो गया। परी उसकी ईमानदारी देख बहुत खुश हुई।" },
+        { sceneNumber: 4, title: "इनाम", text: "परी ने उसे तीनों कुल्हाड़ियाँ भेंट में दे दीं। ईमानदारी ही सबसे बड़ा धन है।" }
+      ]
+    },
+    "demo-26": { 
+      title: "भेड़िया और लड़का", 
+      description: "सच बोलने के महत्व और भरोसे को बनाए रखने के बारे में एक महान कहानी।",
+      scenes: [
+        { sceneNumber: 1, title: "मजाक", text: "एक लड़का भेड़ें चराता था। उसने मजे के लिए चिल्लाया—भेड़िया आया! भेड़िया आया!" },
+        { sceneNumber: 2, title: "लोग आए", text: "गांव वाले मदद के लिए दौड़े, पर वहां कोई भेड़िया नहीं था। लड़का उन पर हंसने लगा।" },
+        { sceneNumber: 3, title: "असली डर", text: "एक दिन सचमुच भेड़िया आ गया। लड़का चिल्लाया, पर कोई नहीं आया क्योंकि सबको लगा कि वह फिर झूठ बोल रहा है।" },
+        { sceneNumber: 4, title: "सीख", text: "झूठ बोलने वाले पर कोई विश्वास नहीं करता, चाहे वह सच ही क्यों न बोल रहा हो।" }
+      ]
+    },
+    "demo-29": { 
+      title: "चालाक खरगोश", 
+      description: "जब एक चालाक खरगोश ने एक खूंखार शेर को मात दी, तो बुद्धिमत्ता की जीत हुई।",
+      scenes: [
+        { sceneNumber: 1, title: "डरावना शेर", text: "जंगल में एक घमंडी शेर रहता था जो सबको परेशान करता था। चालाक खरगोश की बारी आई।" },
+        { sceneNumber: 2, title: "देरी का बहाना", text: "खरगोश जानबूझकर देर से पहुंचा। उसने कहा—महाराज, रास्ते में मुझे एक और शेर मिला था!" },
+        { sceneNumber: 3, title: "कुएं का सच", text: "खरगोश शेर को एक गहरे कुएं के पास ले गया। शेर ने पानी में अपनी ही परछाई देखी और उसे दुश्मन समझा।" },
+        { sceneNumber: 4, title: "विजया", text: "शेर कुएं में कूद गया और खरगोश ने अपनी अक्ल से सबकी जान बचा ली।" }
+      ]
+    },
+    "demo-30": { 
+      title: "बहादुर शेर का बच्चा", 
+      description: "एक छोटा शेर सीखता है कि साहस डर की कमी नहीं, बल्कि अपनों के लिए खड़ा होना है।",
+      scenes: [
+        { sceneNumber: 1, title: "छोटा पंजे", text: "सिम्बा एक नन्हा शेर था जो दहाड़ना सीख रहा था। उसे ऊंचे पत्थरों से डर लगता था।" },
+        { sceneNumber: 2, title: "मुसीबत", text: "एक दिन एक लोमड़ी गड्ढे में गिर गई। सिम्बा को डर लग रहा था, पर उसने मदद करने की सोची।" },
+        { sceneNumber: 3, title: "साहस", text: "सिम्बा ने अपनी पूरी ताकत लगाई और लोमड़ी को बाहर निकाला। उसने अपना डर जीत लिया था।" },
+        { sceneNumber: 4, title: "जंगल का राजा", text: "सबने उसकी बहादुरी की तारीफ की। सच्चा राजा वही है जो दूसरों की रक्षा करता है।" }
+      ]
+    },
+    "demo-33": { 
+      title: "राजकुमारी और बगीचा", 
+      description: "राजकुमारी एलिना को पता चलता है कि असली जादू नेक दिल और दूसरों की सेवा में है।",
+      scenes: [
+        { sceneNumber: 1, title: "मुरझाए फूल", text: "राजकुमारी का बगीचा सूख रहा था। कोई जादू काम नहीं कर रहा था।" },
+        { sceneNumber: 2, title: "सेवा", text: "एलिना ने फूलों को पानी दिया और उनकी देखभाल की। उसने देखा कि प्यार ही असली जादू है।" },
+        { sceneNumber: 3, title: "खिलखिलाहट", text: "जैसे ही उसने मुस्कुराहट के साथ सेवा की, फूल फिर से खिल उठे।" },
+        { sceneNumber: 4, title: "खुशी", text: "महल अब दुनिया का सबसे सुंदर स्थान बन गया था।" }
+      ]
+    },
+    "demo-34": { 
+      title: "राजकुमारी और मटर", 
+      description: "एक चरित्र का परीक्षण जो बीस गद्दों के नीचे एक मटर के दाने से राजकुमारी की पहचान करता है।",
+      scenes: [
+        { sceneNumber: 1, title: "तूफान", text: "आधी रात को एक लड़की महल के दरवाजे पर आई। उसने दावा किया कि वह एक राजकुमारी है।" },
+        { sceneNumber: 2, title: "बिस्तर", text: "रानी ने उसकी परीक्षा ली। बीस गद्दों के नीचे एक छोटा मटर का दाना रख दिया।" },
+        { sceneNumber: 3, title: "बेचैनी", text: "रात भर लड़की को नींद नहीं आई क्योंकि उसे वह दाना चुभ रहा था।" },
+        { sceneNumber: 4, title: "पहचान", text: "इतनी कोमल त्वचा सिर्फ एक असली राजकुमारी की ही हो सकती थी। सबकी खुशी का ठिकाना न रहा।" }
+      ]
+    },
+    "demo-37": { 
+      title: "गणेश की बुद्धिमत्ता", 
+      description: "कैसे गणेश जी ने सिखाया कि माता-पिता की सेवा ही पूरी दुनिया की परिक्रमा है।",
+      scenes: [
+        { sceneNumber: 1, title: "दौड़", text: "शिव और पार्वती ने एक प्रतियोगिता रखी। जो पूरी दुनिया का चक्कर लगाकर पहले आएगा, उसे इनाम मिलेगा।" },
+        { sceneNumber: 2, title: "कार्तिकेय की उड़ान", text: "कार्तिकेय अपने मोर पर सवार होकर तेजी से निकल पड़े।" },
+        { sceneNumber: 3, title: "अनोखा रास्ता", text: "गणेश जी ने हाथ जोड़कर अपने माता-पिता के चारों ओर चक्कर लगाया।" },
+        { sceneNumber: 4, title: "पुरस्कार", text: "उन्होंने कहा—मेरे अभिभावक ही मेरा संसार हैं। शिव-पार्वती ने उन्हें विजेता घोषित किया।" }
+      ]
+    },
+    "demo-38": { 
+      title: "कृष्ण की मुरली", 
+      description: "कृष्ण की बांसुरी की धुन पूरे गौरव और प्रकृति को मंत्रमुग्ध कर देती है।",
+      scenes: [
+        { sceneNumber: 1, title: "यमुना किनारे", text: "मधुबन में कृष्ण ने अपनी बांसुरी बजाना शुरू किया। हवाएँ थम गईं।" },
+        { sceneNumber: 2, title: "पेड़ और मोर", text: "उनकी धुन सुनकर पेड़ नाचने लगे और मोर पंख फैलाकर झूम उठे।" },
+        { sceneNumber: 3, title: "गौ सेवा", text: "गायें घास चरना भूलकर उनकी ओर खींची चली आईं।" },
+        { sceneNumber: 4, title: "शांति", text: "पूरी गोकुल नगरी प्रेम और शांति के संगीत में डूब गई।" }
+      ]
+    },
+    "demo-41": { 
+      title: "अभिमानी मोर", 
+      description: "एक सुंदर पक्षी सीखता है कि बाहरी चमक से ज्यादा व्यवहार और चरित्र मायने रखता है।",
+      scenes: [
+        { sceneNumber: 1, title: "सुंदर पंख", text: "एक मोर को अपने रंग-बिरंगे पंखों पर बहुत घमंड था। वह बगुले का मजाक उड़ाता था।" },
+        { sceneNumber: 2, title: "नीरस बगुला", text: "बगुले ने कहा—मेरे पंख साधारण हैं, पर मैं आसमान में ऊँचा उड़ सकता हूँ।" },
+        { sceneNumber: 3, title: "बारिश", text: "बारिश में मोर के पंख गीले हो गए और वह उड़ नहीं पाया, पर बगुला खुशी से उड़ गया।" },
+        { sceneNumber: 4, title: "सीख", text: "किसी की उपयोगिता उसकी सुंदरता से ज्यादा महत्वपूर्ण होती है।" }
+      ]
+    },
+    "demo-42": { 
+      title: "बाज की ऊंची उड़ान", 
+      description: "आसमान की ऊंचाई से दुनिया को देखने का नज़रिया और घोंसला छोड़ने की हिम्मत।",
+      scenes: [
+        { sceneNumber: 1, title: "चट्टान", text: "एक नन्हा बाज अपने घोंसले से बाहर झांक रहा था। वह उड़ने से डरता था।" },
+        { sceneNumber: 2, title: "धक्का", text: "उसकी माँ ने उसे धीरे से धक्का दिया। गिरने के डर से उसने अपने पंख फैलाए।" },
+        { sceneNumber: 3, title: "उड़ान", text: "वह हवा के साथ बातें करने लगा। अब पूरी नीली दुनिया उसके चरणों में थी।" },
+        { sceneNumber: 4, title: "आज़ादी", text: "हिम्मत करने पर ही हमें आसमान की ऊँचाइयों का पता चलता है।" }
+      ]
+    },
+    "demo-45": { 
+      title: "जादुई जंगल का राज", 
+      description: "एक ऐसी जगह जहाँ प्रकृति खुद कहानियाँ सुनाती है और हर पत्ता चमकता है।",
+      scenes: [
+        { sceneNumber: 1, title: "प्रवेश", text: "आर्यन ने एक गुप्त दरवाजे से जंगल में प्रवेश किया। वहां के पत्ते सोने की तरह चमक रहे थे।" },
+        { sceneNumber: 2, title: "बातें करते पेड़", text: "पुराने बरगद के पेड़ ने उससे कहा—सिर्फ साफ दिल वाले ही यहाँ आ सकते हैं।" },
+        { sceneNumber: 3, title: "तितलियाँ", text: "रंगीन तितलियों ने उसे एक रास्ता दिखाया जहाँ एक चमकता हुआ झरना था।" },
+        { sceneNumber: 4, title: "विदाई", text: "जंगल से निकलते ही उसे लगा कि वह एक बहुत सुंदर सपने से जागा है।" }
+      ]
+    },
+    "demo-46": { 
+      title: "गाती हुई नदी", 
+      description: "अगर आप ध्यान से सुनें, तो नदी का पानी अतीत और भविष्य की बातें सुनाता है।",
+      scenes: [
+        { sceneNumber: 1, title: "पहाड़ की चोटी", text: "नदी एक ऊँचे पहाड़ से शुरू हुई। वह कल-कल करती हुई नीचे आ रही थी।" },
+        { sceneNumber: 2, title: "संगीत", text: "जब वह पत्थरों से टकराती, तो एक प्यारा सा संगीत पैदा होता था।" },
+        { sceneNumber: 3, title: "खेत", text: "उसने प्यासे खेतों को पानी दिया और किसान खुश हो गए।" },
+        { sceneNumber: 4, title: "समंदर", text: "अंत में नदी समंदर से जा मिली, यह बताकर कि यात्रा कितनी भी कठिन हो, मंजिल जरूर मिलती है।" }
+      ]
     }
   },
   gujarati: {
@@ -858,6 +1039,186 @@ const DEMO_TRANSLATIONS: Record<string, Record<string, any>> = {
         { sceneNumber: 3, title: "સાચી હિંમત", text: "નાનકડા સૈનિકે નાઈટ-લેમ્પના પ્રકાશનો ઉપયોગ કરીને અંધારાને ભગાડી દીધો. હિંમત આકારથી નહીં પણ હૃદયથી મપાય છે." },
         { sceneNumber: 4, title: "સવારનો સૂરજ", text: "સવારનો સૂરજ ઉગતા જ પડછાયા ગાયબ થઈ ગયા. સૈનિક રાજી થયો કે તેનો મિત્ર નિરાંતે સૂઈ શક્યો. વફાદારી જ સૌથી મોટી ઢાલ છે." }
       ]
+    },
+    "demo-13": { 
+      title: "બે મિત્રો અને તોફાન", 
+      description: "હિમાલયમાં ભીષણ તોફાન વચ્ચે રોહન અને અમન મિત્રતાનો સાચો અર્થ સમજે છે.",
+      scenes: [
+        { sceneNumber: 1, title: "ઊંચું મેદાન", text: "રોહન અને અમન હિમાલયના ઊંચા મેદાનમાં ઘેટાં ચરાવી રહ્યા હતા. આકાશ નીલમ જેવું બ્લૂ હતું." },
+        { sceneNumber: 2, title: "કાળા વાદળો", text: "અચાનક આકાશમાં કાળા વાદળો છવાઈ ગયા અને જોરદાર પવન ફૂંકાવા લાગ્યો. વાતાવરણ ડરામણું બની ગયું." },
+        { sceneNumber: 3, title: "ગુફા", text: "રોહનનો પગ લપસ્યો પણ અમને તેને બચાવી લીધો. બંને એક નાની ગુફામાં ભરાઈ ગયા અને એકાબીજાને હિંમત આપી." },
+        { sceneNumber: 4, title: "સૂર્યોદય", text: "સવારનો સૂરજ ઉગ્યો ત્યારે તેઓ સુરક્ષિત હતા. તેમની મિત્રતા પહાડો જેવી મજબૂત બની ગઈ." }
+      ]
+    },
+    "demo-14": { 
+      title: "છેલ્લું સફરજન વહેંચવું", 
+      description: "દુષ્કાળના સમયમાં, બે હરીફો વહેંચવાની ખુશી અને મિત્રતાની શક્તિ શોધે છે.",
+      scenes: [
+        { sceneNumber: 1, title: "સૂકી જમીન", text: "લાંબા દુષ્કાળને કારણે નદી સુકાઈ ગઈ હતી અને ખાવાનું મળવું મુશ્કેલ હતું. સેમ અને જેક કંઈક ખાવાનું શોધી રહ્યા હતા." },
+        { sceneNumber: 2, title: "શોધ", text: "તેમને એક સૂકા મેદાનમાં એક વૃક્ષ નીચે એક ચમકતું લાલ સફરજન મળ્યું." },
+        { sceneNumber: 3, title: "વહેંચણી", text: "લડવાને બદલે સેમે સફરજનના બે સરખા ભાગ કર્યા અને મોટો ભાગ જેકને આપ્યો. જાદુ તો ત્યારે થયો જ્યારે બંનેના પેટ ભરાઈ ગયા." },
+        { sceneNumber: 4, title: "નવો મિત્ર", text: "વરસાદ શરૂ થયો અને સફરજન વહેંચવાથી તેમની કાયમી મિત્રતા શરૂ થઈ. વહેંચવામાં જ અસલી સુખ છે." }
+      ]
+    },
+    "demo-17": { 
+      title: "બિસ્કિટના જારનું રહસ્ય", 
+      description: "નાનો જાસૂસ મિલો તેના મેગ્નિફાઈંગ ગ્લાસની મદદથી ગુમ થયેલા બિસ્કિટનું રહસ્ય ઉકેલે છે.",
+      scenes: [
+        { sceneNumber: 1, title: "ખાલી જાર", text: "બિસ્કિટનું જાર ખાલી હતું. મિલોને બહુ નવાઈ લાગી કે આ બિસ્કિટ ગયા ક્યાં?" },
+        { sceneNumber: 2, title: "તપાસ", text: "ચશ્માથી જોતા તેને જમીન પર બિલાડીના વાદળી વાળ મળ્યા. તે સમજી ગયો કે આ કોનું કામ છે." },
+        { sceneNumber: 3, title: "આરોપી", text: "વ્હિસ્કર્સ બિલાડી સોફા નીચે સૂતી હતી, તેની નાક પર બિસ્કિટની કણીઓ ચોંટી હતી." },
+        { sceneNumber: 4, title: "મિત્રતા", text: "દરેક વસ્તુ વહેંચવી જોઈએ, મિલોએ તેને માફ કર્યો અને સાથે દૂધ પીધું." }
+      ]
+    },
+    "demo-18": { 
+      title: "ઉડતું કાર્ડબોર્ડ બોક્સ", 
+      description: "એક બાળકની કલ્પના શક્તિ એક સાદા બોક્સને આકાશમાં ઉડતા વિમાનમાં બદલી નાખે છે.",
+      scenes: [
+        { sceneNumber: 1, title: "ઉડ્ડયન", text: "લિયોને એક મોટું બોક્સ મળ્યું. તે માત્ર બોક્સ નહોતું, પણ દુનિયાનું સૌથી ઝડપી વિમાન હતું!" },
+        { sceneNumber: 2, title: "તારામંડળ", text: "તે ઝૂમ કરીને લિવિંગ રૂમના પહાડો અને તારાઓ વચ્ચેથી ઉડવા લાગ્યો." },
+        { sceneNumber: 3, title: "મુલાકાત", text: "ત્યાં તેને તેની બિલાડી મળી જે એક વિદેશી ગ્રહની રહેવાસી લાગતી હતી." },
+        { sceneNumber: 4, title: "પરત", text: "સફર પૂરી કરી લિયો તેના ઓરડામાં પધારી ગયો, નવા સાહસની રાહ જોતો." }
+      ]
+    },
+    "demo-21": { 
+      title: "ચાંદની નાઈટ લાઈટ", 
+      description: "એક નાની છોકરી ચાંદામામાને રોકાવા કહે છે જેથી તેને રાત્રે ડર ન લાગે.",
+      scenes: [
+        { sceneNumber: 1, title: "અંધારાનો ડર", text: "લીલીને ભૂતિયા પડછાયાઓનો ડર લાગતો હતો. તેણે ચાંદાને વિનંતી કરી—મને છોડીને ના જશો." },
+        { sceneNumber: 2, title: "વચન", text: "ચાંદાએ પોતાની ચાંદની મોકલી જે લીલીના રૂમમાં અજવાળું પાથરી દીધું." },
+        { sceneNumber: 3, title: "મીઠાં સ્વપ્ન", text: "હવે તેને જરાય ડર નહોતો અને તે ઘસઘસાટ ઊંઘી ગઈ." },
+        { sceneNumber: 4, title: "સવાર", text: "જ્યારે તે જાગી, ત્યારે તેને સમજાયું કે અજવાળું તો હંમેશા આપણી સાથે જ છે." }
+      ]
+    },
+    "demo-22": { 
+      title: "તારલા જેવી ઘેટાં ગણવી", 
+      description: "ઊંડી અને શાંત ઊંઘ મેળવવા માટે જાદુઈ ઘેટાંની ગણતરી કરો.",
+      scenes: [
+        { sceneNumber: 1, title: "પહેલી ઘેટાં", text: "સપનાની ખીણમાં, પહેલી ઘેટાંએ ચંદ્ર ઉપરથી છલાંગ લગાવી. તે રૂ જેવી નરમ હતી." },
+        { sceneNumber: 2, title: "બે અને ત્રણ", text: "તેઓ માત્ર ઘેટાં નહોતી, પણ ઊંઘની રખેવાળી કરતી સખીઓ હતી જે શાંતિ લાવતી હતી." },
+        { sceneNumber: 3, title: "છેલ્લી ગણતરી", text: "દસમી ઘેટાંના કૂદતા જ આંખો ભારે થવા લાગી અને ઊંઘ આવવા લાગી." },
+        { sceneNumber: 4, title: "ઊંઘ અને સપના", text: "ગણતરી પૂરી થઈ અને સપનાની મુસાફરી શરૂ થઈ ગઈ." }
+      ]
+    },
+    "demo-25": { 
+      title: "પ્રામાણિક કઠિયારો", 
+      description: "એક ગરીબ કઠિયારાની સચ્ચાઈ જોઈને જળ પરી તેને સોના અને ચાંદીની કુહાડી ઇનામમાં આપે છે.",
+      scenes: [
+        { sceneNumber: 1, title: "ખોવાયેલી કુહાડી", text: "નદી કાંઠે લાકડા કાપતા કઠિયારાની લોખંડની કુહાડી અચાનક નદીમાં પડી ગઈ. તે બિચારો રડવા લાગ્યો." },
+        { sceneNumber: 2, title: "પરીની કસોટી", text: "નદીમાંથી એક પરી બહાર આવી અને તેને સોનાની કુહાડી બતાવી. કઠિયારાએ કહ્યું, 'ના, આ મારી નથી.'" },
+        { sceneNumber: 3, title: "સાચું બોલવું", text: "જ્યારે પરીએ લોખંડની કુહાડી કાઢી, ત્યારે તે ખુશ થઈ ગયો. તેની સત્યતા જોઈ પરી બહુ રાજી થઈ." },
+        { sceneNumber: 4, title: "સત્યનું ઇનામ", text: "પરીએ તેને ત્રણેય કુહાડીઓ ભેટમાં આપી. પ્રામાણિકતા જ શ્રેષ્ઠ નીતિ છે." }
+      ]
+    },
+    "demo-26": { 
+      title: "છોકરો અને વરુ", 
+      description: "જૂઠું બોલવાનું પરિણામ શું આવે છે એ વિશેની એક શિખામણ આપે તેવી વાર્તા.",
+      scenes: [
+        { sceneNumber: 1, title: "મજાક", text: "એક છોકરો રોજ ઘેટાં ચરાવવા જતો. તેણે મજાક કરવા બૂમ પાડી—વરુ આવ્યું! વરુ આવ્યું!" },
+        { sceneNumber: 2, title: "ગામવાસીઓ", text: "લોકો દોડીને આવ્યા પણ ત્યાં કોઈ વરુ નહોતું. છોકરો હસવા લાગ્યો અને બધા ગુસ્સે થયા." },
+        { sceneNumber: 3, title: "સાચું વરુ", text: "એક દિવસ ખરેખર વરુ આવ્યું. છોકરો બહુ રડ્યો પણ કોઈ ન આવ્યું કારણ કે બધાને લાગ્યું તે મજાક કરે છે." },
+        { sceneNumber: 4, title: "બોધ", text: "જૂઠું બોલનાર પર કોઈ વિશ્વાસ નથી કરતું, ભલે તે સાચું બોલતો હોય." }
+      ]
+    },
+    "demo-29": { 
+      title: "ચતુર સસલું", 
+      description: "મોટા કદના સિંહને હરાવવા માટે સસલાએ કેવી રીતે પોતાની બુદ્ધિ વાપરી એની વાર્તા.",
+      scenes: [
+        { sceneNumber: 1, title: "ડરામણો સિંહ", text: "જંગલમાં એક સિંહ રોજ પશુઓને ખાઈ જતો. બધા બહુ ડરેલા રહેતા હતા." },
+        { sceneNumber: 2, title: "સસલાનો વારો", text: "સસલાએ કહ્યું—મહારાજ, રસ્તામાં બીજો સિંહ મળ્યો હતો, તેણે મને રોક્યો હતો!" },
+        { sceneNumber: 3, title: "કૂવો", text: "સસલું સિંહને કૂવા પાસે લઈ ગયું. સિંહે અંદર જોયું અને પોતાનું પ્રતિબિંબ જોયું." },
+        { sceneNumber: 4, title: "જીત", text: "સિંહ કૂવામાં કૂદી પડ્યો અને સસલાએ પોતાની હોશિયારીથી બધાની જાન બચાવી." }
+      ]
+    },
+    "demo-30": { 
+      title: "બહાદુર સિંહનું બચ્ચું", 
+      description: "હિંમત એટલે ડરનું ન હોવું એ નહીં, પણ ડર છતાં સાચું કામ કરવું.",
+      scenes: [
+        { sceneNumber: 1, title: "નાના પંજા", text: "નાનકડું સિંહનું બચ્ચું ડરપોક હતું. તેને નાની વસ્તુઓથી પણ ડર લાગતો હતો." },
+        { sceneNumber: 2, title: "મિત્રની મદદ", text: "એક મિત્ર ખાડામાં ફસાઈ ગયો હતો. સિંહના બચ્ચાએ પોતાનો ડર છોડીને તેને મદદ કરી." },
+        { sceneNumber: 3, title: "હિંમત", text: "તેણે બહુ મહેનત કરી અને પથ્થર ખસેડ્યા. તેને પોતાની અંદર નવી હિંમત મળી." },
+        { sceneNumber: 4, title: "નવો રાજા", text: "બધાએ તેના વખાણ કર્યા. હિંમત પાઠ શીખવી જાય છે." }
+      ]
+    },
+    "demo-33": { 
+      title: "રાજકુમારી અને બગીચો", 
+      description: "રાજકુમારી એલિના શીખે છે કે સાચી સુંદરતા દયાળુ હૃદયમાં રહેલી છે.",
+      scenes: [
+        { sceneNumber: 1, title: "કરમાયેલા ફૂલ", text: "રાજકુમારીનો બગીચો સુકાઈ ગયો હતો. તે બહુ ઉદાસ હતી." },
+        { sceneNumber: 2, title: "પ્રેમ અને પાણી", text: "તેણે પોતે ફૂલોની સેવા કરી અને પ્રેમ આપ્યો. તેણે ગાઈને તેમને ખુશ કર્યા." },
+        { sceneNumber: 3, title: "જાદુ", text: "પ્રેમ આપતા જ ફૂલો ફરીથી મહેકવા લાગ્યા. આ જ સાચો જાદુ હતો." },
+        { sceneNumber: 4, title: "સુંદરતા", text: "બગીચો ફરી સુંદર બની ગયો અને આખું મહેલ ખુશીથી ભરાઈ ગયું." }
+      ]
+    },
+    "demo-34": { 
+      title: "રાજકુમારી અને વટાણા", 
+      description: "એક નાનકડા વટાણાથી કેવી રીતે સાચી રાજકુમારીની ઓળખ થઈ તેની કલાસિક વાર્તા.",
+      scenes: [
+        { sceneNumber: 1, title: "તોફાન", text: "એક રાત્રે તોફાનમાં એક છોકરી મહેલ આવી. તે ભીંજાયેલી હતી." },
+        { sceneNumber: 2, title: "પથારી", text: "રાણીએ તેની નીચે એક નાનકડો વટાણો મૂક્યો અને ઉપર વીસ ગાદલા નાખ્યા." },
+        { sceneNumber: 3, title: "જાગરણ", text: "છોકરી આખી રાત સૂઈ ન શકી કારણ કે તેને કંઈક ખૂંચતું હતું." },
+        { sceneNumber: 4, title: "સાચી રાજકુમારી", text: "માત્ર સાચી રાજકુમારી જ આટલી કોમળ હોઈ શકે. રાજા-રાણી ખુશ થઈ ગયા." }
+      ]
+    },
+    "demo-37": { 
+      title: "ગણેશની બુદ્ધિ", 
+      description: "માતા-પિતાની પ્રદક્ષિણા એટલે આખી પૃથ્વીની ભક્તિ, એવી ગણપતિદાદાની વાત.",
+      scenes: [
+        { sceneNumber: 1, title: "સ્પર્ધા", text: "શિવ અને પાર્વતીએ તેમના પુત્રો માટે એક સ્પર્ધા રાખી. જે પૃથ્વીની સૌથી પહેલા પ્રદક્ષિણા કરશે, તે આ જાદુઈ ફળ જીતશે!" },
+        { sceneNumber: 2, title: "કાર્તિકેયની ઉડાન", text: "કાર્તિકેય તેમના મોર પર બેસીને સમુદ્રો, પર્વતો અને જમીનોની ઝડપથી પ્રદક્ષિણા કરવા નીકળી પડ્યા." },
+        { sceneNumber: 3, title: "સાચી દુનિયા", text: "ગણેશજી પાસે મોર નહોતો. તેમની પાસે એક નાનકડો ઉંદર હતો. તેમણે તેમના માતા-પિતાની આસપાસ ત્રણ વાર પ્રદક્ષિણા કરી." },
+        { sceneNumber: 4, title: "પ્રેમનું ફળ", text: "'મારા માતા-પિતા જ મારી દુનિયા છે,' તેમણે કહ્યું. શિવજી હસ્યા અને તેમને ફળ આપ્યું. બુદ્ધિ એ ઝડપ કરતાં મોટી છે." }
+      ]
+    },
+    "demo-38": { 
+      title: "કૃષ્ણની વાંસળી", 
+      description: "કૃષ્ણ ભગવાનની વાંસળીનો સુર આખી દુનિયા અને પશુ-પંખીઓને ઘેલું લગાડે છે.",
+      scenes: [
+        { sceneNumber: 1, title: "વાંસળીનો સુર", text: "કનૈયાએ યમુના કાંઠે વાંસળી વગાડવાનું શરૂ કર્યું. પક્ષીઓ મૌન થઈ ગયા." },
+        { sceneNumber: 2, title: "ગાયો", text: "બધી ગાયો ઘાસ ખાવાનું ભૂલીને દોડી આવી. વાતાવરણમાં શાંતિ છવાઈ ગઈ." },
+        { sceneNumber: 3, title: "નૃત્ય", text: "વૃક્ષો પણ ડોલવા લાગ્યા અને ગોપીઓ નૃત્ય કરવા લાગી." },
+        { sceneNumber: 4, title: "પ્રેમ", text: "કૃષ્ણની વાંસળીમાં આખી સૃષ્ટિનો પ્રેમ વણાયેલો હતો." }
+      ]
+    },
+    "demo-41": { 
+      title: "અભિમાની મોર", 
+      description: "સુંદરતા કરતા આપણો સ્વભાવ વધુ મહત્વનો છે એ શીખ આપતી વાર્તા.",
+      scenes: [
+        { sceneNumber: 1, title: "ઘમંડ", text: "એક મોરને તેના પીંછા પર બહુ ગર્વ હતો. તે બગલાને નફરત કરતો હતો." },
+        { sceneNumber: 2, title: "ઉડાન", text: "બગલાએ કહ્યું—મારા પીંછા સાદા છે પણ હું ઊંચે ઉડી શકું છું, તું નહીં." },
+        { sceneNumber: 3, title: "વરસાદ", text: "વરસાદમાં મોર નાચી શક્યો પણ ઉડી ન શક્યો. બગલો તો આકાશમાં જતો રહ્યો." },
+        { sceneNumber: 4, title: "સમજણ", text: "દેખાવ કરતા ગુણ વધુ જરૂરી છે. મોરનો ઘમંડ તૂટી ગયો." }
+      ]
+    },
+    "demo-42": { 
+      title: "બાજની ઊંચી ઉડાન", 
+      description: "આકાશની ઊંચાઈએથી દુનિયા જોવાની દ્રષ્ટિ અને હિંમત કેળવવાની વાત.",
+      scenes: [
+        { sceneNumber: 1, title: "ઘોંસલો", text: "બાજનું બચ્ચું ઉડતા પહેલા બહુ ડરતું હતું. તે પથ્થર પકડી રાખતું હતું." },
+        { sceneNumber: 2, title: "પ્રોત્સાહન", text: "તેની માતાએ તેને આકાશમાં ધકેલ્યું. તે પડવા લાગ્યું પણ પછી તેણે પાંખો ફેલાવી." },
+        { sceneNumber: 3, title: "ઉડવું", text: "હવે તે આકાશનો રાજા હતો. તેને દુનિયા સુંદર લાગી." },
+        { sceneNumber: 4, title: "લક્ષ્ય", text: "જો આપણે પ્રયત્ન કરીએ તો આકાશ જેટલી ઊંચાઈ મેળવી શકીએ છીએ." }
+      ]
+    },
+    "demo-45": { 
+      title: "જાદુઈ જંગલ", 
+      description: "એવું જંગલ જ્યાં વૃક્ષો વાતો કરે છે અને પવિત્રતાનો જાદુ ચારેબાજુ ફેલાયેલો છે.",
+      scenes: [
+        { sceneNumber: 1, title: "પ્રવેશ", text: "જ્યારે આર્યન જંગલમાં ગયો, ત્યાંના ઝાડ પ્રકાશ આપતા હતા." },
+        { sceneNumber: 2, title: "મધુર અવાજ", text: "પવન ફૂંકાતા પાંદડાઓમાંથી મધુર સંગીત સંભળાતું હતું." },
+        { sceneNumber: 3, title: "શાંતિ", text: "ત્યાં કોઈ હિંસક પ્રાણી નહોતું, બધા પ્રેમથી સાથે રહેતા હતા." },
+        { sceneNumber: 4, title: "સ્વર્ગ", text: "આર્યનને લાગ્યું કે તે કોઈ સાક્ષાત્ જાદુઈ દુનિયામાં આવી ગયો છે." }
+      ]
+    },
+    "demo-46": { 
+      title: "ગાતી નદી", 
+      description: "જો તમે ધ્યાનથી સાંભળો તો નદીનું વહેતું પાણી તમને ભવિષ્યની વાતો સંભળાવશે.",
+      scenes: [
+        { sceneNumber: 1, title: "ઝરણું", text: "પહાડોમાંથી એક નાનકડું ઝરણું ગીતો ગાતું નીચે આવતું હતું." },
+        { sceneNumber: 2, title: "પથ્થરો", text: "પથ્થરો પર અફળાતી નદીનો અવાજ મધુર ઘંટડી જેવો લાગતો હતો." },
+        { sceneNumber: 3, title: "તરસ છિપાવવી", text: "બધા જંગલના પ્રાણીઓ ત્યાં પાણી પીવા આવતા. નદી મલકાતી હતી." },
+        { sceneNumber: 4, title: "સાગર", text: "અંતે નદી દરિયાને મળી ગઈ અને પોતાની મુસાફરી પૂરી કરી." }
+      ]
     }
   }
 };
@@ -868,6 +1229,32 @@ router.get("/demo-stories", async (req: Request, res: Response) => {
 
   if (lang === "english") {
     return res.json(stories);
+  }
+
+  // Use hardcoded translations if available
+  const translations = DEMO_TRANSLATIONS[lang];
+  if (translations) {
+    const translatedStories = stories.map((story: Story) => {
+      const trans = translations[story.id];
+      if (trans) {
+        return {
+          ...story,
+          title: trans.title,
+          description: trans.description,
+          language: lang,
+          scenes: story.scenes.map((scene: StoryScene) => {
+            const transScene = trans.scenes?.find((ts: any) => ts.sceneNumber === scene.sceneNumber);
+            return {
+              ...scene,
+              title: transScene?.title || scene.title,
+              text: transScene?.text || scene.text
+            };
+          })
+        };
+      }
+      return { ...story, language: lang };
+    });
+    return res.json(translatedStories);
   }
 
   try {
@@ -971,7 +1358,7 @@ ${isGame ? "CRITICAL: You MUST provide exactly 5 quiz questions based on the sto
           model: "gpt-4o",
           messages: [
             { role: "system", content: systemPrompt },
-            { role: "user", content: `Create a story about: ${prompt}. ${isGame ? "Include game choices in scenes and 5 questions at the end." : ""}\n\nFormat: { "title": "...", "scenes": [{ "sceneNumber": 1, "title": "...", "text": "...", "imagePrompt": "...", "choices": [] }], "quizQuestions": [] }` }
+            { role: "user", content: `Create a story about: ${prompt}. ${isGame ? "Include game choices in scenes and 5 questions at the end." : ""}\n\nIMPORTANT: Use ${language} for ALL story fields (title, text, description, choices). ONLY imagePrompt must be in English.\n\nFormat: { "title": "...", "scenes": [{ "sceneNumber": 1, "title": "...", "text": "...", "imagePrompt": "...", "choices": [] }], "quizQuestions": [] }` }
           ],
           response_format: { type: "json_object" }
         });
@@ -986,7 +1373,7 @@ ${isGame ? "CRITICAL: You MUST provide exactly 5 quiz questions based on the sto
     // 4. Free AI Fallback (Pollinations)
     try {
       console.log("🚀 Using Pollinations (FREE) fallback...");
-      const freePrompt = `${systemPrompt}\n\nUser Input: ${prompt}\n\nReturn EXACTLY a JSON object. No words outside JSON. No code blocks. Format: { "title": "...", "scenes": [{ "sceneNumber": 1, "title": "...", "text": "...", "imagePrompt": "...", "choices": [] }], "quizQuestions": [] }`;
+      const freePrompt = `${systemPrompt}\n\nUser Input: ${prompt}\n\nReturn EXACTLY a JSON object. No words outside JSON. No code blocks. IMPORTANT: Use ${language} for ALL story fields (title, text, description, choices). ONLY imagePrompt must be in English. Format: { "title": "...", "scenes": [{ "sceneNumber": 1, "title": "...", "text": "...", "imagePrompt": "...", "choices": [] }], "quizQuestions": [] }`;
       
       const response = await fetch("https://text.pollinations.ai/", {
         method: "POST",
@@ -1041,24 +1428,24 @@ router.post("/generate-story-image", async (req: Request, res: Response) => {
     const encodedPrompt = encodeURIComponent(fullPrompt);
     const imageUrl = `https://image.pollinations.ai/prompt/${encodedPrompt}?width=1024&height=1024&nologo=true&seed=${seed}&model=flux`;
 
-    // Fetch and buffer server-side to resolve client-side CORS and cross-origin issues
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 45000);
     try {
+      // Attempt to fetch and buffer server-side to resolve client-side CORS and cross-origin issues
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 15000); // 15s timeout for free tier
+      
       const imgResponse = await fetch(imageUrl, { signal: controller.signal });
       clearTimeout(timeout);
       
       if (imgResponse.ok) {
         const buffer = Buffer.from(await imgResponse.arrayBuffer());
         const b64 = buffer.toString("base64");
-        console.log(`✅ [Router] Image generated via Pollinations: ${buffer.length} bytes`);
+        console.log(`✅ [Router] Image generated and buffered via Pollinations: ${buffer.length} bytes`);
         return res.json({ b64_json: b64, url: null });
       } else {
-         console.warn(`⚠️ Pollinations returned status ${imgResponse.status}.`);
+         console.warn(`⚠️ Pollinations returned status ${imgResponse.status}. Returning direct URL.`);
       }
     } catch (fetchErr: any) {
-      clearTimeout(timeout);
-      console.warn(`⚠️ Pollinations fetch failed: ${fetchErr.message}. Returning direct URL as fallback.`);
+      console.warn(`⚠️ Pollinations buffering failed: ${fetchErr.message}. Returning direct URL as fallback.`);
     }
 
     // Ultimate fallback: Browser loads the URL directly if server-side buffering failed
@@ -1100,6 +1487,33 @@ router.post("/generate-narration", async (req: Request, res: Response) => {
         });
       } catch (e: any) {
         console.warn(`⚠️ [ElevenLabs] Failed: ${e.message}. No more AI narration fallbacks available.`);
+      }
+    }
+
+    // Attempt 2: OpenAI TTS (Secondary - uses the same key as story/image)
+    if (process.env.OPENAI_API_KEY) {
+      try {
+        console.log(`🎙️ [OpenAI TTS] Attempting generation: voice=${requestedVoice || "shimmer"}, lang=${language}`);
+        
+        // Map common voice names to OpenAI's supported voices
+        const openAIVoices = ["alloy", "echo", "fable", "onyx", "nova", "shimmer"];
+        const voice = openAIVoices.includes(requestedVoice) ? requestedVoice : getVoiceForLanguage(language, requestedVoice);
+
+        const mp3 = await (openai as any).audio.speech.create({
+          model: "tts-1",
+          voice: voice,
+          input: text,
+        });
+
+        const buffer = Buffer.from(await mp3.arrayBuffer());
+        console.log(`✅ [OpenAI TTS] Success (${buffer.length} bytes)`);
+        
+        return res.json({ 
+          audioBase64: buffer.toString("base64"), 
+          format: "mp3" 
+        });
+      } catch (e: any) {
+        console.warn(`⚠️ [OpenAI TTS] Failed: ${e.message}`);
       }
     }
 
