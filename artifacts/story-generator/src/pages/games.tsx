@@ -37,6 +37,11 @@ const GAMES_TRANSLATIONS = {
       { word: "PHOENIX",   hint: "A magical bird reborn from flames",         emoji: "🔥" },
       { word: "TREASURE",  hint: "Gold and jewels hidden away",               emoji: "💎" },
       { word: "UNICORN",   hint: "A horse with a magical horn",               emoji: "🦄" },
+      { word: "DRAGONFLY", hint: "A fast insect with four wings",             emoji: "🦟" },
+      { word: "KINGDOM",   hint: "The land ruled by a king",                  emoji: "🗺️" },
+      { word: "RAINBOW",   hint: "A colorful arch in the sky after rain",     emoji: "🌈" },
+      { word: "GHOST",     hint: "A friendly spirit in a haunted house",       emoji: "👻" },
+      { word: "SPARKLE",   hint: "A tiny flash of light",                      emoji: "✨" },
     ]
   },
   hindi: {
@@ -69,6 +74,11 @@ const GAMES_TRANSLATIONS = {
       { word: "हाथी",    hint: "सबसे बड़ा भूमि जानवर",     emoji: "🐘" },
       { word: "महल",     hint: "एक बड़ा शाही घर",          emoji: "🏰" },
       { word: "दोस्त",   hint: "जो हमेशा साथ दे",          emoji: "🤝" },
+      { word: "तारा",    hint: "रात में चमकने वाला",       emoji: "⭐" },
+      { word: "सूरज",    hint: "दिन में रोशनी देने वाला",    emoji: "☀️" },
+      { word: "बादल",    hint: "आकाश में सफेद रुई जैसा",    emoji: "☁️" },
+      { word: "फूल",     hint: "बगीचे की सुंदरता",          emoji: "🌸" },
+      { word: "पानी",    hint: "जीवन के लिए जरूरी",         emoji: "💧" },
     ]
   },
   gujarati: {
@@ -101,6 +111,11 @@ const GAMES_TRANSLATIONS = {
       { word: "હાથી",    hint: "સૌથી મોટું ભૂમિ પ્રાણી",   emoji: "🐘" },
       { word: "મહેલ",     hint: "એક મોટું શાહી ઘર",       emoji: "🏰" },
       { word: "મિત્ર",    hint: "જે હંમેશા સાથે રહે",       emoji: "🤝" },
+      { word: "તારા",    hint: "રાત્રે ચમકતા",           emoji: "⭐" },
+      { word: "સૂરજ",    hint: "દિવસમાં પ્રકાશ આપે",       emoji: "☀️" },
+      { word: "વાદળ",    hint: "આકાશમાં સફેદ રૂ જેવું",      emoji: "☁️" },
+      { word: "ફૂલ",     hint: "બગીચાની સુંદરતા",        emoji: "🌸" },
+      { word: "પાણી",    hint: "જીવન માટે જરૂરી",         emoji: "💧" },
     ]
   }
 };

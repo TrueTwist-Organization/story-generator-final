@@ -5,191 +5,347 @@
     "category": "king_queen",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/Majestic+ancient+Indian+king+and+queen+sitting+on+a+stone+terrace+overlooking+misty+mountains+and+golden+temples+cinematic+storybook+illustration+detailed+digital+art+warm+sunset+colors?width=512&height=768&nologo=true&seed=881",
-    "description": "A wise king named Aryan solves a difficult dispute between two women by testing their true love.",
+    "thumbnail": "/images/demo-king.png",
+    "description": "A wise king named Aryan solves a difficult dispute between two women.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The Decree",
-        "text": "In a kingdom where truth was the highest law, King Aryan faced a difficult choice. Two women claimed the same child.",
-        "imagePrompt": "A noble king with a grey beard sitting on a high throne, two women standing before him, one looking desperate, the other greedy, medieval court",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Just King's Decree began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Just King's Decree, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "The Test",
-        "text": "'Split the child in two,' the King said calmly. One woman stayed silent, while the other fell to her knees, crying for mercy.",
-        "imagePrompt": "The King raising a hand in judgment, a guardsman standing near, one woman weeping on the floor while the other watches coldly",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Just King's Decree, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "Selfless Love",
-        "text": "'Give the child to her!' the crying woman yelled. 'I would rather lose my child than see him harmed.'",
-        "imagePrompt": "Close up of an emotional mother's face with tears, pleading with her hands outstretched towards the king",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Just King's Decree, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "Justice Served",
-        "text": "The King smiled. 'Only a true mother would give up her child to save him.' Justice was done, and the kingdom rejoiced.",
-        "imagePrompt": "The mother hugging her baby tightly, the king smiling warmly from his throne, glowing light through stained glass windows",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Just King's Decree, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
   },
   {
     "id": "demo-2",
-    "title": "Queen Elara's Secret",
+    "title": "Queen Elara's Secret Garden",
     "category": "king_queen",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/Royal+European+king+and+queen+in+a+classic+sunlit+palace+throne+room+with+tall+arched+windows+and+floral+arrangements+cinematic+storybook+illustration+detailed+digital+art+bright+royal+colors?width=512&height=768&nologo=true&seed=882",
+    "thumbnail": "/images/demo-king.png",
     "description": "The Queen discovers a hidden garden that only blooms when the kingdom is at peace.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The Hidden Wall",
-        "text": "Beneath the palace walls, Queen Elara found a door covered in thick ivy. It hadn't been opened for a hundred years.",
-        "imagePrompt": "Queen Elara in a royal gown, clearing vines from an old stone door at the base of a castle wall, mystery atmosphere",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of Queen Elara's Secret Garden began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of Queen Elara's Secret Garden, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "The Bloom",
-        "text": "As she stepped inside, the silver moonflowers began to glow. They only opened their petals when the heart was light.",
-        "imagePrompt": "A secret garden with glowing blue and silver flowers, a stone fountain in the center, sparks of magic in the air",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of Queen Elara's Secret Garden, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "The Message",
-        "text": "Inside, a message was carved in stone: 'Peace is the garden where hope grows.' Elara knew she had to share this with her people.",
-        "imagePrompt": "Close up of a stone tablet with elegant carvings, surrounded by glowing petals and soft light",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of Queen Elara's Secret Garden, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "The Kingdom Blooms",
-        "text": "By sharing the garden's secret, the Queen brought the whole kingdom together. Unity became their greatest strength.",
-        "imagePrompt": "A grand celebration in the palace courtyard, people holding jars of glowing plants, happiness and light",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of Queen Elara's Secret Garden, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-3",
+    "title": "The Golden Crown of Aether",
+    "category": "king_queen",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-king.png",
+    "description": "A journey to recover the lost crown that brings unity to the realm.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Golden Crown of Aether began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Golden Crown of Aether, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Golden Crown of Aether, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Golden Crown of Aether, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Golden Crown of Aether, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-4",
+    "title": "A Banquet for Peace",
+    "category": "king_queen",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-king.png",
+    "description": "Two warring kings decide to settle their differences over a magical feast.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of A Banquet for Peace began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of A Banquet for Peace, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of A Banquet for Peace, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of A Banquet for Peace, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of A Banquet for Peace, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
   },
   {
     "id": "demo-5",
-    "title": "The Last Dragon",
+    "title": "The Last Dragon Rider",
     "category": "fantasy",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/Two%20children%20with%20a%20burning%20torch%20exploring%20a%20dark%20mysterious%20cave%2C%20dramatic%20shadows%2C%20classic%20storybook%20illustration%2C%20vintage%20art%20style?width=512&height=768&nologo=true&seed=994",
-    "description": "An unlikely hero finds the last dragon egg in a hidden cave and must protect it from those who want its power.",
+    "thumbnail": "/images/demo-anime.png",
+    "description": "An unlikely hero finds the last dragon egg in a hidden cave.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The Cave",
-        "text": "Kael was a simple shepherd, but he followed a falling star into the Dragon's Maw cave. There, he found a pulsing purple egg.",
-        "imagePrompt": "A young man in simple clothes holding a glowing purple egg inside a dark, rocky cave with stalactites",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Last Dragon Rider began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Last Dragon Rider, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "The Hatching",
-        "text": "With a soft crack, a tiny creature with emerald eyes emerged. Kael name him Spark, the last of his kind.",
-        "imagePrompt": "A small cute baby dragon with tiny wings peeking out of a broken purple shell, looking up at a surprised young man",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Last Dragon Rider, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "The Flight",
-        "text": "Years passed, and Spark grew strong. Together, they soared above the clouds, far away from the greedy hunters.",
-        "imagePrompt": "A man riding a large green dragon through a golden sky with white fluffy clouds, high altitude adventure",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Last Dragon Rider, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "A New Era",
-        "text": "They found a hidden valley where dragons could once again thrive. Kael became the first Guardian of the Skies.",
-        "imagePrompt": "A beautiful hidden valley with a waterfall, several dragons flying around, a peaceful sanctuary",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Last Dragon Rider, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
   },
   {
     "id": "demo-6",
-    "title": "Crystal Mountain",
+    "title": "Shards of the Crystal Mountain",
     "category": "fantasy",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/Dark%20gothic%20tower%20reaching%20the%20clouds%2C%20mysterious%20fantasy%20architecture%2C%20cinematic%20storybook%20illustration%2C%20detailed%20digital%20art%2C%20gloomy%20atmosphere?width=512&height=768&nologo=true&seed=991",
-    "description": "Quest to find the scattered pieces of the mountain that keeps the world afloat and the magic within.",
+    "thumbnail": "/images/demo-anime.png",
+    "description": "Quest to find the scattered pieces of the mountain that keeps the world afloat.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The Split",
-        "text": "Long ago, the Crystal Mountain was the heart of the world. But it shattered, and the world began to sink.",
-        "imagePrompt": "A massive crystal mountain floating in a dark sky, pieces of it falling away into a mist below",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of Shards of the Crystal Mountain began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of Shards of the Crystal Mountain, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "The Call",
-        "text": "A young girl named Lyra heard the crystal singing. She set out with only a lantern and a map showing the stars.",
-        "imagePrompt": "A girl in a cloak walking through a misty forest, holding a lantern while looking at a scroll under moonlight",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of Shards of the Crystal Mountain, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "The Summit",
-        "text": "The mountain was guarded by stone giants. Lyra didn't fight them; she sang the song of the mountain back to them.",
-        "imagePrompt": "Large stone giants standing perfectly still on a snowy slope, a small girl standing before them peacefully",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of Shards of the Crystal Mountain, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "The Rebirth",
-        "text": "As the pieces came together, the world floated high once more. The mountain was whole, and so was her heart.",
-        "imagePrompt": "The crystal mountain glowing with brilliant white light, aurora borealis in the sky, epic peaceful resolution",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of Shards of the Crystal Mountain, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-7",
+    "title": "Whispers of the Eldritch Woods",
+    "category": "fantasy",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-anime.png",
+    "description": "A young explorer must listen to the trees to find her way home.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of Whispers of the Eldritch Woods began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of Whispers of the Eldritch Woods, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of Whispers of the Eldritch Woods, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of Whispers of the Eldritch Woods, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of Whispers of the Eldritch Woods, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-8",
+    "title": "The Flying Island of Zephyr",
+    "category": "fantasy",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-anime.png",
+    "description": "Life aboard an island that drifts through the clouds.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Flying Island of Zephyr began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Flying Island of Zephyr, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Flying Island of Zephyr, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Flying Island of Zephyr, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Flying Island of Zephyr, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
   },
   {
     "id": "demo-9",
-    "title": "Sorcerer's Apprentice",
+    "title": "The Sorcerer's Apprentice",
     "category": "magic",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/Young+wizard+apprentice+accidentally+making+brooms+dance+in+a+chaotic+magical+library+floating+books+and+glowing+sparks+cinematic+storybook+illustration?width=512&height=768&nologo=true&seed=108",
-    "description": "A young student learns that true magic comes from the heart, not just from old books and dusty scrolls.",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "A young student learns that true magic comes from the heart, not just spells.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The First Spell",
-        "text": "Toby tried to make the brooms dance. He read the words correctly, but the magic was wild and messy.",
-        "imagePrompt": "A young boy in a wizard robe, many brooms floating around a room haphazardly, spilled potion bottles, chaotic magic",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Sorcerer's Apprentice began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Sorcerer's Apprentice, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "The Master's Library",
-        "text": "Master Eldon watched from the shadows. 'Magic follows your intent, Toby, not just your tongue.'",
-        "imagePrompt": "An old wizard with a long white beard and starry hat, standing in a library filled with glowing books",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Sorcerer's Apprentice, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "The Pure Heart",
-        "text": "When a small bird was hurt, Toby didn't look at a book. He reached out with love, and the magic worked perfectly.",
-        "imagePrompt": "A boy gently holding a small bird, a soft blue light emanating from his palms, healing wings",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Sorcerer's Apprentice, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "A True Wizard",
-        "text": "He realized that being a sorcerer wasn't about power, but about protection. He was an apprentice no more.",
-        "imagePrompt": "The boy and the old wizard standing together on a balcony, casting a combined spell that creates fireworks",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Sorcerer's Apprentice, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
@@ -200,74 +356,152 @@
     "category": "magic",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/Young+woman+using+a+glowing+silver+inkwell+to+draw+a+paper+boat+that+comes+to+life+magical+ink+ripples+on+an+antique+desk+storybook+art?width=512&height=768&nologo=true&seed=109",
-    "description": "Everything written with this ink comes to life for exactly one hour, but it can't be used for greed.",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "Everything written with this ink comes to life for exactly one hour.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The Bottle",
-        "text": "In a box of antiques, Sarah found a bottle that smelled like wet earth and ozone. It was the Ink of Creation.",
-        "imagePrompt": "A young woman opening a dusty wooden box, finding a small obsidian bottle with a glowing silver label",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Magic Inkwell began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Magic Inkwell, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "The Drawing",
-        "text": "She drew a small paper boat. To her shock, it floated right off the page and began to sail in her glass of water.",
-        "imagePrompt": "A small origami-style boat made of ink-marked paper, floating in a water glass, magical ripples",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Magic Inkwell, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "The Limit",
-        "text": "A greedy merchant tried to draw a bag of gold, but the ink turned to dust. It only worked for things of beauty.",
-        "imagePrompt": "A grumpy man looking at a pile of gray dust on a desk, a disappointed expression, dark atmosphere",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Magic Inkwell, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "One Hour of Joy",
-        "text": "Sarah drew a field of butterflies for her sick grandmother. For one hour, the room was filled with dancing colors.",
-        "imagePrompt": "An old woman smiling in bed, surrounded by many vibrant glowing butterflies, a very warm and joyful room",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Magic Inkwell, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-11",
+    "title": "Quest for the Starlight Wand",
+    "category": "magic",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "Only the bravest can hold the wand made from a fallen star.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of Quest for the Starlight Wand began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of Quest for the Starlight Wand, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of Quest for the Starlight Wand, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of Quest for the Starlight Wand, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of Quest for the Starlight Wand, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-12",
+    "title": "The Invisible Cloak",
+    "category": "magic",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "Discovering that being unseen is as much a responsibility as it is a power.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Invisible Cloak began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Invisible Cloak, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Invisible Cloak, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Invisible Cloak, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Invisible Cloak, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
   },
   {
     "id": "demo-13",
-    "title": "Two Friends and the Storm",
+    "title": "The Two Friends and the Storm",
     "category": "friendship",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/Two+friends+braving+a+dramatic+mountain+storm+hugging+together+for+warmth+in+a+snowy+himalayan+meadow+cinematic+storybook+art?width=512&height=768&nologo=true&seed=112",
-    "description": "Rohan and Aman learn the true meaning of friendship during a dangerous storm in the Himalayas.",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "Rohan and Aman learn the true meaning of friendship during a dangerous storm.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The High Meadow",
-        "text": "Rohan and Aman were grazing their sheep in the high meadow. The sky was as blue as a sapphire, and they were laughing.",
-        "imagePrompt": "Two boys in traditional Himalayan clothes laughing in a green meadow with many sheep, snow capped mountains in background",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Two Friends and the Storm began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Two Friends and the Storm, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "The Dark Clouds",
-        "text": "Without warning, the light vanished. A thunderhead as black as coal rolled over the peaks, bringing ice and wind.",
-        "imagePrompt": "Massive dark scary clouds looming over a mountain ridge, wind blowing the grass and sheep running for cover",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Two Friends and the Storm, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "The Cave",
-        "text": "Rohan's foot slipped on the wet rock, but Aman caught him. They huddled together in a small cave, sharing a single blanket.",
-        "imagePrompt": "One boy holding the hand of another who is slipping on a rock cliff, rain and lightning everywhere",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Two Friends and the Storm, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "The Sunrise",
-        "text": "The morning sun was warm and golden. They had survived together, and their bond was now as strong as the mountains themselves.",
-        "imagePrompt": "Two friends walking down a mountain path in the morning sun, arms around each other's shoulders, peaceful and heroic",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Two Friends and the Storm, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
@@ -278,152 +512,308 @@
     "category": "friendship",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/Two+kids+with+different+clothes+sharing+a+single+red+apple+in+a+dry+dusty+village+warm+sunlight+heartwarming+storybook+art?width=512&height=768&nologo=true&seed=113",
-    "description": "In a time of scarcity, two rivals find common ground and discover that sharing makes a meal twice as full.",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "In a time of scarcity, two rivals find common ground.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The Dry Land",
-        "text": "A long drought had dried the river, and food was hard to find. Sam and Jack were both searching for anything to eat.",
-        "imagePrompt": "A cracked dry earth landscape, two tired-looking boys walking along a dusty path, several abandoned buckets",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of Sharing the Last Apple began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of Sharing the Last Apple, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "The Discovery",
-        "text": "They both spotted it at the same time: one small, bright red apple underneath a dead tree.",
-        "imagePrompt": "A single red apple on the ground, two boys rushing towards it from different sides, hands almost touching it",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of Sharing the Last Apple, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "The Split",
-        "text": "Instead of fighting, Sam took a small knife and cut the apple exactly in half. He handed the bigger half to Jack.",
-        "imagePrompt": "Hands of a boy cutting an apple in half on a flat stone, the other boy looking surprised and grateful",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of Sharing the Last Apple, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "A New Friend",
-        "text": "As they ate together, the first raindrop fell. Sharing the apple was the start of a friendship that would last a lifetime.",
-        "imagePrompt": "Two boys laughing and eating apple slices, rain starting to fall on their faces, puddles forming",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of Sharing the Last Apple, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-15",
+    "title": "The Great River Rescue",
+    "category": "friendship",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "A teamwork-driven adventure to save a stranded kitten.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Great River Rescue began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Great River Rescue, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Great River Rescue, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Great River Rescue, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Great River Rescue, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-16",
+    "title": "A Friend in Need",
+    "category": "friendship",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "The story of how a small act of kindness changed a lonely heart.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of A Friend in Need began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of A Friend in Need, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of A Friend in Need, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of A Friend in Need, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of A Friend in Need, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
   },
   {
     "id": "demo-17",
-    "title": "The Cookie Jar Mystery",
+    "title": "The Little Bus that Could",
     "category": "kids",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/Young+detective+looking+at+an+empty+glass+cookie+jar+through+a+magnifying+glass+blue+cat+sneaking+away+in+the+background+kids+mystery+storybook?width=512&height=768&nologo=true&seed=116",
-    "description": "Young Milo uses his magnifying glass to solve the case of the missing cookies.",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "A small bus proves that size doesn't matter when you have determination.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The Empty Jar",
-        "text": "Milo loved cookies, but someone else loved them more. The jar was empty, and there were crumbs on the floor.",
-        "imagePrompt": "A boy looking disappointed at an empty cookie jar on a table, cookie crumbs trail leading to another room",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Little Bus that Could began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Little Bus that Could, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "Detective Work",
-        "text": "With his magnifying glass, he found a long blue hair. Milo knew exactly who had a blue coat.",
-        "imagePrompt": "A close up of a magnifying glass showing a blue cat hair on a wooden floor",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Little Bus that Could, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "The Suspect",
-        "text": "Whiskers the Cat was sleeping under the couch. She looked very satisfied, and there was a bit of frosting on her nose.",
-        "imagePrompt": "A blue cat sleeping under a couch with some white frosting on its chin, looking very happy",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Little Bus that Could, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "Sharing is Fun",
-        "text": "Instead of being mad, Milo shared a glass of milk. Next time, they decided to bake together.",
-        "imagePrompt": "A boy and a blue cat sharing a small snack together, both of them looking very happy",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Little Bus that Could, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
   },
   {
     "id": "demo-18",
-    "title": "The Flying Cardboard Box",
+    "title": "Sparky the Robot's Adventure",
     "category": "kids",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/A+child+inside+a+cardboard+box+rocket+ship+soaring+through+a+vibrant+living+room+filled+with+imaginary+nebulae+and+aliens+kids+storybook+art?width=512&height=768&nologo=true&seed=117",
-    "description": "A child's imagination turns a simple cardboard box into a spaceship for an epic adventure through the living room.",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "A small robot discovers the wonder and beauty of its very first rainstorm.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The Launchpad",
-        "text": "Leo found a big cardboard box. It wasn't just a box; it was the fastest spaceship in the galaxy!",
-        "imagePrompt": "A child drawing controls inside a large cardboard box, surrounded by toys, in a living room",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of Sparky the Robot's Adventure began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of Sparky the Robot's Adventure, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "Through the Stars",
-        "text": "Zoom! He flew past the sofa-mountains and the lamp-stars, heading for the kitchen-planet.",
-        "imagePrompt": "A child in a cardboard box spaceship 'flying' through a living room, blurred background to show speed",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of Sparky the Robot's Adventure, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "Alien Encounter",
-        "text": "On the kitchen-planet, he met a friendly alien (his cat, Mittens) who wanted to share his space-milk.",
-        "imagePrompt": "A child in a cardboard box spaceship offering a bowl of milk to a cat wearing a tin foil hat",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of Sparky the Robot's Adventure, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "Home Sweet Home",
-        "text": "After a long journey, Leo landed his spaceship safely back in his room, ready for his next adventure.",
-        "imagePrompt": "A child sleeping soundly in bed, the cardboard box spaceship parked neatly beside it, stars drawn on the box",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of Sparky the Robot's Adventure, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-19",
+    "title": "The Toy Chest Mystery",
+    "category": "kids",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "What happens when the toys come to life when the lights go out?",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Toy Chest Mystery began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Toy Chest Mystery, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Toy Chest Mystery, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Toy Chest Mystery, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Toy Chest Mystery, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-20",
+    "title": "Cookie the Cat's Big Day",
+    "category": "kids",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "A day in the life of a playful kitten with a big imagination.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of Cookie the Cat's Big Day began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of Cookie the Cat's Big Day, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of Cookie the Cat's Big Day, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of Cookie the Cat's Big Day, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of Cookie the Cat's Big Day, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
   },
   {
     "id": "demo-21",
-    "title": "The Moon's Night Light",
+    "title": "The Sleepy Moon and the Little Star",
     "category": "bedtime",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/Cozy+children+bedroom+with+the+moon+shining+through+the+window+like+a+gentle+nightlight+sparkling+stars+bedtime+storybook+art?width=512&height=768&nologo=true&seed=120",
-    "description": "A little girl asks the moon to stay so she doesn't feel alone at night.",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "A gentle bedtime story about the Moon caring for a tired little star.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The Fear of Dark",
-        "text": "Lilly didn't like the shadows on her wall. She whispered to the moon, 'Please don't go away.'",
-        "imagePrompt": "A girl in bed looking at shadows on the wall that look like scary trees, moonlight shining through the glass",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Sleepy Moon and the Little Star began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Sleepy Moon and the Little Star, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "The Moon's Promise",
-        "text": "The moon sent a beam of silver light that turned her teddy bear into a knight made of stardust.",
-        "imagePrompt": "A teddy bear glowing with silver starlight, sitting upright on a bed, protective stance",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Sleepy Moon and the Little Star, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "Dreamland Gate",
-        "text": "With the star-knight by her side, Lilly drifted into a world where everything was made of fluff and soft light.",
-        "imagePrompt": "A girl sleeping peacefully, her room turning into a clouds and soft light, many stars",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Sleepy Moon and the Little Star, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "Morning Sun",
-        "text": "Lilly woke up feeling brave. She knew that even when the moon sleeps, the light is always there.",
-        "imagePrompt": "A girl sitting up in bed with the morning sun hitting her face, a huge smile, her teddy bear is normal again",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Sleepy Moon and the Little Star, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
@@ -434,74 +824,152 @@
     "category": "bedtime",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/Child+sleeping+on+a+giant+fluffy+cloud+with+jumping+star+sheep+in+a+moonlit+sky+dreamy+bedtime+art?width=512&height=768&nologo=true&seed=121",
-    "description": "Counting magical star-sheep to fall into a deep and peaceful slumber.",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "A journey through the clouds where dreams are born.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The First Sheep",
-        "text": "In the valley of dreams, the first sheep stepped across the moon. She was soft and white as a summer cloud.",
-        "imagePrompt": "A fluffy white sheep jumping over a fence made of starlight in a purple night sky",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of Counting Star Sheep began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of Counting Star Sheep, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "Two and Three",
-        "text": "They weren't just sheep. They were the keepers of the deep sleep, and they brought pillows and soft blankets.",
-        "imagePrompt": "Three sheep walking on a cloud, several pillows made of starlight floating around them",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of Counting Star Sheep, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "The Final Count",
-        "text": "As the tenth sheep jumped, the child's eyes became heavy. Ten is the number of the deepest rest.",
-        "imagePrompt": "A long line of sheep in the sky, a bedroom window below with a sleeping child, very serene",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of Counting Star Sheep, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "Deep Dream",
-        "text": "The sheep settled into the stars. The counting was over, and the adventure of dreaming had begun.",
-        "imagePrompt": "A child dreaming of flying on a sheep's back, a world of colors and stars",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of Counting Star Sheep, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-23",
+    "title": "The Dreamland Express",
+    "category": "bedtime",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "Hop on the train that takes children to their most beautiful dreams.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Dreamland Express began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Dreamland Express, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Dreamland Express, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Dreamland Express, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Dreamland Express, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-24",
+    "title": "Lullaby of the Whispering Sea",
+    "category": "bedtime",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "The waves sing a soft song to help the world sleep.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of Lullaby of the Whispering Sea began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of Lullaby of the Whispering Sea, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of Lullaby of the Whispering Sea, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of Lullaby of the Whispering Sea, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of Lullaby of the Whispering Sea, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
   },
   {
     "id": "demo-25",
-    "title": "Honest Woodcutter",
+    "title": "The Honest Woodcutter",
     "category": "moral",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/Honest+woodcutter+at+a+river+edge+with+a+glowing+water+fairy+holding+a+golden+axe+forest+setting+moral+storybook+art?width=512&height=768&nologo=true&seed=124",
-    "description": "A poor woodcutter is rewarded for his honesty by a river fairy after he refuses to take axes that don't belong to him.",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "A poor woodcutter is rewarded for his honesty by a river fairy.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The Big Mistake",
-        "text": "Oh no! Hari's old iron axe slipped from his hand and fell into the deep, dark river. He was so poor he couldn't afford a new one.",
-        "imagePrompt": "A man in simple clothes looking worried at the edge of a river, bubbles in the water as an axe sinks",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Honest Woodcutter began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Honest Woodcutter, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "The Fairy",
-        "text": "The river began to glow. A beautiful water fairy appeared, holding up a golden axe. 'Is this yours?' she asked.",
-        "imagePrompt": "A glowing water fairy rising from a river holding a shining golden axe, the man looking surprised",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Honest Woodcutter, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "The Choice",
-        "text": "Hari shook his head. 'No, that is too fine for a man like me.' She then showed him a silver one, but he said no again.",
-        "imagePrompt": "The man being shown a silver axe, he is gesturing 'no' with his hands, honest expression",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Honest Woodcutter, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "Honesty Rewarded",
-        "text": "Finally, she showed him his old iron axe. 'That's it!' he cried. The fairy was so happy she gave him all three axes.",
-        "imagePrompt": "The fairy handing the man three axes (gold, silver, iron), he is bowing in gratitude, bright forest light",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Honest Woodcutter, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
@@ -512,308 +980,620 @@
     "category": "moral",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/A+young+shepherd+boy+shouting+on+a+green+hill+with+sheep+villagers+running+up+to+help+faded+gray+wolf+shadow+in+the+woods+moral+storybook+art?width=512&height=768&nologo=true&seed=125",
-    "description": "The classic tale of why telling the truth is important for trust and how a boy learned it the hard way.",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "The classic tale of why telling the truth is important for trust.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "Boredom",
-        "text": "Bored on the hill, Sam decided to play a trick. 'Wolf! Wolf!' he yelled, and all the villagers ran up to help.",
-        "imagePrompt": "A boy on a green hill cupping his hands and shouting, villagers in the distance running towards him",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Boy who Cried Wolf began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Boy who Cried Wolf, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "The Second Trick",
-        "text": "He did it again the next day. The villagers were angry, but Sam just laughed at his cleverness.",
-        "imagePrompt": "A boy laughing on a hill as frustrated villagers walk back down, a group of sheep nearby",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Boy who Cried Wolf, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
-        "sceneNumber": 2,
-        "title": "The Real Wolf",
-        "text": "Then, a giant shadow moved in the trees. A real wolf was there! Sam yelled for help, but no one came.",
-        "imagePrompt": "A large gray wolf with glowing eyes peeking out from bushes, the boy looking terrified and shouting",
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Boy who Cried Wolf, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "Restoring Trust",
-        "text": "He lost his sheep that day. He learned that no one believes a liar, even when he's telling the truth.",
-        "imagePrompt": "The boy sitting alone on a hill in the sunset, a sad expression, empty paths below",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Boy who Cried Wolf, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-27",
+    "title": "Kindness to Others",
+    "category": "moral",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "A story about how a simple smile can ripple through a whole town.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of Kindness to Others began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of Kindness to Others, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of Kindness to Others, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of Kindness to Others, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of Kindness to Others, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-28",
+    "title": "The Golden Rule",
+    "category": "moral",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "A journey to a land where everyone treats others exactly how they want to be treated.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Golden Rule began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Golden Rule, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Golden Rule, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Golden Rule, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Golden Rule, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
   },
   {
     "id": "demo-29",
-    "title": "The Clever Rabbit",
+    "title": "The Clever Rabbit and the Lion",
     "category": "animal",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/A+small+clever+rabbit+standing+confronting+a+giant+fierce+lion+near+a+stone+well+deep+jungle+vibrant+colors+animal+storybook+art?width=512&height=768&nologo=true&seed=128",
-    "description": "Intelligence overcomes strength when a clever rabbit outsmarts a fierce lion who thought he was the master of all.",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "Intelligence overcomes strength when a clever rabbit outsmarts a fierce lion.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The King's Hunger",
-        "text": "Leo the Lion ate an animal every day. The forest was scared. The animals met to find a better way.",
-        "imagePrompt": "A large fierce lion sitting on a rock in the jungle, small animals hiding behind trees, dark atmosphere",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Clever Rabbit and the Lion began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Clever Rabbit and the Lion, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "The Rabbit's Turn",
-        "text": "It was the rabbit's turn to be eaten. He arrived late and told the Lion, 'A bigger King lion stopped me!'",
-        "imagePrompt": "A small rabbit standing in front of a giant lion, looking brave but small, lush jungle background",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Clever Rabbit and the Lion, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "The Well",
-        "text": "The rabbit led the Lion to a deep well. 'He is inside!' the rabbit said. The Lion saw his own face and jumped in to fight.",
-        "imagePrompt": "The lion looking into a round stone well, his reflection visible, the rabbit pointing towards the water",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Clever Rabbit and the Lion, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "Victory",
-        "text": "With the Lion gone, the forest was safe. Always remember: wit is stronger than claws.",
-        "imagePrompt": "All the animals (deer, monkeys, parrots) celebrating in a clearing, the rabbit on a small raised rock",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Clever Rabbit and the Lion, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
   },
   {
     "id": "demo-30",
-    "title": "Brave Little Lion cub",
+    "title": "Brave Little Lion",
     "category": "animal",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/Small+lion+cub+and+baby+zebra+sitting+together+on+a+savanna+at+sunset+warm+golden+light+animal+friendship+storybook+art?width=512&height=768&nologo=true&seed=129",
-    "description": "A cub learns that courage isn't the absence of fear, but acting despite it for those we love.",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "A cub learns that courage isn't the absence of fear, but acting despite it.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The Fearful Cub",
-        "text": "Simba was afraid of everything—even the long grass. He hid behind his mother always.",
-        "imagePrompt": "A small lion cub cowering behind a large lioness's legs in the tall savanna grass",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of Brave Little Lion began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of Brave Little Lion, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "The Lost Friend",
-        "text": "A baby zebra got stuck in a mud pit. Simba heard the cries. No one else was there to help.",
-        "imagePrompt": "A small zebra cub sinking into a pit of gray mud, looking very scared",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of Brave Little Lion, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "Stepping Up",
-        "text": "Simba's legs shook, but he walked onto the logs and pulled the zebra's neck with all his cub strength.",
-        "imagePrompt": "The lion cub pulling a zebra cub by the mane using his mouth, a very determined and brave expression",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of Brave Little Lion, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "The Real King",
-        "text": "He saved his friend. Simba learned that true power isn't about the size of your roar, but the size of your heart.",
-        "imagePrompt": "The two cubs sitting together in the sunset, Simbe looking tall and proud, beautiful savanna view",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of Brave Little Lion, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-31",
+    "title": "The Wise Owl's Advice",
+    "category": "animal",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "The forest animals seek wisdom from the oldest inhabitant of the big oak tree.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Wise Owl's Advice began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Wise Owl's Advice, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Wise Owl's Advice, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Wise Owl's Advice, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Wise Owl's Advice, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-32",
+    "title": "Turtle and the Hare: The Rematch",
+    "category": "animal",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "An updated take on the classic race with a focus on consistency.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of Turtle and the Hare: The Rematch began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of Turtle and the Hare: The Rematch, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of Turtle and the Hare: The Rematch, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of Turtle and the Hare: The Rematch, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of Turtle and the Hare: The Rematch, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
   },
   {
     "id": "demo-33",
-    "title": "Princess and the Garden",
+    "title": "The Kind Princess and the Secret Garden",
     "category": "princess",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/Young+princess+in+a+blue+dress+kneeling+in+a+vibrant+palace+garden+planting+seeds+magical+butterflies+colorful+flowers+princess+storybook+art?width=512&height=768&nologo=true&seed=132",
-    "description": "Princess Elina discovers that true beauty and magic come from a kind heart and the way she treats her subjects.",
+    "thumbnail": "/images/demo-princess.png",
+    "description": "Princess Elina discovers that true beauty and magic come from a kind heart.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The Gray Palace",
-        "text": "Elina lived in a palace made of cold, gray stone. It had many jewels, but no flowers and no laughter.",
-        "imagePrompt": "A large stone castle on a hill, a young woman looking out from a window, empty courtyard",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Kind Princess and the Secret Garden began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Kind Princess and the Secret Garden, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "The Seeds",
-        "text": "She found a bag of old seeds in the cellar. She decided to plant them herself, getting her fine hands dirty.",
-        "imagePrompt": "A princess in a blue dress kneeling on the ground, digging a small hole, a bag of seeds next to her",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Kind Princess and the Secret Garden, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "The Bloom",
-        "text": "As the flowers grew, so did the happiness of the castle. The stone walls began to glow with light and color.",
-        "imagePrompt": "A vibrant garden with many types of flowers, vines growing up the castle walls, butterfly magic",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Kind Princess and the Secret Garden, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "The New Queen",
-        "text": "She learned that the best kingdoms are built from the ground up, with love and a bit of hard work.",
-        "imagePrompt": "The princess standing in her garden, people from the village joining her, a very bright and happy ending",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Kind Princess and the Secret Garden, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
   },
   {
     "id": "demo-34",
-    "title": "Princess and the Pea",
+    "title": "Princess and the Magic Pea",
     "category": "princess",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/A+tall+bed+with+twenty+colorful+mattresses+stacked+up+to+the+ceiling+a+small+pea+glowing+at+the+bottom+moonlight+princess+storybook+art?width=512&height=768&nologo=true&seed=133",
-    "description": "A classic test of character that reveals a true royal spirit after a very restless night on twenty mattresses.",
+    "thumbnail": "/images/demo-princess.png",
+    "description": "A test of character that reveals a true royal spirit.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The Rainy Night",
-        "text": "A knock came at the castle door in the middle of a storm. A girl stood there, soaking wet, claiming to be a princess.",
-        "imagePrompt": "A girl with messy hair and a wet dress at a large castle door, rain and lightning, palace guards",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of Princess and the Magic Pea began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of Princess and the Magic Pea, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "The Bed",
-        "text": "The Queen placed a single green pea under twenty mattresses. 'If she's a real princess, she'll feel it,' she thought.",
-        "imagePrompt": "A tall bed with many colorful mattresses, an old queen hiding a small pea at the very bottom",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of Princess and the Magic Pea, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "Restless Sleep",
-        "text": "The girl couldn't sleep. Every time she moved, she felt like she was lying on a mountain of stone.",
-        "imagePrompt": "A girl sitting up in a giant bed, looking tired and rubbing her back, moonlight from the window",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of Princess and the Magic Pea, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "Recognition",
-        "text": "'I didn't sleep a wink!' she said at breakfast. Only a true princess could be so sensitive. The prince had found his bride.",
-        "imagePrompt": "The prince and girl shaking hands at a breakfast table, the queen smiling in the background",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of Princess and the Magic Pea, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-35",
+    "title": "The Lost Glass Slipper",
+    "category": "princess",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-princess.png",
+    "description": "A search for a kind girl who left her heart at the ball.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Lost Glass Slipper began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Lost Glass Slipper, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Lost Glass Slipper, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Lost Glass Slipper, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Lost Glass Slipper, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-36",
+    "title": "Enchanted Castle Quest",
+    "category": "princess",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-princess.png",
+    "description": "A brave princess travels to break a hundred-year-old spell.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of Enchanted Castle Quest began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of Enchanted Castle Quest, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of Enchanted Castle Quest, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of Enchanted Castle Quest, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of Enchanted Castle Quest, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
   },
   {
     "id": "demo-37",
-    "title": "Ganesha's Wisdom",
+    "title": "Gift from the Heavens",
     "category": "god",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/Lord+Ganesha+with+elephant+head+holding+a+glowing+golden+fruit+inside+a+divine+palace+with+stars+and+lotus+flowers+god+storybook+art?width=512&height=768&nologo=true&seed=136",
-    "description": "How the elephant-headed god learned that circling his parents was the same as circling the whole world.",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "A village is blessed by a celestial being for their hard work.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The Race",
-        "text": "Shiva and Parvati had a race for their sons. 'Whoever circles the world first wins this magical fruit!'",
-        "imagePrompt": "A divine couple sitting on a high mountain throne, two sons standing before them, a golden fruit in the center",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of Gift from the Heavens began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of Gift from the Heavens, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "Kartikeya's Flight",
-        "text": "Kartikeya jumped on his peacock and flew around the oceans, mountains, and lands as fast as he could.",
-        "imagePrompt": "A young warrior on a peacock flying over the sea and mountains, sunset sky",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of Gift from the Heavens, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "The Real World",
-        "text": "Ganesha didn't have a peacock. He had a small mouse. He walked around his parents three times.",
-        "imagePrompt": "Lord Ganesha in orange robes walking around a seated couple, his mouse following him closely",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of Gift from the Heavens, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "The Fruit of Love",
-        "text": "'My parents ARE my world,' he said. Shiva smiled and gave him the fruit. Wisdom is greater than speed.",
-        "imagePrompt": "The couple handing Lord Ganesha a glowing golden fruit, happiness and light within a divine palace",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of Gift from the Heavens, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
   },
   {
     "id": "demo-38",
-    "title": "Krishna and the Flute",
+    "title": "The Temple of Wisdom",
     "category": "god",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/Lord+Krishna+playing+a+golden+flute+under+a+flowering+Kadamba+tree+with+dancing+peacocks+and+calm+cows+divine+light+god+storybook+art?width=512&height=768&nologo=true&seed=137",
-    "description": "The song of Krishna's flute charms all of nature, bringing a moment of pure bliss to the cows and the clouds.",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "Seekers travel from afar to answer the three riddles of the stone guardian.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The Evening Bank",
-        "text": "By the river Yamuna, young Krishna sat on the soft grass. The birds were silent, waiting for his first note.",
-        "imagePrompt": "A blue-skinned boy with a crown of peacock feathers, sitting under a large ancient tree, a river in the background",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Temple of Wisdom began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Temple of Wisdom, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "The Music",
-        "text": "As the flute touched his lips, a melody of pure joy filled the air. The cows stopped grazing to listen.",
-        "imagePrompt": "Lord Krishna playing a golden flute, several cows and calves looking at him with peaceful eyes",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Temple of Wisdom, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "Dancing Peacock",
-        "text": "Even the peacocks began to dance! The rhythm of the flute was the heartbeat of the whole universe.",
-        "imagePrompt": "A peacock with a grand open tail dancing in a lush garden, the music notes glowing in the air",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Temple of Wisdom, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "Eternal Peace",
-        "text": "The music reminded every living being that the divine is always with us, in the sound of a song or a breeze.",
-        "imagePrompt": "Lord Krishna surrounded by many animals and children, everyone looking completely happy and at peace",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Temple of Wisdom, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-39",
+    "title": "Celestial Balance",
+    "category": "god",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "Sun and Moon work together to keep the world in perfect harmony.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of Celestial Balance began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of Celestial Balance, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of Celestial Balance, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of Celestial Balance, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of Celestial Balance, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-40",
+    "title": "Path of Light",
+    "category": "god",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "A humble man finds a lantern that only shines when he helps others.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of Path of Light began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of Path of Light, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of Path of Light, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of Path of Light, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of Path of Light, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
   },
   {
     "id": "demo-41",
-    "title": "The Proud Peacock",
+    "title": "The Phoenix's Rebirth",
     "category": "bird",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/A+proud+peacock+with+a+grand+colorful+tail+spread+out+in+a+vibrant+forest+garden+at+sunset+bird+storybook+art?width=512&height=768&nologo=true&seed=140",
-    "description": "A beautiful bird learns that while his feathers are grand, his voice isn't the most important gift he has to offer.",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "A story of hope and starting over, even when it seems like all is lost.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The Mirror",
-        "text": "Percy the Peacock loved his reflection. 'I'm the most beautiful bird in the world!' he would shout.",
-        "imagePrompt": "A peacock looking at himself in a forest puddle, his tail spread out in all colors",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Phoenix's Rebirth began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Phoenix's Rebirth, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "The Song Contest",
-        "text": "The Nightingale sang a song that made the trees cry with joy. Percy tried to sing, but out came a harsh squawk.",
-        "imagePrompt": "A tiny brown nightingale singing on a branch, the peacock looking frustrated with an open beak",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Phoenix's Rebirth, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "The Lesson",
-        "text": "The Owl told him: 'Beauty is for the eyes, but character is for the ears of the universe.'",
-        "imagePrompt": "An owl on a branch looking down at a peacock with its tail closed, thoughtful atmosphere",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Phoenix's Rebirth, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "Inner Beauty",
-        "text": "Percy stopped boasting. He used his large feathers to shade the smaller birds from the sun. He was finally happy.",
-        "imagePrompt": "The peacock with his tail spread over a group of small birds, providing shade in a sunny sunny field",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Phoenix's Rebirth, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
@@ -824,35 +1604,113 @@
     "category": "bird",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/A+majestic+eagle+soaring+high+above+a+lush+green+valley+and+winding+river+bright+blue+sky+with+white+clouds+bird+storybook+art?width=512&height=768&nologo=true&seed=141",
-    "description": "Learning to see the big picture from above the clouds and the courage it takes to leave the nest.",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "Learning to see the big picture from above the clouds.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The Cliff Edge",
-        "text": "Eddie the Eagle was afraid to jump. The wind was fast, and the rocks below were very sharp and hard.",
-        "imagePrompt": "A young eagle sitting at the edge of a high rocky cliff, looking down with a nervous expression",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of Eagle's High Flight began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of Eagle's High Flight, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "The First Wingbeat",
-        "text": "His father pushed him! Seconds before he hit the ground, Eddie opened his wings and felt the air carry him up.",
-        "imagePrompt": "The eagle diving down, wings starting to open, a massive canyon below",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of Eagle's High Flight, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "Above the Storm",
-        "text": "He flew higher than anyone. He saw the whole river, the whole forest, and the whole world in one glance.",
-        "imagePrompt": "The eagle flying through a white cloud, looking down on a miniature world of green and blue",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of Eagle's High Flight, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "Master of Sky",
-        "text": "He realized that the only thing holding him back was his own fear. Now, the sky was his true home.",
-        "imagePrompt": "The eagle soaring toward the sun, silhouette against a bright sky, pure freedom",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of Eagle's High Flight, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-43",
+    "title": "The Singing Nightingale",
+    "category": "bird",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "A bird's song that can heal hearts and change a king's mind.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Singing Nightingale began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Singing Nightingale, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Singing Nightingale, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Singing Nightingale, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Singing Nightingale, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-44",
+    "title": "Blue Jay's Nest Hunt",
+    "category": "bird",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "Searching for the perfect spot to start a new family in the spring.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of Blue Jay's Nest Hunt began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of Blue Jay's Nest Hunt, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of Blue Jay's Nest Hunt, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of Blue Jay's Nest Hunt, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of Blue Jay's Nest Hunt, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
@@ -860,38 +1718,38 @@
   {
     "id": "demo-45",
     "title": "The Magical Forest",
-    "category": "custom",
+    "category": "nature",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/An+enchanted+forest+with+translucent+glowing+glass+leaves+in+rainbow+colors+magical+sparkles+crystal+trees+custom+storybook+art?width=512&height=768&nologo=true&seed=144",
-    "description": "Discover a place where nature itself tells tales of the old world and every tree has a heartbeat.",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "Discover a place where nature itself tells tales of the old world.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The First Step",
-        "text": "The air was filled with the sound of wind chimes. But there were no chimes—only the leaves of the Crystal Wood.",
-        "imagePrompt": "A forest with translucent glass-like leaves, a young explorer touching a tree trunk that is glowing",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of The Magical Forest began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of The Magical Forest, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "The Drinking Pool",
-        "text": "The animals here didn't drink water, they drank light from the silver pond that sat in the forest's heart.",
-        "imagePrompt": "A fox and a deer drinking from a pool of glowing white liquid, stars reflected on the surface",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of The Magical Forest, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "The Elder Tree",
-        "text": "At the center was the Tree of Time. Its rings told the story of every star that had ever fallen to earth.",
-        "imagePrompt": "A massive tree with a face carved in the bark, its roots glowing with ancient energy",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of The Magical Forest, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "Always Green",
-        "text": "The forest never died. It only changed colors, reflecting the dreams of those who wandered through it.",
-        "imagePrompt": "A wide shot of a rainbow-colored forest under a double moon sky, incredibly magical and colorful",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of The Magical Forest, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
@@ -899,38 +1757,116 @@
   {
     "id": "demo-46",
     "title": "Singing River's Secret",
-    "category": "custom",
+    "category": "nature",
     "language": "english",
     "mode": "image",
-    "thumbnail": "https://image.pollinations.ai/prompt/A+sparkling+river+flowing+through+a+peaceful+valley+with+musical+notes+glowing+in+the+mist+vibrant+flowers+green+hills+custom+storybook+art?width=512&height=768&nologo=true&seed=145",
-    "description": "If you listen closely, the water tells where it has been and the future it plans to bring.",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "If you listen closely, the water tells where it has been.",
     "scenes": [
       {
         "sceneNumber": 1,
-        "title": "The Source",
-        "text": "High in the mountains, a small stream began with a giggle. It was the only river in the world that could sing.",
-        "imagePrompt": "A small waterfall coming out of a cave on a snowy mountain, musical notes in the spray",
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of Singing River's Secret began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of Singing River's Secret, starting scene, detailed digital art, vibrant colors",
         "choices": []
       },
       {
         "sceneNumber": 2,
-        "title": "The Chorus",
-        "text": "As it grew, the river added more voices. The rocks were its drums, and the fish were its backup singers.",
-        "imagePrompt": "A wide river with many rocks, fish jumping out of the water, a very lively and rhythmic scene",
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of Singing River's Secret, character facing a challenge, magical atmosphere",
         "choices": []
       },
       {
         "sceneNumber": 3,
-        "title": "The Warning",
-        "text": "One day, the river took on a dark, low note. It was warning the village of the coming flood from the melted snow.",
-        "imagePrompt": "The river water turning dark and fast, people on the bank looking worried and listening",
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of Singing River's Secret, magical particles, success and teamwork",
         "choices": []
       },
       {
         "sceneNumber": 4,
-        "title": "Peaceful Harmony",
-        "text": "The village prepared, and no one was hurt. The river went back to its sweet lullaby, the most trusted friend of all.",
-        "imagePrompt": "The river flowing through a peaceful village, sun reflecting on the water, people waving at the stream",
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of Singing River's Secret, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-47",
+    "title": "Mountain Peak Adventure",
+    "category": "nature",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "Climbing to the top to see the world from a new perspective.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of Mountain Peak Adventure began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of Mountain Peak Adventure, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of Mountain Peak Adventure, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of Mountain Peak Adventure, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of Mountain Peak Adventure, happy ending, warm lighting, peaceful forest",
+        "choices": []
+      }
+    ]
+  },
+  {
+    "id": "demo-48",
+    "title": "Desert Rose Discovery",
+    "category": "nature",
+    "language": "english",
+    "mode": "image",
+    "thumbnail": "/images/demo-nature.png",
+    "description": "Finding beauty in the most unexpected and dry places.",
+    "scenes": [
+      {
+        "sceneNumber": 1,
+        "title": "Introduction",
+        "text": "Once upon a time, our adventure in the realm of Desert Rose Discovery began. The world was full of wonder and discovery.",
+        "imagePrompt": "Cinematic storybook illustration of Desert Rose Discovery, starting scene, detailed digital art, vibrant colors",
+        "choices": []
+      },
+      {
+        "sceneNumber": 2,
+        "title": "The Challenge",
+        "text": "Suddenly, a great challenge arose! Our heroes had to find a way to overcome the obstacle that stood in their path.",
+        "imagePrompt": "Dramatic moment in the story of Desert Rose Discovery, character facing a challenge, magical atmosphere",
+        "choices": []
+      },
+      {
+        "sceneNumber": 3,
+        "title": "The Resolution",
+        "text": "With courage and wisdom, the solution was found. Everyone worked together to bring balance back to the realm.",
+        "imagePrompt": "Heroic resolution of Desert Rose Discovery, magical particles, success and teamwork",
+        "choices": []
+      },
+      {
+        "sceneNumber": 4,
+        "title": "Happy Ending",
+        "text": "Peace was restored, and the lesson was learned. The memory of this journey would live on forever in the hearts of many.",
+        "imagePrompt": "Celebration and sunset in the story of Desert Rose Discovery, happy ending, warm lighting, peaceful forest",
         "choices": []
       }
     ]
