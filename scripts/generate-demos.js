@@ -112,7 +112,63 @@ for (const cat of categories) {
       category: cat,
       language: "english",
       mode: "image",
-      thumbnail: `/images/demo-${cat === 'king_queen' ? 'king' : cat === 'nature' ? 'nature' : cat === 'princess' ? 'princess' : cat === 'fantasy' ? 'anime' : 'nature'}.png`,
+      thumbnail: (() => {
+        const title = template.title;
+        const lowerTitle = title.toLowerCase();
+        
+        // Simple hash function for consistent variety
+        const getHash = (str) => {
+          let hash = 0;
+          for (let k = 0; k < str.length; k++) {
+            hash = ((hash << 5) - hash) + str.charCodeAt(k);
+            hash |= 0;
+          }
+          return Math.abs(hash);
+        };
+        const titleHash = getHash(title);
+
+        const allImages = [
+          'king_queen_1', 'king_queen_2', 'king_queen_3', 'king_queen_4', 
+          'fantasy_1', 'anime', 'forest-girl', 'friends-storm', 
+          'moon-star', 'nature', 'princess', 'rabbit-lion', 'woodcutter'
+        ];
+
+        const keywordPools = [
+          { keywords: ['king', 'monarch', 'decree'], pool: ['king_queen_1', 'king_queen_4', 'king_queen_3'] },
+          { keywords: ['queen', 'garden', 'elara'], pool: ['king_queen_2', 'forest-girl', 'nature'] },
+          { keywords: ['crown', 'aether', 'unity'], pool: ['king_queen_3', 'fantasy_1', 'king_queen_1'] },
+          { keywords: ['banquet', 'feast', 'peace'], pool: ['king_queen_4', 'nature', 'friends-storm'] },
+          { keywords: ['dragon', 'rider', 'cave'], pool: ['fantasy_1', 'anime', 'woodcutter'] },
+          { keywords: ['crystal', 'mountain', 'shard'], pool: ['anime', 'fantasy_1', 'nature'] },
+          { keywords: ['moon', 'star', 'sleepy', 'night'], pool: ['moon-star', 'nature', 'anime'] },
+          { keywords: ['sorcerer', 'magic'], pool: ['anime', 'moon-star', 'forest-girl', 'woodcutter'] },
+          { keywords: ['inkwell', 'wand', 'cloak', 'robot', 'space'], pool: ['anime', 'forest-girl', 'moon-star', 'fantasy_1'] },
+          { keywords: ['storm', 'rescue', 'friend', 'sharing'], pool: ['friends-storm', 'nature', 'forest-girl'] },
+          { keywords: ['rabbit', 'lion', 'kitten', 'puppy', 'animal'], pool: ['rabbit-lion', 'nature', 'forest-girl'] },
+          { keywords: ['woodcutter', 'honest', 'axe'], pool: ['woodcutter', 'nature', 'forest-girl'] },
+          { keywords: ['princess', 'girl', 'castle'], pool: ['princess', 'forest-girl', 'anime'] },
+          { keywords: ['bird', 'phoenix', 'eagle', 'nightingale', 'nest'], pool: ['nature', 'forest-girl', 'anime'] },
+          { keywords: ['god', 'ganesha', 'krishna', 'hanuman', 'shiva'], pool: ['nature', 'moon-star', 'forest-girl'] }
+        ];
+
+        let imageName = '';
+        for (const entry of keywordPools) {
+          if (entry.keywords.some(k => lowerTitle.includes(k))) {
+            imageName = entry.pool[titleHash % entry.pool.length];
+            break;
+          }
+        }
+
+        if (!imageName) {
+          imageName = allImages[titleHash % allImages.length];
+        }
+        
+        const specialImgs = ['king_queen_1', 'king_queen_2', 'king_queen_3', 'king_queen_4', 'fantasy_1'];
+        if (specialImgs.includes(imageName)) {
+          return `/images/${imageName}.png`;
+        }
+        return `/images/demo-${imageName}.png`;
+      })(),
       description: template.desc,
       scenes: [
         {

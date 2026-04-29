@@ -10,6 +10,8 @@ import GamesPage from "@/pages/games";
 import PrivacyPolicy from "@/pages/privacy";
 import TermsOfService from "@/pages/terms";
 import CookiesPolicy from "@/pages/cookies";
+import FAQPage from "@/pages/faqs";
+import AboutPage from "@/pages/about";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient({
@@ -30,6 +32,8 @@ function Router() {
       <Route path="/privacy" component={PrivacyPolicy} />
       <Route path="/terms" component={TermsOfService} />
       <Route path="/cookies" component={CookiesPolicy} />
+      <Route path="/faqs" component={FAQPage} />
+      <Route path="/about" component={AboutPage} />
       <Route component={NotFound} />
     </Switch>
   );

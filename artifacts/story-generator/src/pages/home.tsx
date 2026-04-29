@@ -23,6 +23,7 @@ const CATEGORIES: { id: GenerateStoryBodyCategory; label: string; icon: string; 
   { id: "princess", label: "Princess", icon: "👸", image: "/images/cat-princess.webp" },
   { id: "god", label: "God", icon: "🙏", image: "/images/cat-god.webp" },
   { id: "bird", label: "Bird", icon: "🐦", image: "/images/cat-bird.webp" },
+  { id: "nature", label: "Nature", icon: "🌿", image: "/images/demo-nature.png" },
   { id: "custom", label: "Custom", icon: "✨", image: "/images/cat-custom.webp" },
 ];
 
@@ -69,6 +70,7 @@ const TRANSLATIONS = {
       princess: "Princess", 
       god: "God", 
       bird: "Bird", 
+      nature: "Nature",
       custom: "Custom" 
     },
     modes: { image: "Story Book", video: "Cinematic", game: "Adventure" },
@@ -108,6 +110,7 @@ const TRANSLATIONS = {
       princess: "राजकुमारी", 
       god: "भगवान", 
       bird: "पक्षी", 
+      nature: "प्रकृति",
       custom: "कस्टम" 
     },
     modes: { image: "कहानी की किताब", video: "सिनेमैटिक", game: "साहसिक" },
@@ -147,6 +150,7 @@ const TRANSLATIONS = {
       princess: "રાજકુમારી", 
       god: "ભગવાન", 
       bird: "પક્ષી", 
+      nature: "કુદરત",
       custom: "કસ્ટમ" 
     },
     modes: { image: "વાર્તા પુસ્તક", video: "સિનેમેટિક", game: "સાહસ" },
@@ -571,16 +575,17 @@ export default function HomePage() {
                       // Best-matching local image per category (always loads instantly)
                       const categoryImagePools: Record<string, string[]> = {
                         king_queen:  ["/images/king_queen_1.png", "/images/king_queen_2.png", "/images/king_queen_3.png", "/images/king_queen_4.png"],
-                        princess:    ["/images/cat-princess.webp",   "/images/demo-princess.png",   "/images/demo-forest-girl.png", "/images/cat-princess.webp"],
-                        fantasy:     ["/images/fantasy_1.png",       "/images/demo-moon-star.png",   "/images/cat-fantasy.webp",    "/images/demo-forest-girl.png"],
+                        princess:    ["/images/cat-princess.webp",   "/images/demo-princess.png",   "/images/demo-forest-girl.png", "/images/demo-anime.png"],
+                        fantasy:     ["/images/fantasy_1.png",       "/images/demo-moon-star.png",   "/images/cat-fantasy.webp",    "/images/demo-anime.png"],
                         magic:       ["/images/cat-magic.webp",      "/images/demo-moon-star.png",   "/images/demo-forest-girl.png", "/images/cat-magic.webp"],
                         friendship:  ["/images/cat-friendship.webp", "/images/demo-friends-storm.png","/images/cat-friendship.webp", "/images/demo-friends-storm.png"],
                         kids:        ["/images/cat-kids.webp",       "/images/demo-rabbit-lion.png", "/images/cat-kids.webp",       "/images/demo-rabbit-lion.png"],
                         bedtime:     ["/images/cat-bedtime.webp",    "/images/demo-moon-star.png",   "/images/cat-bedtime.webp",    "/images/demo-moon-star.png"],
                         moral:       ["/images/cat-moral.webp",      "/images/demo-woodcutter.png",  "/images/cat-moral.webp",      "/images/demo-woodcutter.png"],
                         animal:      ["/images/cat-animal.webp",     "/images/demo-rabbit-lion.png"],
-                        god:         ["/images/cat-god.webp",        "/images/demo-nature.png"],
-                        bird:        ["/images/cat-bird.webp",       "/images/fantasy_1.png"],
+                        god:         ["/images/cat-god.webp",        "/images/demo-nature.png",      "/images/demo-forest-girl.png"],
+                        bird:        ["/images/cat-bird.webp",       "/images/fantasy_1.png",        "/images/demo-nature.png"],
+                        nature:      ["/images/demo-nature.png",      "/images/demo-forest-girl.png", "/images/cat-custom.webp"],
                         custom:      ["/images/cat-custom.webp",     "/images/demo-nature.png"],
                       };
 
