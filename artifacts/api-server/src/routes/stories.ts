@@ -9,6 +9,7 @@ import {
   openai,
 } from "@workspace/integrations-openai-ai-server";
 import { generateElevenLabsAudio } from "../lib/elevenlabs";
+import { generateReplicateImage, generateInstantIDImage } from "../lib/replicate";
 
 const router: IRouter = Router();
 
@@ -602,7 +603,15 @@ function getFallbackStory(prompt: string, category: string, language: string, mo
 
 async function getLocalDemoImage(category: string, prompt: string, sceneNumber: number = 0): Promise<string> {
   const imagesDir = path.resolve(process.cwd(), "..", "story-generator", "public", "images");
+  const localPath = path.join(process.cwd(), "..", "story-generator", "public", "demos", category, `${sceneNumber}.jpg`);
 
+  try {
+    const buffer = await fs.readFile(localPath);
+    console.log(`🖼️ Serving local demo image: ${localPath}`);
+    return buffer.toString("base64");
+  } catch (e) {
+    // Continue to AI fallbacks
+  }
   try {
     const aiPrompt = encodeURIComponent(`${prompt}, clean storybook illustration, cinematic, detailed digital art, vibrant colors, children story style`);
     const freeAiUrl = `https://image.pollinations.ai/prompt/${aiPrompt}?seed=${Math.floor(Math.random() * 10000)}&width=1024&height=1024&nologo=true`;
@@ -1258,7 +1267,6 @@ router.get("/demo-stories", async (req: Request, res: Response) => {
   }
 
   try {
-    // Check disk cache first to avoid repeated API calls
     const cachePath = path.join(process.cwd(), "src", "data", `demo-stories-${lang}.json`);
     try {
       const cached = await fs.readFile(cachePath, "utf8");
@@ -1403,13 +1411,35 @@ ${isGame ? "CRITICAL: You MUST provide exactly 5 quiz questions based on the sto
 
 router.post("/generate-story-image", async (req: Request, res: Response) => {
   try {
-    const { prompt, category, faceImage } = req.body;
+    const { prompt, category, faceImage, sceneNumber } = req.body;
     const categoryStyle = getCategoryStyle(category || "custom");
     const fullPrompt = `${prompt}, ${categoryStyle}, children's storybook illustration, vibrant colors, magical atmosphere, high quality digital art`;
 
     console.log(`🎨 [Router] Generating image for: "${prompt.slice(0, 50)}..." (Face: ${faceImage ? "yes" : "no"})`);
 
-    // 1. OpenAI DALL-E 3 Priority (User requested)
+    // 1. Replicate InstantID (Premium Face Preservation)
+    if (faceImage && process.env.REPLICATE_API_TOKEN) {
+      try {
+        console.log("🎨 [Router] Using Replicate InstantID for face consistency...");
+        const b64 = await generateInstantIDImage(prompt, faceImage);
+        return res.json({ b64_json: b64, url: null });
+      } catch (err: any) {
+        console.warn(`⚠️ Replicate InstantID failed: ${err.message}. Falling back to standard generation.`);
+      }
+    }
+
+    // 2. Replicate Flux (High Quality Standard)
+    if (process.env.REPLICATE_API_TOKEN) {
+      try {
+        console.log("🎨 [Router] Using Replicate Flux for high quality scene...");
+        const b64 = await generateReplicateImage(fullPrompt);
+        return res.json({ b64_json: b64, url: null });
+      } catch (err: any) {
+        console.warn(`⚠️ Replicate Flux failed: ${err.message}. Falling back to OpenAI/Free tiers.`);
+      }
+    }
+
+    // 3. OpenAI DALL-E 3 Priority
     if (process.env.OPENAI_API_KEY) {
       try {
         console.log(`🎨 [Router] Generating image via OpenAI (DALL-E 3): "${fullPrompt.slice(0, 60)}..."`);
@@ -1422,34 +1452,22 @@ router.post("/generate-story-image", async (req: Request, res: Response) => {
       }
     }
 
-    // 2. Pollinations.ai - FAST & FREE Image Generation
-    console.log(`🎨 [Router] Generating image via Pollinations.ai: "${fullPrompt.slice(0, 60)}..."`);
-    const seed = Math.floor(Math.random() * 999999);
-    const encodedPrompt = encodeURIComponent(fullPrompt);
-    const imageUrl = `https://image.pollinations.ai/prompt/${encodedPrompt}?width=1024&height=1024&nologo=true&seed=${seed}&model=flux`;
-
+    // 4. Free AI Fallback (Pollinations + Local Files)
     try {
-      // Attempt to fetch and buffer server-side to resolve client-side CORS and cross-origin issues
-      const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 15000); // 15s timeout for free tier
-      
-      const imgResponse = await fetch(imageUrl, { signal: controller.signal });
-      clearTimeout(timeout);
-      
-      if (imgResponse.ok) {
-        const buffer = Buffer.from(await imgResponse.arrayBuffer());
-        const b64 = buffer.toString("base64");
-        console.log(`✅ [Router] Image generated and buffered via Pollinations: ${buffer.length} bytes`);
+      console.log(`🎨 [Router] Falling back to local/free generator: "${prompt.slice(0, 40)}..."`);
+      const b64 = await getLocalDemoImage(category, prompt, sceneNumber);
+      if (b64) {
         return res.json({ b64_json: b64, url: null });
-      } else {
-         console.warn(`⚠️ Pollinations returned status ${imgResponse.status}. Returning direct URL.`);
       }
-    } catch (fetchErr: any) {
-      console.warn(`⚠️ Pollinations buffering failed: ${fetchErr.message}. Returning direct URL as fallback.`);
+    } catch (e: any) {
+      console.warn("⚠️ getLocalDemoImage failed:", e.message);
     }
 
-    // Ultimate fallback: Browser loads the URL directly if server-side buffering failed
+    // 5. Direct Pollinations URL Fallback (Last resort)
+    const seed = Math.floor(Math.random() * 999999);
+    const imageUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(fullPrompt)}?width=1024&height=1024&nologo=true&seed=${seed}&model=flux`;
     return res.json({ b64_json: null, url: imageUrl });
+
   } catch (err) {
     console.error("❌ Image Generation FATAL ERROR:", (err as Error).message);
     return res.status(500).json({ error: (err as Error).message });

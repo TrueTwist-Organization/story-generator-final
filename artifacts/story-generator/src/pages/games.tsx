@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useLocation } from "wouter";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, RefreshCw, CheckCircle2, XCircle, Trophy, Sparkles } from "lucide-react";
+import { ChevronLeft, RefreshCw, CheckCircle2, XCircle, Trophy, Sparkles, Volume2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -181,6 +181,39 @@ export default function GamesPage() {
 
   const current = questions[currentIdx];
 
+  // Accessibility Narration
+  const speakCurrentWord = useCallback(() => {
+    if (!window.speechSynthesis || !current || gameState !== "playing") return;
+    window.speechSynthesis.cancel();
+    
+    const text = `${gt.unscrambleTitle}. ${showHint ? current.hint : ""}`;
+    const utterance = new SpeechSynthesisUtterance(text);
+    
+    const voices = window.speechSynthesis.getVoices();
+    if (language === 'hindi') {
+      utterance.lang = 'hi-IN';
+      utterance.voice = voices.find(v => v.lang.startsWith('hi')) || voices[0];
+    } else if (language === 'gujarati') {
+      utterance.lang = 'gu-IN';
+      utterance.voice = voices.find(v => v.lang.startsWith('gu')) || voices.find(v => v.lang.startsWith('hi')) || voices[0];
+    } else {
+      utterance.lang = 'en-US';
+      utterance.voice = voices.find(v => v.lang.startsWith('en')) || voices[0];
+    }
+    
+    window.speechSynthesis.speak(utterance);
+  }, [current, gameState, gt.unscrambleTitle, language, showHint]);
+
+  useEffect(() => {
+    let timer: any;
+    if (gameState === "playing") {
+      timer = setTimeout(speakCurrentWord, 800);
+    }
+    return () => {
+      if (timer) clearTimeout(timer);
+    };
+  }, [currentIdx, showHint, gameState, speakCurrentWord]);
+
   const handleSubmit = () => {
     if (!current || status !== "idle") return;
     if (input.trim().toUpperCase() === current.word) {
@@ -335,7 +368,15 @@ export default function GamesPage() {
             </div>
 
             {/* Title */}
-            <h2 className="text-center text-white/50 text-sm font-bold uppercase tracking-[0.3em] mb-3">{gt.unscrambleTitle}</h2>
+            <div className="flex justify-center items-center gap-3 mb-3">
+              <h2 className="text-white/50 text-sm font-bold uppercase tracking-[0.3em]">{gt.unscrambleTitle}</h2>
+              <button 
+                onClick={speakCurrentWord}
+                className="p-1.5 rounded-full bg-white/5 hover:bg-white/10 text-white/40 hover:text-white transition-colors"
+              >
+                <Volume2 className="w-4 h-4" />
+              </button>
+            </div>
 
             {/* Scrambled letters */}
             <div className="flex justify-center gap-2 flex-wrap mb-8">

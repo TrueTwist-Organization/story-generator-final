@@ -262,12 +262,8 @@ function BookPage({
     // 1. If we already have a URL (from cache or manual imageUrl), skip generation
     if (imageUrl || generateImage.isPending || imageError) return;
  
-    // 2. STOP automatic generation for demo stories as requested by user
-    // This allows the user to add images manually to characters/scenes later
-    if (story.id.startsWith("demo-")) {
-      console.log(`ℹ️ [BookPage] Automatic generation skipped for demo story scene.`);
-      return;
-    }
+    // 2. We now allow automatic generation for all stories to ensure a smooth experience
+    // unless the user explicitly wants to keep them static.
  
     if (!scene.imagePrompt || lastAttemptedImagePrompt.current === scene.imagePrompt) return;
  
@@ -443,16 +439,25 @@ function BookPage({
     } else if (!audioUrl && window.speechSynthesis) {
        // Toggle browser speech
        if (isPlaying) {
-         window.speechSynthesis.pause();
+         window.speechSynthesis.cancel(); // Use cancel instead of pause for better reliability in re-triggers
          setIsPlaying(false);
        } else {
-         if (window.speechSynthesis.paused) {
-           window.speechSynthesis.resume();
-           setIsPlaying(true);
-         } else {
-           // Re-trigger synthesis if needed
-           console.log("Retriggering synthesis...");
-         }
+         // Re-trigger the synthesis logic
+         const activeScene = scene;
+         const lang = story.language;
+         
+         const utterance = new SpeechSynthesisUtterance(activeScene.text || "");
+         const voices = window.speechSynthesis.getVoices();
+         utterance.lang = lang === 'hindi' ? 'hi-IN' : lang === 'gujarati' ? 'gu-IN' : 'en-US';
+         utterance.voice = voices.find(v => v.lang.startsWith(utterance.lang.split('-')[0])) || voices[0];
+         utterance.onstart = () => setIsPlaying(true);
+         utterance.onend = () => {
+           setIsPlaying(false);
+           if (!activeScene.choices || activeScene.choices.length === 0) {
+             setTimeout(() => onNext(), 1500);
+           }
+         };
+         window.speechSynthesis.speak(utterance);
        }
     }
   };
@@ -621,7 +626,7 @@ function BookPage({
                     size="icon" 
                     className="w-14 h-14 rounded-full border-black/10 bg-black/5 hover:bg-black/10 transition-colors"
                     onClick={toggleSpeech}
-                    disabled={!audioUrl}
+                    disabled={!audioUrl && !window.speechSynthesis}
                   >
                     {generateAudio.isPending ? (
                       <RefreshCw className="w-6 h-6 animate-spin text-primary" />
@@ -652,9 +657,47 @@ function QuizPage({ language, questions, onComplete }: { language: string, quest
   const [score, setScore] = useState(0);
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
   const [isAnswered, setIsAnswered] = useState(false);
+  const [isNarrationPlaying, setIsNarrationPlaying] = useState(false);
 
   const question = questions[currentIdx];
   const isLast = currentIdx === questions.length - 1;
+
+  // Quiz Narration
+  useEffect(() => {
+    let timer: any;
+    
+    if (window.speechSynthesis && !isAnswered) {
+      const speakQuestion = () => {
+        window.speechSynthesis.cancel();
+        const text = `${question.question}. ${question.options.map((o: string, i: number) => `Option ${String.fromCharCode(65 + i)}: ${o}`).join(". ")}`;
+        const utterance = new SpeechSynthesisUtterance(text);
+        const voices = window.speechSynthesis.getVoices();
+        
+        if (language === 'hindi') {
+          utterance.lang = 'hi-IN';
+          utterance.voice = voices.find(v => v.lang.startsWith('hi')) || voices[0];
+        } else if (language === 'gujarati') {
+          utterance.lang = 'gu-IN';
+          utterance.voice = voices.find(v => v.lang.startsWith('gu')) || voices.find(v => v.lang.startsWith('hi')) || voices[0];
+        } else {
+          utterance.lang = 'en-US';
+          utterance.voice = voices.find(v => v.lang.startsWith('en')) || voices[0];
+        }
+
+        utterance.onstart = () => setIsNarrationPlaying(true);
+        utterance.onend = () => setIsNarrationPlaying(false);
+        window.speechSynthesis.speak(utterance);
+      };
+
+      // Delay slightly to allow page transition
+      timer = setTimeout(speakQuestion, 1000);
+    }
+
+    return () => {
+      if (timer) clearTimeout(timer);
+      if (window.speechSynthesis) window.speechSynthesis.cancel();
+    };
+  }, [currentIdx, language, question, isAnswered]);
 
   const handleSelect = (idx: number) => {
     if (isAnswered) return;
